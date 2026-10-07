@@ -1,0 +1,45 @@
+PREPROCESSING STEPS
+
+1. Excel: grouped parents' qualification codes
+   Formula applied to Mother qualification (column I) and Father qualification (column J),
+   then pasted as values over the original codes:
+   =IF(ISNUMBER(MATCH(I2,{2,3,4,5,6,40,41,42,43,44},0)),"Higher",
+    IF(ISNUMBER(MATCH(I2,{1,9,10,12,13,14,18,20,22,25,27,31,33,39},0)),"Secondary",
+    IF(ISNUMBER(MATCH(I2,{11,19,26,29,30,35,36,37,38},0)),"Basic",
+    IF(I2=34,"Unknown","CHECK"))))
+   Result: Basic / Secondary / Higher / Unknown (no "CHECK" values left)
+
+2. Excel: grouped parents' occupation codes
+   Mother occupation (column K) and Father occupation (column L):
+   [paste occupation formula]
+   Result: High-skilled / Clerical/service / Manual skilled / Low-skilled / Other/unknown
+
+3. Excel: binary target (Dropout + Enrolled -> Not on time)
+   Target (column AK):
+   [paste target formula]
+   Result: Graduate 2209 / Not on time 2215 -> saved as data_all.csv
+
+4. Weka: removed Nationality and 2nd semester columns
+   weka.filters.unsupervised.attribute.Remove -R 8,30-33
+   weka.filters.unsupervised.attribute.Remove -R 27-28
+   - Nationality: highly correlated with International (r = 0.91), kept International
+   - 2nd semester (6 columns): not available at the time of prediction in either stage
+
+5. Weka: numeric to nominal
+   weka.filters.unsupervised.attribute.NumericToNominal -R 1,2,4,5,6,8-11,13-18,20
+   Kept numeric: application order, previous qualification grade, admission grade,
+   age at enrollment, 1st semester curricular units, unemployment rate, inflation rate, GDP
+
+6. Weka: stratified 80/20 split, Stage 2 (includes 1st semester, 30 attributes)
+   weka.filters.supervised.instance.StratifiedRemoveFolds -S 0 -N 5 -F 1      -> test_stage2.arff  (885: 443 / 442)
+   weka.filters.supervised.instance.StratifiedRemoveFolds -S 0 -V -N 5 -F 1   -> train_stage2.arff (3539: 1772 / 1767)
+
+7. Weka: stratified 80/20 split, Stage 1 (no semester data, 24 attributes)
+   Starting again from the data after step 5, removed 1st semester columns:
+   weka.filters.unsupervised.attribute.Remove -R 21-26
+   weka.filters.supervised.instance.StratifiedRemoveFolds -S 0 -N 5 -F 1      -> test_stage1.arff  (885: 443 / 442)
+   weka.filters.supervised.instance.StratifiedRemoveFolds -S 0 -V -N 5 -F 1   -> train_stage1.arff (3539: 1772 / 1767)
+
+   Same seed (0) in both stages, so Stage 1 and Stage 2 use exactly the same
+   test students. All transformations were applied before splitting, so train
+   and test files have identical headers.
