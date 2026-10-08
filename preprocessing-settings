@@ -11,7 +11,6 @@ PREPROCESSING STEPS
 
 2. Excel: grouped parents' occupation codes
    Mother occupation (column K) and Father occupation (column L):
-   [paste occupation formula]
    Result: High-skilled / Clerical/service / Manual skilled / Low-skilled / Other/unknown
 
 3. Excel: binary target (Dropout + Enrolled -> Not on time)
