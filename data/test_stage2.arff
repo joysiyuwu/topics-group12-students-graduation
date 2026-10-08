@@ -1,0 +1,919 @@
+@relation 'data_all-weka.filters.unsupervised.attribute.Remove-R8,30-33-weka.filters.unsupervised.attribute.Remove-R27-28-weka.filters.unsupervised.attribute.NumericToNominal-R1,2,4,5,6,8-11,13-18,20-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N5-F1'
+
+@attribute 'Marital status' {1,2,3,4,5,6}
+@attribute 'Application mode' {1,2,5,7,10,15,16,17,18,26,27,39,42,43,44,51,53,57}
+@attribute 'Application order' numeric
+@attribute Course {33,171,8014,9003,9070,9085,9119,9130,9147,9238,9254,9500,9556,9670,9773,9853,9991}
+@attribute 'Daytime/evening attendance' {0,1}
+@attribute 'Previous qualification' {1,2,3,4,5,6,9,10,12,14,15,19,38,39,40,42,43}
+@attribute 'Previous qualification (grade)' numeric
+@attribute 'Mother qualification' {Basic,Secondary,Higher,Unknown}
+@attribute 'Father qualification' {Secondary,Higher,Basic,Unknown}
+@attribute 'Mother occupation' {Clerical/service,High-skilled,Low-skilled,'Manual skilled',Other/unknown}
+@attribute 'Father occupation' {Low-skilled,High-skilled,'Manual skilled',Other/unknown,Clerical/service}
+@attribute 'Admission grade' numeric
+@attribute Displaced {0,1}
+@attribute 'Educational special needs' {0,1}
+@attribute Debtor {0,1}
+@attribute 'Tuition fees up to date' {0,1}
+@attribute Gender {0,1}
+@attribute 'Scholarship holder' {0,1}
+@attribute 'Age at enrollment' numeric
+@attribute International {0,1}
+@attribute 'Curricular units 1st sem (credited)' numeric
+@attribute 'Curricular units 1st sem (enrolled)' numeric
+@attribute 'Curricular units 1st sem (evaluations)' numeric
+@attribute 'Curricular units 1st sem (approved)' numeric
+@attribute 'Curricular units 1st sem (grade)' numeric
+@attribute 'Curricular units 1st sem (without evaluations)' numeric
+@attribute 'Unemployment rate' numeric
+@attribute 'Inflation rate' numeric
+@attribute GDP numeric
+@attribute Target {'Not on time',Graduate}
+
+@data
+1,17,5,171,1,1,122,Basic,Secondary,Clerical/service,Low-skilled,127.3,1,0,0,1,1,0,20,0,0,0,0,0,0,0,10.8,1.4,1.74,'Not on time'
+1,1,1,9773,1,1,127,Basic,Basic,Low-skilled,High-skilled,120.7,1,0,0,1,0,0,20,0,0,6,6,5,13.2,0,15.5,2.8,-4.06,'Not on time'
+1,1,1,9085,1,1,138,Basic,Basic,High-skilled,High-skilled,131,1,0,0,1,0,0,18,0,0,5,9,5,12.666667,2,9.4,-0.8,-3.12,'Not on time'
+1,39,1,9119,1,10,133.1,Unknown,Basic,Other/unknown,Other/unknown,128.8,1,0,0,1,1,0,43,0,0,5,0,0,0,0,7.6,2.6,0.32,'Not on time'
+1,39,1,9991,0,1,133.1,Basic,Basic,Low-skilled,Low-skilled,109.7,0,0,0,1,0,0,29,0,0,5,0,0,0,0,16.2,0.3,-0.92,'Not on time'
+2,7,1,9254,1,3,130,Secondary,Higher,Clerical/service,High-skilled,130,0,0,0,1,0,0,39,0,0,6,10,0,0,0,12.4,0.5,1.79,'Not on time'
+1,43,1,9070,1,1,116,Secondary,Secondary,High-skilled,High-skilled,120.9,0,0,0,1,1,0,24,0,0,6,6,0,0,0,12.7,3.7,-1.7,'Not on time'
+1,1,1,171,1,1,141,Basic,Basic,Clerical/service,Other/unknown,135.8,1,0,0,1,1,0,19,0,0,0,0,0,0,0,15.5,2.8,-4.06,'Not on time'
+1,39,1,9991,0,2,140,Higher,Higher,High-skilled,High-skilled,155.7,1,0,0,1,1,0,35,0,0,1,1,0,0,1,10.8,1.4,1.74,'Not on time'
+1,39,1,9500,1,1,133.1,Secondary,Secondary,Clerical/service,Other/unknown,100.8,0,0,0,1,1,0,24,0,0,7,18,0,0,0,13.9,-0.3,0.79,'Not on time'
+1,1,4,9500,1,1,115,Higher,Higher,High-skilled,High-skilled,111.5,1,0,1,0,0,0,19,0,0,7,10,4,11.96,0,13.9,-0.3,0.79,'Not on time'
+1,1,1,9085,1,1,113,Secondary,Secondary,Clerical/service,Clerical/service,106.7,1,0,0,1,0,0,20,0,0,6,15,4,14.2,0,15.5,2.8,-4.06,'Not on time'
+1,43,1,9500,1,1,130,Basic,Basic,Low-skilled,Clerical/service,100,0,0,0,1,0,0,20,0,0,7,11,6,11.616667,0,13.9,-0.3,0.79,'Not on time'
+1,17,6,9556,1,1,122,Secondary,Secondary,Clerical/service,Clerical/service,117.1,1,0,0,1,0,0,19,0,0,7,12,5,12.1,0,13.9,-0.3,0.79,'Not on time'
+1,1,2,9500,1,1,117,Basic,Secondary,Clerical/service,'Manual skilled',112.1,0,0,0,1,0,1,20,0,0,7,9,5,13.188,0,11.1,0.6,2.02,'Not on time'
+1,17,1,9853,1,1,138,Basic,Basic,'Manual skilled','Manual skilled',124.7,1,0,0,1,0,0,18,0,0,6,11,3,12.333333,0,9.4,-0.8,-3.12,'Not on time'
+3,39,1,9003,1,1,170,Secondary,Basic,'Manual skilled','Manual skilled',170,0,0,1,1,0,0,47,0,0,1,1,0,0,0,8.9,1.4,3.51,'Not on time'
+1,1,2,9500,1,1,123,Unknown,Unknown,Other/unknown,Other/unknown,113.3,1,0,0,1,0,0,20,0,0,7,8,4,11.95,0,7.6,2.6,0.32,'Not on time'
+1,18,3,9070,1,1,131,Secondary,Basic,Clerical/service,Clerical/service,122.3,1,0,0,0,0,0,19,0,0,6,6,6,12.166667,0,15.5,2.8,-4.06,'Not on time'
+1,1,1,8014,0,1,120,Secondary,Basic,'Manual skilled',High-skilled,122.8,0,0,0,1,0,0,23,0,0,6,13,2,10,0,9.4,-0.8,-3.12,'Not on time'
+1,39,1,9500,1,1,120,Secondary,Higher,'Manual skilled',High-skilled,105.9,0,0,0,1,0,0,35,0,0,3,4,3,11.816667,0,11.1,0.6,2.02,'Not on time'
+1,39,1,8014,0,1,133.1,Secondary,Basic,Clerical/service,Clerical/service,102.5,0,0,0,1,0,1,27,0,0,6,16,1,10,0,8.9,1.4,3.51,'Not on time'
+1,1,1,9147,1,1,133.1,Basic,Secondary,Low-skilled,Other/unknown,100,0,0,0,1,0,0,21,0,0,5,12,3,12,0,16.2,0.3,-0.92,'Not on time'
+1,39,1,9147,1,1,120,Basic,Secondary,Low-skilled,High-skilled,122.7,0,0,0,0,0,0,25,0,0,5,5,0,0,0,10.8,1.4,1.74,'Not on time'
+2,39,1,9556,1,19,133.1,Basic,Basic,'Manual skilled','Manual skilled',99.5,1,0,1,0,0,1,37,0,0,7,13,1,16,0,8.9,1.4,3.51,'Not on time'
+1,1,2,9147,1,1,121,Secondary,Basic,Low-skilled,Low-skilled,113.7,1,0,0,0,0,0,20,0,0,5,10,2,10,0,7.6,2.6,0.32,'Not on time'
+1,44,1,9003,1,39,140,Basic,Basic,Low-skilled,Clerical/service,140,0,0,0,1,0,0,24,0,0,6,10,6,11.428571,0,12.4,0.5,1.79,'Not on time'
+1,39,1,9130,1,3,150,Higher,Secondary,Other/unknown,Other/unknown,150,1,0,0,1,0,0,34,0,1,5,6,1,11,0,12.7,3.7,-1.7,'Not on time'
+1,7,1,9085,1,40,150,Basic,Basic,Low-skilled,Clerical/service,150,0,0,1,0,0,0,26,0,0,3,3,0,0,0,8.9,1.4,3.51,'Not on time'
+1,44,1,9119,1,39,151,Basic,Basic,Clerical/service,'Manual skilled',151,0,0,1,1,0,0,26,0,0,5,6,0,0,0,16.2,0.3,-0.92,'Not on time'
+1,1,2,8014,0,1,96,Higher,Secondary,High-skilled,Low-skilled,100,0,0,0,1,0,0,20,0,0,6,10,5,12,0,9.4,-0.8,-3.12,'Not on time'
+1,39,1,9003,1,1,133.1,Basic,Basic,High-skilled,'Manual skilled',130,0,0,1,1,0,1,30,0,0,6,6,0,0,0,11.1,0.6,2.02,'Not on time'
+1,17,1,9085,1,1,134,Basic,Basic,High-skilled,'Manual skilled',131.2,0,0,0,1,0,0,19,0,0,5,8,1,11,0,7.6,2.6,0.32,'Not on time'
+1,18,4,9147,1,1,130,Basic,Basic,Low-skilled,Low-skilled,119.9,1,0,0,0,0,0,34,0,0,5,5,0,0,0,9.4,-0.8,-3.12,'Not on time'
+1,1,1,9238,1,1,135,Basic,Basic,Clerical/service,'Manual skilled',121,0,0,0,1,0,0,19,0,0,6,13,3,10.333333,0,7.6,2.6,0.32,'Not on time'
+1,17,2,9085,1,1,120,Secondary,Secondary,Low-skilled,Other/unknown,115,0,0,0,0,0,0,20,0,0,5,8,2,10.5,0,7.6,2.6,0.32,'Not on time'
+1,1,1,9773,1,1,120,Basic,Basic,Low-skilled,Low-skilled,114.8,1,1,0,1,0,0,19,0,0,6,11,4,12.25,0,7.6,2.6,0.32,'Not on time'
+1,44,1,9085,1,39,140,Secondary,Higher,Clerical/service,'Manual skilled',140,1,0,0,1,0,0,29,0,0,6,0,0,0,0,15.5,2.8,-4.06,'Not on time'
+1,1,5,9670,1,1,133.1,Secondary,Secondary,High-skilled,Clerical/service,133,1,0,0,1,0,0,19,0,0,6,0,0,0,0,7.6,2.6,0.32,'Not on time'
+1,1,3,9147,1,1,131,Basic,Basic,Low-skilled,'Manual skilled',132.4,1,0,0,1,0,0,19,0,0,5,5,5,11.8,0,9.4,-0.8,-3.12,'Not on time'
+1,1,1,9853,1,1,133,Secondary,Basic,Clerical/service,Other/unknown,131.3,1,0,0,1,0,0,20,0,0,6,9,5,14.333333,0,15.5,2.8,-4.06,'Not on time'
+1,17,1,9238,1,1,128,Basic,Basic,Low-skilled,'Manual skilled',118.6,1,0,0,1,0,1,21,0,0,6,8,5,13.2,0,8.9,1.4,3.51,'Not on time'
+1,1,1,9085,1,1,101,Basic,Basic,Low-skilled,Clerical/service,101,1,0,1,1,0,0,22,0,0,6,9,5,13.333333,0,12.4,0.5,1.79,'Not on time'
+1,1,1,9070,1,1,125,Secondary,Secondary,Clerical/service,Clerical/service,132,0,0,0,0,0,0,18,0,1,6,10,5,12.2,1,13.9,-0.3,0.79,'Not on time'
+1,1,2,9147,1,1,125,Secondary,Basic,Clerical/service,'Manual skilled',115.2,0,1,0,1,0,0,21,0,0,5,6,0,0,0,15.5,2.8,-4.06,'Not on time'
+2,18,2,9238,1,1,140,Basic,Basic,Low-skilled,Other/unknown,120.4,0,0,1,0,0,0,39,0,0,6,0,0,0,0,9.4,-0.8,-3.12,'Not on time'
+1,43,1,9119,1,1,133.1,Secondary,Secondary,Low-skilled,High-skilled,136,0,0,0,1,1,0,31,0,0,5,12,1,12,0,16.2,0.3,-0.92,'Not on time'
+1,17,1,9670,1,1,133,Basic,Basic,Low-skilled,'Manual skilled',121.8,1,0,0,1,1,0,22,0,0,6,0,0,0,0,13.9,-0.3,0.79,'Not on time'
+1,17,2,9119,1,1,127,Basic,Secondary,Low-skilled,Other/unknown,121.1,1,0,0,1,1,1,18,0,0,5,6,5,13.2,0,8.9,1.4,3.51,'Not on time'
+1,1,5,9119,1,1,126,Secondary,Basic,Clerical/service,Clerical/service,122.5,1,0,0,1,1,0,19,0,0,5,12,3,12,0,12.4,0.5,1.79,'Not on time'
+1,44,1,9003,1,39,150,Higher,Higher,High-skilled,High-skilled,150,0,0,0,1,1,0,25,0,9,14,16,14,12.428571,0,15.5,2.8,-4.06,'Not on time'
+1,39,1,9003,1,19,133.1,Higher,Secondary,High-skilled,Clerical/service,120,0,0,0,1,1,0,25,0,0,3,4,0,0,0,16.2,0.3,-0.92,'Not on time'
+2,39,1,9085,1,9,133.1,Secondary,Secondary,Clerical/service,Clerical/service,120,1,0,0,0,1,0,29,0,0,5,12,0,0,4,9.4,-0.8,-3.12,'Not on time'
+1,17,1,9670,1,1,155,Secondary,Basic,Clerical/service,'Manual skilled',134.7,1,0,0,1,0,0,20,0,0,6,8,5,13.4,0,12.7,3.7,-1.7,'Not on time'
+1,7,1,9130,1,3,140,Basic,Basic,Low-skilled,Low-skilled,140,1,0,0,1,0,0,23,0,0,6,0,0,0,0,12.4,0.5,1.79,'Not on time'
+1,43,3,9500,1,1,126,Basic,Basic,'Manual skilled',Clerical/service,124.3,1,0,0,1,0,1,18,0,0,7,8,5,11.98,0,7.6,2.6,0.32,'Not on time'
+1,17,4,9070,1,1,116,Basic,Basic,Low-skilled,Low-skilled,109,0,0,0,1,0,1,23,0,0,6,6,6,13.333333,0,11.1,0.6,2.02,'Not on time'
+2,39,1,9670,1,1,130,Basic,Basic,Low-skilled,Other/unknown,158,0,0,1,0,0,0,34,0,0,6,7,4,13.5,0,12.7,3.7,-1.7,'Not on time'
+1,1,1,9147,1,1,130,Basic,Basic,Low-skilled,Low-skilled,131.8,1,0,0,1,0,1,19,0,0,5,8,2,10.5,0,7.6,2.6,0.32,'Not on time'
+1,39,1,9003,1,1,130,Basic,Basic,Low-skilled,Low-skilled,120,0,0,0,1,0,0,25,0,0,6,6,0,0,0,11.1,0.6,2.02,'Not on time'
+1,17,1,9853,1,1,147,Basic,Basic,Low-skilled,Low-skilled,142.8,1,0,0,1,0,0,23,0,0,6,11,2,10,0,7.6,2.6,0.32,'Not on time'
+1,39,1,9085,1,39,120,Basic,Basic,High-skilled,Low-skilled,137.7,1,0,0,0,1,0,41,0,3,3,3,3,12.333333,0,12.4,0.5,1.79,'Not on time'
+1,1,1,9147,1,1,143,Higher,Secondary,Clerical/service,Clerical/service,152.1,1,0,1,1,1,0,18,0,0,5,15,4,13.333333,0,13.9,-0.3,0.79,'Not on time'
+1,7,1,9556,1,4,190,Higher,Higher,High-skilled,High-skilled,190,1,0,0,1,1,0,43,0,4,4,4,4,13.875,0,11.1,0.6,2.02,'Not on time'
+1,39,1,9119,1,1,100,Basic,Basic,Low-skilled,'Manual skilled',160,0,0,1,0,1,0,45,0,0,5,5,0,0,0,15.5,2.8,-4.06,'Not on time'
+1,43,1,33,1,19,133.1,Basic,Basic,Clerical/service,Clerical/service,140,0,0,1,1,1,0,35,0,3,10,18,6,12.666667,0,16.2,0.3,-0.92,'Not on time'
+1,43,1,9670,1,1,141,Higher,Higher,High-skilled,High-skilled,133.3,1,0,0,1,1,0,18,0,0,6,13,4,13.75,0,13.9,-0.3,0.79,'Not on time'
+1,1,1,171,1,1,137,Secondary,Higher,High-skilled,'Manual skilled',146.5,1,0,1,1,1,0,19,0,6,12,13,11,12,0,8.9,1.4,3.51,'Not on time'
+2,43,1,9003,1,1,149,Secondary,Secondary,Clerical/service,Clerical/service,156.1,1,0,0,0,1,0,29,0,0,6,6,0,0,0,15.5,2.8,-4.06,'Not on time'
+1,15,1,9670,1,1,133.1,Secondary,Secondary,Low-skilled,Clerical/service,128.2,0,0,1,0,1,0,18,1,0,6,6,4,11.25,0,8.9,1.4,3.51,'Not on time'
+1,44,1,9130,1,39,150,Secondary,Secondary,Clerical/service,Clerical/service,150,1,0,0,1,0,0,20,0,0,5,7,4,12,1,10.8,1.4,1.74,'Not on time'
+1,1,1,171,1,1,148,Higher,Higher,Clerical/service,High-skilled,131.6,1,0,0,1,0,0,21,0,6,12,12,8,13.875,0,8.9,1.4,3.51,'Not on time'
+1,39,1,9500,1,1,120,Higher,Higher,High-skilled,High-skilled,149,0,0,0,0,1,0,36,0,0,6,15,2,11.5,0,15.5,2.8,-4.06,'Not on time'
+1,1,1,9130,1,1,143,Higher,Higher,High-skilled,Other/unknown,141.3,0,0,1,0,0,0,23,0,0,6,10,6,14,0,11.1,0.6,2.02,'Not on time'
+1,17,1,9070,1,1,136,Secondary,Basic,Clerical/service,Clerical/service,130.8,0,0,0,1,0,0,20,0,0,6,6,6,12.5,0,10.8,1.4,1.74,'Not on time'
+1,17,1,9254,1,1,136,Secondary,Higher,High-skilled,High-skilled,128.7,1,0,0,1,0,0,20,0,0,6,8,6,11.666667,0,13.9,-0.3,0.79,'Not on time'
+1,1,3,9119,1,1,133,Higher,Secondary,High-skilled,Clerical/service,121.8,1,0,0,1,1,0,18,0,0,5,9,4,12,0,8.9,1.4,3.51,'Not on time'
+1,17,1,9147,1,1,116,Higher,Secondary,High-skilled,Clerical/service,115.7,0,0,0,0,1,0,22,0,0,5,10,4,11.5,0,8.9,1.4,3.51,'Not on time'
+1,17,4,9119,1,1,127,Basic,Basic,Clerical/service,Clerical/service,120.4,1,0,1,0,1,0,18,0,0,5,12,0,0,0,9.4,-0.8,-3.12,'Not on time'
+1,1,1,9773,1,1,108,Unknown,Basic,Other/unknown,High-skilled,105.9,0,0,0,1,1,0,20,0,0,6,11,4,10.75,0,7.6,2.6,0.32,'Not on time'
+1,44,1,9085,1,39,160,Secondary,Secondary,Clerical/service,Clerical/service,160,1,1,0,0,1,0,19,0,2,6,6,6,14,0,12.4,0.5,1.79,'Not on time'
+1,17,1,9070,1,1,119,Basic,Basic,Low-skilled,Low-skilled,115.2,0,0,0,1,1,1,21,0,0,6,8,4,11.5,0,15.5,2.8,-4.06,'Not on time'
+1,39,1,171,1,1,147,Basic,Basic,'Manual skilled',Low-skilled,133.3,0,0,0,0,0,0,32,0,0,0,0,0,0,0,16.2,0.3,-0.92,'Not on time'
+1,1,2,9147,1,1,121,Basic,Basic,Low-skilled,Low-skilled,126.3,1,0,0,1,0,0,20,0,0,5,12,1,10,2,12.7,3.7,-1.7,'Not on time'
+1,39,1,9500,1,1,140,Basic,Basic,Low-skilled,'Manual skilled',135.5,0,0,0,1,0,0,32,0,0,7,0,0,0,0,13.9,-0.3,0.79,'Not on time'
+4,39,1,9991,0,1,120,Basic,Basic,Low-skilled,Low-skilled,110,0,0,0,1,0,0,37,0,0,5,14,2,10,0,12.7,3.7,-1.7,'Not on time'
+1,1,5,9147,1,1,125,Basic,Basic,'Manual skilled','Manual skilled',122.2,1,0,0,1,0,0,18,0,0,5,9,1,11,0,7.6,2.6,0.32,'Not on time'
+1,1,1,9773,1,1,145,Basic,Basic,Clerical/service,Other/unknown,131.7,1,0,0,1,0,0,18,0,0,6,7,6,12.666667,0,7.6,2.6,0.32,'Not on time'
+1,39,1,9147,1,1,140,Basic,Higher,Low-skilled,High-skilled,135.1,0,0,0,1,1,0,61,0,0,5,0,0,0,0,15.5,2.8,-4.06,'Not on time'
+1,1,3,9670,1,1,134,Secondary,Basic,Other/unknown,Other/unknown,128.4,1,0,0,0,1,0,19,0,0,5,5,0,0,0,7.6,2.6,0.32,'Not on time'
+2,39,1,9991,0,1,135,Unknown,Unknown,Other/unknown,Other/unknown,134.1,1,0,0,0,1,0,49,0,0,5,5,0,0,0,7.6,2.6,0.32,'Not on time'
+1,39,1,9991,0,19,133.1,Basic,Basic,'Manual skilled',Clerical/service,155.5,1,0,1,0,1,0,39,0,0,5,6,5,10.6,0,10.8,1.4,1.74,'Not on time'
+1,17,1,9070,1,1,134,Secondary,Secondary,Clerical/service,Other/unknown,133.3,1,0,0,1,1,0,18,0,0,6,7,5,10.8,1,7.6,2.6,0.32,'Not on time'
+1,44,1,9085,1,39,130,Basic,Secondary,'Manual skilled',Clerical/service,130,1,0,0,1,0,0,22,1,0,6,12,5,12.8,0,12.4,0.5,1.79,'Not on time'
+1,1,2,9773,1,1,125,Basic,Secondary,Clerical/service,Clerical/service,122.2,1,0,0,1,0,0,18,0,0,6,0,0,0,0,11.1,0.6,2.02,'Not on time'
+1,17,1,9070,1,1,136,Basic,Basic,'Manual skilled','Manual skilled',121.7,1,0,0,1,0,0,18,0,0,6,6,2,13,0,12.4,0.5,1.79,'Not on time'
+1,1,3,9773,1,1,175,Higher,Basic,High-skilled,Other/unknown,157.5,1,0,0,1,0,0,19,0,0,6,8,6,13.166667,0,10.8,1.4,1.74,'Not on time'
+1,1,1,9070,1,1,133.1,Basic,Basic,'Manual skilled','Manual skilled',117,0,0,0,1,0,0,20,0,0,6,0,0,0,0,15.5,2.8,-4.06,'Not on time'
+1,17,1,9254,1,1,158,Basic,Basic,Clerical/service,Low-skilled,138.1,1,0,0,1,0,0,19,0,0,6,8,4,12.5,0,7.6,2.6,0.32,'Not on time'
+1,43,1,171,1,1,133,Basic,Basic,Clerical/service,'Manual skilled',133,0,0,0,1,0,0,18,0,0,0,0,0,0,0,15.5,2.8,-4.06,'Not on time'
+1,1,1,9085,1,6,122,Basic,Basic,Low-skilled,Low-skilled,126.2,1,0,0,1,0,0,22,0,0,5,14,4,14.25,3,9.4,-0.8,-3.12,'Not on time'
+1,1,2,9500,1,1,124,Unknown,Unknown,Other/unknown,Other/unknown,123.3,1,0,0,1,0,1,20,0,0,8,8,7,14.901429,1,9.4,-0.8,-3.12,'Not on time'
+1,39,2,9556,1,1,130,Basic,Basic,Low-skilled,Low-skilled,159,1,0,0,1,0,0,25,0,0,7,11,7,11.857143,0,12.4,0.5,1.79,'Not on time'
+1,1,1,9254,1,1,145,Secondary,Basic,Clerical/service,Low-skilled,131.7,1,0,0,1,0,1,21,0,0,6,8,6,12.166667,0,10.8,1.4,1.74,'Not on time'
+1,18,2,9853,1,1,120,Secondary,Secondary,Low-skilled,Other/unknown,115.8,0,0,0,1,0,0,18,0,0,7,12,6,12,0,13.9,-0.3,0.79,'Not on time'
+1,17,1,9254,1,1,123,Basic,Basic,Low-skilled,'Manual skilled',120.6,1,0,0,0,0,0,19,0,0,6,9,3,11.666667,0,10.8,1.4,1.74,'Not on time'
+1,42,1,9119,1,1,144,Unknown,Unknown,Other/unknown,Other/unknown,119.5,0,0,0,1,1,0,18,0,0,5,6,1,10,0,10.8,1.4,1.74,'Not on time'
+1,53,1,9085,1,42,140,Basic,Basic,Low-skilled,Low-skilled,138.2,0,0,1,0,0,0,21,0,7,10,15,8,13.75,0,8.9,1.4,3.51,'Not on time'
+1,17,1,9853,1,1,125,Basic,Basic,Clerical/service,'Manual skilled',128.5,1,0,0,1,0,0,18,0,0,7,9,6,11.5,0,13.9,-0.3,0.79,'Not on time'
+2,39,1,9003,1,19,133.1,Basic,Basic,Low-skilled,Other/unknown,120,0,0,1,1,0,0,37,0,0,6,10,6,12.875,0,16.2,0.3,-0.92,'Not on time'
+1,1,4,9500,1,1,126,Basic,Basic,'Manual skilled',Low-skilled,121.3,1,0,0,1,0,1,18,0,0,7,9,6,13.533333,0,12.4,0.5,1.79,'Not on time'
+1,18,1,9119,1,1,146,Secondary,Basic,'Manual skilled','Manual skilled',132.4,1,0,0,1,1,0,18,0,0,5,5,1,16,0,9.4,-0.8,-3.12,'Not on time'
+2,43,1,9991,0,1,140,Basic,Basic,Clerical/service,Low-skilled,100,0,0,0,0,0,0,31,0,2,6,10,4,11.75,0,12.7,3.7,-1.7,'Not on time'
+1,43,1,9085,1,1,170,Basic,Basic,Clerical/service,High-skilled,170,1,0,0,1,0,0,19,0,0,5,5,0,0,5,12.7,3.7,-1.7,'Not on time'
+1,39,1,9670,1,1,140,Basic,Basic,'Manual skilled','Manual skilled',120,0,0,0,1,0,0,28,0,0,6,8,1,10,0,10.8,1.4,1.74,'Not on time'
+1,39,1,8014,0,1,133.1,Secondary,Secondary,Clerical/service,Clerical/service,116.5,0,0,0,1,1,1,24,0,0,6,6,4,12.25,0,12.4,0.5,1.79,'Not on time'
+1,44,1,9003,1,39,120,Secondary,Basic,Low-skilled,'Manual skilled',120,0,0,0,1,1,0,22,0,2,6,15,3,11.75,0,13.9,-0.3,0.79,'Not on time'
+1,18,1,9254,1,1,118,Basic,Basic,Clerical/service,Clerical/service,123.3,1,0,0,1,1,0,26,0,0,6,10,4,10,0,9.4,-0.8,-3.12,'Not on time'
+1,17,2,9085,1,1,123,Secondary,Basic,Clerical/service,Low-skilled,113.6,1,0,0,1,0,0,19,0,0,5,13,3,12,2,9.4,-0.8,-3.12,'Not on time'
+1,1,1,9085,1,1,101,Secondary,Basic,Clerical/service,Low-skilled,98.9,1,0,0,1,0,0,21,0,0,6,12,4,12.5,0,11.1,0.6,2.02,'Not on time'
+1,17,2,9853,1,1,126,Secondary,Basic,High-skilled,Other/unknown,126,1,0,0,1,0,0,19,0,0,6,9,5,13,0,7.6,2.6,0.32,'Not on time'
+1,1,3,9500,1,1,128,Secondary,Secondary,'Manual skilled','Manual skilled',120.5,1,0,0,1,0,1,19,0,0,7,10,5,13.04,0,12.4,0.5,1.79,'Not on time'
+1,39,1,9773,1,1,140,Unknown,Basic,Other/unknown,Other/unknown,102.5,0,0,0,1,0,0,26,0,0,6,8,4,11.75,0,7.6,2.6,0.32,'Not on time'
+1,39,1,9070,1,1,139.3,Basic,Basic,Clerical/service,Clerical/service,117.5,0,0,0,1,1,0,28,0,0,6,0,0,0,0,12.4,0.5,1.79,'Not on time'
+1,1,1,171,1,1,116,Basic,Secondary,Clerical/service,High-skilled,111.1,0,0,0,1,1,0,21,0,0,0,0,0,0,0,13.9,-0.3,0.79,'Not on time'
+1,1,1,9130,1,1,120,Basic,Basic,High-skilled,Low-skilled,116.1,1,0,0,1,1,0,22,0,0,5,9,2,10.5,0,12.7,3.7,-1.7,'Not on time'
+1,1,1,9130,1,1,133.1,Secondary,Secondary,High-skilled,Low-skilled,138,1,0,0,1,0,0,20,0,0,6,11,6,13.333333,0,16.2,0.3,-0.92,'Not on time'
+1,17,1,9254,1,1,118,Basic,Unknown,Clerical/service,Other/unknown,122.2,1,0,0,1,0,0,22,0,0,6,10,4,10.5,0,7.6,2.6,0.32,'Not on time'
+1,17,4,9853,1,1,143,Basic,Basic,Low-skilled,Clerical/service,127.3,1,0,0,1,0,0,18,0,0,6,7,5,11.8,0,10.8,1.4,1.74,'Not on time'
+1,1,5,9853,1,1,123,Secondary,Secondary,Clerical/service,Low-skilled,113.2,1,0,0,1,0,0,20,0,0,6,12,4,12,0,10.8,1.4,1.74,'Not on time'
+1,17,1,9003,1,1,170,Secondary,Higher,Low-skilled,Clerical/service,144.1,1,0,1,0,1,0,26,0,0,6,8,0,0,0,16.2,0.3,-0.92,'Not on time'
+1,17,1,9130,1,1,132,Higher,Secondary,Clerical/service,High-skilled,127.8,0,0,0,1,1,0,18,0,0,6,9,6,12,0,11.1,0.6,2.02,'Not on time'
+1,1,6,9500,1,1,122,Secondary,Secondary,High-skilled,'Manual skilled',114.3,1,0,0,1,1,0,18,0,0,7,8,6,13.976667,0,11.1,0.6,2.02,'Not on time'
+1,51,1,9119,1,1,140,Secondary,Basic,Clerical/service,Clerical/service,150,0,0,0,1,1,0,23,0,0,5,7,2,13,0,8.9,1.4,3.51,'Not on time'
+1,44,1,9003,1,39,130,Higher,Higher,'Manual skilled',High-skilled,130,1,0,0,1,1,0,20,0,0,6,12,4,11.6,0,15.5,2.8,-4.06,'Not on time'
+1,1,1,9085,1,1,123,Secondary,Secondary,Clerical/service,Low-skilled,116.7,1,0,0,1,1,1,20,0,0,6,10,4,13.2,0,12.4,0.5,1.79,'Not on time'
+1,39,1,9500,1,19,133.1,Secondary,Higher,High-skilled,High-skilled,100,0,0,1,1,1,0,24,0,0,7,21,0,0,3,16.2,0.3,-0.92,'Not on time'
+1,17,5,9773,1,1,122,Basic,Basic,'Manual skilled','Manual skilled',123.1,1,0,0,0,0,0,19,0,0,6,12,3,11,0,9.4,-0.8,-3.12,'Not on time'
+1,17,1,9500,1,1,131,Basic,Basic,Low-skilled,Low-skilled,123.8,1,0,0,1,0,0,19,0,0,7,0,0,0,0,15.5,2.8,-4.06,'Not on time'
+1,17,1,9085,1,1,130,Basic,Secondary,Low-skilled,Clerical/service,101.3,1,0,0,1,1,0,20,0,0,6,12,4,12.8,0,12.4,0.5,1.79,'Not on time'
+4,39,1,9003,1,1,133.1,Basic,Basic,Low-skilled,Clerical/service,100.7,0,0,0,1,0,0,39,0,0,6,15,2,13,2,15.5,2.8,-4.06,'Not on time'
+2,39,1,9119,1,3,120,Basic,Basic,Clerical/service,'Manual skilled',122.5,0,0,0,0,0,0,32,0,0,5,6,0,0,0,12.7,3.7,-1.7,'Not on time'
+1,39,1,8014,0,1,133.1,Unknown,Unknown,Other/unknown,Other/unknown,100,1,0,0,1,0,0,27,0,0,6,11,4,12.25,0,7.6,2.6,0.32,'Not on time'
+1,1,1,9119,1,1,130,Basic,Basic,Low-skilled,Clerical/service,140.2,1,0,0,1,1,0,20,0,0,5,5,0,0,0,9.4,-0.8,-3.12,'Not on time'
+1,44,1,9130,1,39,140,Basic,Basic,Clerical/service,Clerical/service,140,1,0,1,0,0,0,20,0,1,6,11,3,12,0,12.4,0.5,1.79,'Not on time'
+1,39,1,9003,1,19,133.1,Basic,Basic,Low-skilled,Other/unknown,120,0,0,1,0,1,0,38,0,0,6,8,0,0,0,16.2,0.3,-0.92,'Not on time'
+1,1,3,9085,1,1,131,Basic,Basic,Low-skilled,'Manual skilled',136.3,1,0,1,0,0,0,18,0,0,5,7,3,13,0,7.6,2.6,0.32,'Not on time'
+1,1,1,9147,1,1,132,Basic,Basic,'Manual skilled','Manual skilled',131.3,1,0,0,1,0,0,18,0,0,5,8,4,12,0,9.4,-0.8,-3.12,'Not on time'
+1,1,4,9147,1,1,120,Basic,Basic,Clerical/service,Clerical/service,122.8,1,0,0,1,1,0,18,0,0,5,6,4,11.5,0,10.8,1.4,1.74,'Not on time'
+1,17,1,9238,1,1,136,Basic,Basic,'Manual skilled','Manual skilled',140.9,1,0,0,1,1,0,18,0,0,6,10,4,12,0,9.4,-0.8,-3.12,'Not on time'
+1,53,1,9003,1,42,130,Basic,Basic,Low-skilled,Low-skilled,130,1,0,1,1,1,0,20,0,7,12,16,11,12.545455,0,8.9,1.4,3.51,'Not on time'
+2,39,1,9085,1,19,133.1,Basic,Basic,Low-skilled,Clerical/service,101,1,0,0,1,0,0,26,0,0,6,21,3,12.666667,0,15.5,2.8,-4.06,'Not on time'
+1,42,1,9853,1,1,120,Secondary,Basic,Clerical/service,'Manual skilled',111.3,0,0,0,1,0,0,24,0,9,13,17,10,11.5,0,16.2,0.3,-0.92,'Not on time'
+2,39,1,9773,1,19,133.1,Basic,Basic,Low-skilled,Clerical/service,131,0,0,1,0,1,0,42,0,0,4,5,0,0,0,13.9,-0.3,0.79,'Not on time'
+1,1,5,9500,1,1,130,Basic,Basic,Low-skilled,'Manual skilled',127.6,1,0,0,1,0,0,18,0,0,7,10,7,12.9,0,15.5,2.8,-4.06,'Not on time'
+1,1,1,171,1,1,136,Higher,Higher,High-skilled,High-skilled,152.5,1,0,0,1,0,0,20,0,0,0,0,0,0,0,13.9,-0.3,0.79,'Not on time'
+1,17,3,9254,1,1,122,Secondary,Secondary,Clerical/service,Clerical/service,126.6,0,0,0,0,0,0,18,0,0,5,5,5,10.4,0,10.8,1.4,1.74,'Not on time'
+1,1,2,9670,1,1,124,Basic,Secondary,Low-skilled,Clerical/service,117.7,1,0,1,1,1,0,20,0,0,5,5,4,12,0,9.4,-0.8,-3.12,'Not on time'
+1,7,1,9119,1,1,140.8,Unknown,Unknown,Other/unknown,Other/unknown,134,0,0,0,1,1,0,24,0,0,5,0,0,0,0,7.6,2.6,0.32,'Not on time'
+1,1,1,9500,1,1,168,Secondary,Secondary,Clerical/service,Clerical/service,161,1,0,0,1,1,0,18,0,0,7,7,7,16.142857,0,16.2,0.3,-0.92,'Not on time'
+1,1,4,9147,1,1,117,Secondary,Basic,'Manual skilled',Low-skilled,117,1,0,0,1,1,0,19,0,0,5,5,4,10.75,0,12.4,0.5,1.79,'Not on time'
+2,39,1,9500,1,1,100,Basic,Basic,Clerical/service,Clerical/service,130,0,0,0,1,1,1,33,0,0,8,16,1,10,1,12.7,3.7,-1.7,'Not on time'
+1,17,1,9254,1,1,131,Basic,Basic,Clerical/service,Low-skilled,131.7,1,0,0,0,0,0,18,0,0,6,0,0,0,0,12.7,3.7,-1.7,'Not on time'
+1,1,5,9500,1,1,130,Secondary,Higher,Low-skilled,Other/unknown,118.1,1,0,0,1,1,0,18,0,0,7,10,6,12.035714,0,13.9,-0.3,0.79,'Not on time'
+1,43,1,9773,1,1,127,Secondary,Secondary,Low-skilled,'Manual skilled',110,0,0,1,0,1,0,19,0,0,6,10,3,11.666667,0,16.2,0.3,-0.92,'Not on time'
+1,39,1,9003,1,1,110,Secondary,Secondary,Low-skilled,Clerical/service,120,0,0,1,0,1,0,27,0,0,6,0,0,0,0,13.9,-0.3,0.79,'Not on time'
+1,17,5,9119,1,1,123,Higher,Secondary,High-skilled,Low-skilled,116,1,0,1,0,1,0,20,0,0,5,5,0,0,0,8.9,1.4,3.51,'Not on time'
+1,1,1,9147,1,1,140,Basic,Basic,Low-skilled,Low-skilled,129.2,1,0,0,1,0,0,26,0,0,5,6,0,0,0,15.5,2.8,-4.06,'Not on time'
+1,16,3,9853,1,1,134,Basic,Basic,Low-skilled,Clerical/service,121.4,1,0,0,1,0,1,23,0,0,6,10,4,14.25,1,7.6,2.6,0.32,'Not on time'
+2,39,1,9991,0,1,140,Basic,Secondary,Low-skilled,Low-skilled,150,0,0,1,1,1,0,35,0,0,5,6,5,10.8,0,9.4,-0.8,-3.12,'Not on time'
+1,43,1,9147,1,1,123,Basic,Basic,'Manual skilled','Manual skilled',110,0,0,0,1,1,0,25,0,0,5,12,3,11,1,9.4,-0.8,-3.12,'Not on time'
+1,17,1,9085,1,1,137,Secondary,Secondary,Clerical/service,'Manual skilled',134.6,1,0,0,1,1,0,22,0,0,6,16,0,0,0,16.2,0.3,-0.92,'Not on time'
+1,1,3,9500,1,1,139,Higher,Secondary,Clerical/service,High-skilled,126,1,0,0,1,1,0,18,0,0,8,15,5,12.288,1,10.8,1.4,1.74,'Not on time'
+1,17,1,9670,1,1,127,Higher,Higher,High-skilled,High-skilled,121.4,0,0,0,1,1,0,18,0,0,6,0,0,0,0,15.5,2.8,-4.06,'Not on time'
+1,17,4,9773,1,1,127,Higher,Basic,Low-skilled,Low-skilled,115.8,1,0,1,0,0,0,19,0,0,6,6,0,0,0,8.9,1.4,3.51,'Not on time'
+1,39,1,9670,1,1,133.1,Secondary,Secondary,Clerical/service,Clerical/service,112.9,0,0,0,1,0,0,24,0,0,6,12,2,11.666667,0,16.2,0.3,-0.92,'Not on time'
+1,1,1,9147,1,1,133.1,Basic,Basic,Low-skilled,Low-skilled,119,1,0,0,0,0,1,19,0,0,5,7,3,10.666667,0,10.8,1.4,1.74,'Not on time'
+1,1,1,9130,1,1,138,Higher,Basic,High-skilled,Clerical/service,131,1,0,0,1,1,0,19,0,0,6,8,4,11.6,0,11.1,0.6,2.02,'Not on time'
+1,1,1,9119,1,1,148,Basic,Basic,Low-skilled,'Manual skilled',133,0,0,0,1,1,0,18,0,0,5,12,5,13.285714,0,12.4,0.5,1.79,'Not on time'
+1,39,1,9119,1,1,110,Secondary,Secondary,Clerical/service,Clerical/service,125.9,0,0,0,1,1,0,34,0,0,5,7,0,0,0,10.8,1.4,1.74,'Not on time'
+1,17,1,9670,1,1,133.1,Unknown,Higher,'Manual skilled',High-skilled,130.6,1,0,1,0,1,0,23,0,0,5,5,0,0,0,7.6,2.6,0.32,'Not on time'
+1,1,2,171,1,1,127,Higher,Basic,Clerical/service,Clerical/service,139.6,1,0,1,0,1,1,18,0,0,0,0,0,0,0,13.9,-0.3,0.79,'Not on time'
+1,44,1,9003,1,39,160,Basic,Basic,Low-skilled,'Manual skilled',160,1,0,0,0,1,0,30,0,4,9,18,6,11.833333,0,15.5,2.8,-4.06,'Not on time'
+1,1,1,9085,1,1,105,Basic,Basic,'Manual skilled','Manual skilled',102.6,0,1,0,1,0,0,21,0,0,6,13,4,12,0,11.1,0.6,2.02,'Not on time'
+1,44,1,9085,1,39,140,Secondary,Secondary,High-skilled,'Manual skilled',140,1,0,0,1,0,0,20,0,2,6,11,5,14.2,0,13.9,-0.3,0.79,'Not on time'
+1,1,2,9773,1,1,116,Secondary,Basic,Clerical/service,'Manual skilled',127.6,1,0,0,1,0,1,19,0,0,6,7,6,13.857143,0,13.9,-0.3,0.79,'Not on time'
+1,1,4,9238,1,1,125,Basic,Secondary,Clerical/service,Clerical/service,122.6,1,1,0,1,0,0,18,0,0,6,9,5,11.833333,0,13.9,-0.3,0.79,'Not on time'
+1,17,1,9853,1,1,146,Secondary,Secondary,High-skilled,Clerical/service,128.2,0,0,1,1,0,0,18,0,0,6,8,4,13.25,0,12.7,3.7,-1.7,'Not on time'
+1,44,1,9085,1,1,140,Secondary,Higher,High-skilled,High-skilled,140,0,0,0,1,0,0,20,0,0,6,7,6,14.285714,0,13.9,-0.3,0.79,'Not on time'
+1,1,1,9254,1,1,133,Basic,Secondary,Other/unknown,Other/unknown,121.5,1,0,0,1,0,1,20,0,0,6,12,0,0,0,7.6,2.6,0.32,'Not on time'
+1,7,1,9853,1,3,140,Unknown,Unknown,Other/unknown,Other/unknown,140,1,0,0,0,0,0,24,0,0,6,12,0,0,0,9.4,-0.8,-3.12,'Not on time'
+1,1,1,9254,1,1,100,Basic,Basic,Clerical/service,Clerical/service,101.8,1,0,0,1,0,0,21,0,0,6,8,5,11.6,0,12.4,0.5,1.79,'Not on time'
+1,1,2,171,1,1,127,Higher,Secondary,High-skilled,High-skilled,133.5,1,0,0,1,1,0,17,0,0,0,0,0,0,0,15.5,2.8,-4.06,'Not on time'
+2,7,1,9130,1,3,120,Higher,Higher,High-skilled,High-skilled,128.2,0,0,0,1,0,0,33,0,1,5,11,2,11.5,1,9.4,-0.8,-3.12,'Not on time'
+1,1,6,9500,1,1,138,Secondary,Basic,High-skilled,Low-skilled,123,1,0,0,1,0,0,19,0,0,7,10,5,13.44,0,12.4,0.5,1.79,'Not on time'
+1,1,4,9773,1,1,124,Basic,Basic,Other/unknown,Other/unknown,124,0,0,0,0,0,0,18,0,0,4,4,0,0,0,12.7,3.7,-1.7,'Not on time'
+1,17,1,9853,1,1,135,Higher,Higher,High-skilled,High-skilled,132.9,1,0,0,0,0,0,29,0,0,6,9,6,16.333333,0,12.7,3.7,-1.7,'Not on time'
+1,43,1,9500,1,1,127,Basic,Basic,Clerical/service,'Manual skilled',121.1,0,0,0,1,0,1,18,0,0,7,11,5,12.16,0,16.2,0.3,-0.92,'Not on time'
+1,17,2,9670,1,1,129,Secondary,Basic,Clerical/service,Clerical/service,119.2,1,0,0,1,0,0,21,0,0,6,0,0,0,0,8.9,1.4,3.51,'Not on time'
+1,43,1,9254,1,1,142,Basic,Basic,Low-skilled,Low-skilled,125.9,0,0,0,1,0,1,19,0,0,6,0,0,0,0,10.8,1.4,1.74,'Not on time'
+1,39,1,9254,1,1,133.1,Basic,Secondary,Clerical/service,High-skilled,101,0,0,1,1,0,0,25,0,0,6,6,0,0,0,15.5,2.8,-4.06,'Not on time'
+1,17,2,171,1,1,137,Secondary,Secondary,Clerical/service,High-skilled,143.3,1,0,0,1,0,0,18,0,0,0,0,0,0,0,9.4,-0.8,-3.12,'Not on time'
+1,43,1,8014,0,6,133.1,Unknown,Unknown,Other/unknown,Other/unknown,100,0,0,1,1,0,0,29,0,1,6,9,4,12,0,7.6,2.6,0.32,'Not on time'
+1,17,4,9773,1,1,137,Secondary,Secondary,Clerical/service,Clerical/service,125.8,0,0,1,1,1,0,20,0,0,6,7,5,12.2,0,12.7,3.7,-1.7,'Not on time'
+1,1,2,9773,1,1,133.1,Basic,Basic,Clerical/service,'Manual skilled',98,1,0,0,1,1,1,19,0,0,6,8,4,12,0,15.5,2.8,-4.06,'Not on time'
+1,39,1,8014,0,1,140,Basic,Basic,Low-skilled,'Manual skilled',122,1,0,1,0,1,0,29,0,0,6,11,4,12.5,0,12.4,0.5,1.79,'Not on time'
+1,17,2,9147,1,1,133.1,Basic,Basic,Clerical/service,'Manual skilled',109,1,0,0,1,1,1,22,0,0,5,7,3,12.333333,0,10.8,1.4,1.74,'Not on time'
+1,16,2,9147,1,1,129,Basic,Basic,Clerical/service,Low-skilled,127.6,1,0,0,1,1,0,19,0,0,5,8,5,11.6,0,10.8,1.4,1.74,'Not on time'
+2,39,1,9773,1,1,120,Basic,Basic,Low-skilled,High-skilled,155.5,0,0,0,1,1,0,47,0,0,6,12,5,13.8,0,12.7,3.7,-1.7,'Not on time'
+1,1,1,9254,1,1,123,Basic,Basic,Low-skilled,Clerical/service,117.8,0,0,0,1,1,0,19,0,0,6,10,4,12.75,0,10.8,1.4,1.74,'Not on time'
+1,43,1,9119,1,1,128,Secondary,Basic,Clerical/service,'Manual skilled',100,0,0,0,1,1,0,19,0,0,5,8,5,12,0,13.9,-0.3,0.79,'Not on time'
+1,44,1,9238,1,39,140,Secondary,Secondary,Clerical/service,High-skilled,138.6,0,0,0,1,1,0,22,0,3,6,7,6,12.333333,0,13.9,-0.3,0.79,'Not on time'
+1,39,1,9254,1,1,133.1,Basic,Basic,Low-skilled,'Manual skilled',121.5,0,0,0,1,1,0,54,0,0,6,9,6,13.714286,0,16.2,0.3,-0.92,'Not on time'
+1,43,1,9147,1,1,123,Secondary,Secondary,Clerical/service,Clerical/service,114.4,0,0,0,1,1,0,22,0,0,5,6,0,0,0,15.5,2.8,-4.06,'Not on time'
+1,7,1,9003,1,3,140,Secondary,Secondary,Low-skilled,Clerical/service,140,0,0,0,1,1,0,50,0,2,6,8,2,13.5,0,15.5,2.8,-4.06,'Not on time'
+2,39,1,9991,0,19,133.1,Basic,Secondary,Clerical/service,Clerical/service,138.3,0,0,0,1,1,0,44,0,0,5,9,3,11.333333,0,13.9,-0.3,0.79,'Not on time'
+2,43,1,8014,0,1,120,Basic,Basic,Clerical/service,Clerical/service,161.1,0,0,0,1,1,0,47,0,0,6,9,6,12.142857,0,16.2,0.3,-0.92,'Not on time'
+1,42,1,9119,1,1,136,Secondary,Basic,Clerical/service,Clerical/service,117.5,0,0,0,1,1,0,19,0,2,5,6,4,11.8,0,15.5,2.8,-4.06,'Not on time'
+1,43,2,9147,1,1,126,Secondary,Basic,High-skilled,High-skilled,100,1,0,0,1,1,0,22,0,0,5,11,0,0,0,16.2,0.3,-0.92,'Not on time'
+1,18,5,9119,1,1,136,Higher,Higher,High-skilled,High-skilled,125.2,1,0,0,1,1,0,19,0,0,5,9,5,11.833333,0,12.4,0.5,1.79,'Not on time'
+1,1,1,9500,1,1,141,Basic,Secondary,Other/unknown,Other/unknown,128,0,0,0,1,1,0,18,0,0,8,8,0,0,3,10.8,1.4,1.74,'Not on time'
+1,1,1,9070,1,1,148,Secondary,Secondary,Clerical/service,'Manual skilled',141.4,0,0,0,1,1,0,19,0,0,6,0,0,0,0,15.5,2.8,-4.06,'Not on time'
+2,39,1,9119,1,1,110,Basic,Basic,Low-skilled,Low-skilled,106.8,0,0,0,1,1,0,34,0,0,5,8,1,10,0,8.9,1.4,3.51,'Not on time'
+1,39,1,9003,1,1,133.1,Basic,Basic,Low-skilled,'Manual skilled',110,1,0,0,1,1,0,31,0,0,6,8,0,0,0,16.2,0.3,-0.92,'Not on time'
+1,17,1,9119,1,1,122,Basic,Basic,Low-skilled,Low-skilled,114.7,0,0,0,1,1,0,20,0,0,5,6,5,15.8,0,11.1,0.6,2.02,'Not on time'
+1,1,2,9085,1,1,125,Basic,Basic,Other/unknown,Other/unknown,137.3,0,0,0,1,1,0,18,0,0,6,0,0,0,0,7.6,2.6,0.32,'Not on time'
+1,44,1,9119,1,39,140,Secondary,Basic,Clerical/service,Clerical/service,140,1,0,0,1,1,0,22,0,0,5,9,0,0,0,10.8,1.4,1.74,'Not on time'
+1,44,1,9003,1,1,140,Secondary,Secondary,Clerical/service,Clerical/service,140,0,0,0,1,1,0,20,0,0,6,11,6,11.285714,0,16.2,0.3,-0.92,'Not on time'
+1,39,1,9147,1,1,120,Basic,Basic,Low-skilled,Low-skilled,110,0,0,0,0,1,0,32,0,0,5,9,0,0,1,9.4,-0.8,-3.12,'Not on time'
+1,1,5,9773,1,1,125,Basic,Higher,Clerical/service,High-skilled,126.1,1,0,0,1,1,0,22,0,0,6,10,5,13.4,0,9.4,-0.8,-3.12,'Not on time'
+1,1,1,9147,1,1,135,Basic,Basic,Low-skilled,Clerical/service,126.3,0,0,0,1,1,0,18,0,0,5,11,2,13.5,0,8.9,1.4,3.51,'Not on time'
+4,39,1,8014,0,19,100,Secondary,Basic,Low-skilled,High-skilled,111.5,0,0,0,1,1,0,45,0,2,8,10,4,11.5,0,10.8,1.4,1.74,'Not on time'
+2,39,1,9991,0,1,100,Basic,Basic,Low-skilled,Low-skilled,125.3,1,0,0,1,1,0,41,0,0,5,8,4,11.25,0,7.6,2.6,0.32,'Not on time'
+1,17,2,9070,1,1,127,Basic,Basic,Low-skilled,Low-skilled,119.3,1,1,0,1,1,1,25,0,0,6,8,4,10.25,0,12.7,3.7,-1.7,'Not on time'
+1,39,2,9119,1,1,120,Basic,Basic,Clerical/service,Clerical/service,128,0,0,0,1,1,0,30,0,0,2,2,0,0,0,7.6,2.6,0.32,'Not on time'
+1,1,3,9773,1,1,146,Basic,Basic,Low-skilled,'Manual skilled',134.1,1,0,0,1,1,1,18,0,0,6,6,6,12.5,0,10.8,1.4,1.74,'Not on time'
+1,43,1,9670,1,6,170,Unknown,Unknown,Other/unknown,Other/unknown,111.6,0,0,0,1,1,0,35,0,1,5,5,1,14,0,9.4,-0.8,-3.12,'Not on time'
+1,39,1,9500,1,1,120,Basic,Basic,Low-skilled,Low-skilled,100,0,0,0,1,1,0,34,0,0,7,15,6,11.333333,0,16.2,0.3,-0.92,'Not on time'
+1,39,1,9003,1,1,100,Secondary,Higher,Low-skilled,Other/unknown,120,0,0,1,0,1,0,44,0,2,7,14,4,12,2,15.5,2.8,-4.06,'Not on time'
+2,39,1,9773,1,1,133.1,Basic,Basic,'Manual skilled',Clerical/service,132,0,0,0,1,1,0,43,0,0,6,10,4,11.75,0,15.5,2.8,-4.06,'Not on time'
+1,39,1,9130,1,19,133.1,Basic,Basic,Low-skilled,Other/unknown,156.4,1,0,1,1,1,0,44,0,0,6,9,5,11.571429,0,13.9,-0.3,0.79,'Not on time'
+1,44,1,9130,1,39,150,Higher,Secondary,High-skilled,Clerical/service,150,1,0,0,1,1,0,19,0,1,6,13,5,11.6,0,13.9,-0.3,0.79,'Not on time'
+1,1,1,9254,1,1,160,Basic,Basic,Low-skilled,Low-skilled,140.8,1,0,0,1,1,0,23,0,0,6,8,6,12.666667,0,7.6,2.6,0.32,'Not on time'
+1,18,1,9147,1,1,147,Basic,Secondary,Low-skilled,'Manual skilled',139.3,1,0,0,1,1,0,20,0,0,5,0,0,0,0,12.4,0.5,1.79,'Not on time'
+1,39,1,171,1,19,133.1,Secondary,Basic,High-skilled,'Manual skilled',110,0,0,0,1,1,1,25,1,0,0,0,0,0,0,15.5,2.8,-4.06,'Not on time'
+1,1,1,9670,1,1,126,Secondary,Higher,Clerical/service,High-skilled,122.5,1,0,0,1,0,0,19,0,0,6,6,6,13.333333,0,8.9,1.4,3.51,'Not on time'
+1,17,1,9130,1,1,138,Higher,Basic,High-skilled,'Manual skilled',126.3,1,0,0,1,0,1,18,0,0,6,7,6,12.833333,1,8.9,1.4,3.51,'Not on time'
+1,17,1,9070,1,1,108,Basic,Secondary,Clerical/service,High-skilled,111.9,0,0,0,1,0,0,19,0,0,6,0,0,0,0,8.9,1.4,3.51,'Not on time'
+1,18,4,9119,1,1,134,Basic,Basic,Low-skilled,'Manual skilled',124.9,1,0,1,1,1,0,18,0,0,5,11,3,10.666667,0,8.9,1.4,3.51,'Not on time'
+2,39,1,9500,1,19,133.1,Basic,Basic,High-skilled,Other/unknown,120,0,0,0,1,0,0,37,0,0,7,9,2,10.75,0,16.2,0.3,-0.92,'Not on time'
+1,1,4,9254,1,1,110,Basic,Basic,Low-skilled,'Manual skilled',113.2,1,0,0,1,0,0,24,0,0,6,14,2,10.5,0,10.8,1.4,1.74,'Not on time'
+1,17,1,9853,1,1,120,Basic,Basic,Low-skilled,Other/unknown,122.6,0,0,0,1,0,0,20,0,0,6,8,3,12.333333,0,12.7,3.7,-1.7,'Not on time'
+1,17,1,9147,1,1,115,Basic,Basic,'Manual skilled','Manual skilled',115,1,0,0,1,0,0,23,0,0,5,7,2,10,1,9.4,-0.8,-3.12,'Not on time'
+1,17,3,9853,1,1,138,Basic,Basic,Clerical/service,Low-skilled,125.1,1,1,0,1,0,1,19,0,0,6,6,6,13.5,0,12.7,3.7,-1.7,'Not on time'
+2,43,1,9991,0,1,130,Basic,Basic,Low-skilled,Low-skilled,128.2,0,0,0,1,0,0,34,0,3,8,9,3,11,0,9.4,-0.8,-3.12,'Not on time'
+1,17,2,9853,1,1,150,Basic,Basic,Clerical/service,Clerical/service,142,1,0,0,1,0,1,19,0,0,6,8,6,12.333333,0,10.8,1.4,1.74,'Not on time'
+1,1,1,9147,1,1,120,Secondary,Basic,'Manual skilled','Manual skilled',111.3,0,0,0,1,1,1,18,0,0,5,10,4,10.8,0,15.5,2.8,-4.06,'Not on time'
+1,39,2,9556,1,1,133.1,Higher,Secondary,High-skilled,Clerical/service,136.1,0,0,0,1,1,0,26,0,0,7,7,2,11.75,0,12.4,0.5,1.79,'Not on time'
+1,1,1,171,1,1,133.1,Secondary,Basic,'Manual skilled','Manual skilled',118,0,0,0,1,1,0,22,0,0,0,0,0,0,0,11.1,0.6,2.02,'Not on time'
+1,1,1,9500,1,1,127,Higher,Secondary,High-skilled,'Manual skilled',121.4,0,0,0,1,1,0,20,0,0,7,10,5,13.976667,0,12.4,0.5,1.79,'Not on time'
+1,1,1,9254,1,1,125,Basic,Basic,High-skilled,High-skilled,124,0,0,0,1,1,1,19,0,0,6,7,6,11,0,11.1,0.6,2.02,'Not on time'
+2,39,1,9991,0,19,133.1,Basic,Basic,Clerical/service,Clerical/service,150,0,0,0,0,1,0,49,0,0,5,8,2,11,0,15.5,2.8,-4.06,'Not on time'
+2,39,1,9991,0,1,160,Unknown,Unknown,Other/unknown,Other/unknown,114.3,0,0,0,1,1,0,40,0,0,5,9,3,11,0,7.6,2.6,0.32,'Not on time'
+1,7,1,9991,0,3,120,Basic,Basic,'Manual skilled','Manual skilled',120,0,0,1,0,1,0,46,0,0,5,5,0,0,0,11.1,0.6,2.02,'Not on time'
+1,1,1,9119,1,1,140,Basic,Basic,Low-skilled,Low-skilled,166,1,0,1,1,1,0,20,0,0,5,7,0,0,0,9.4,-0.8,-3.12,'Not on time'
+1,17,1,9670,1,1,115,Basic,Basic,Low-skilled,'Manual skilled',109.1,0,0,1,0,1,0,21,0,0,6,11,4,12.25,0,11.1,0.6,2.02,'Not on time'
+1,44,1,9003,1,39,140,Secondary,Basic,High-skilled,Low-skilled,140,0,0,0,1,1,0,25,0,0,6,16,3,11.25,0,15.5,2.8,-4.06,'Not on time'
+1,43,1,8014,0,1,113,Basic,Basic,Other/unknown,'Manual skilled',128.2,0,0,0,0,0,0,41,0,0,6,6,0,0,6,9.4,-0.8,-3.12,'Not on time'
+1,43,1,9085,1,1,127,Higher,Higher,High-skilled,Clerical/service,100,0,0,0,1,0,0,21,0,0,6,11,4,11.75,0,13.9,-0.3,0.79,'Not on time'
+1,17,2,9238,1,1,118,Secondary,Basic,Clerical/service,Other/unknown,110.7,1,1,0,1,0,0,18,0,0,6,15,2,10.333333,3,12.7,3.7,-1.7,'Not on time'
+2,39,1,9991,0,1,110,Basic,Basic,Low-skilled,Low-skilled,130,0,0,0,0,1,0,42,0,0,4,4,0,0,0,12.7,3.7,-1.7,'Not on time'
+1,39,2,9147,1,1,120,Basic,Basic,Low-skilled,Low-skilled,104,0,0,0,0,1,0,26,0,0,5,8,1,10,0,10.8,1.4,1.74,'Not on time'
+1,43,1,8014,0,1,120,Basic,Basic,Low-skilled,Clerical/service,100,0,0,0,1,0,0,45,0,5,9,13,8,11,0,12.7,3.7,-1.7,'Not on time'
+1,1,1,9500,1,1,124,Basic,Basic,High-skilled,'Manual skilled',117.5,1,0,0,1,1,0,19,0,0,8,10,5,12.858,3,9.4,-0.8,-3.12,'Not on time'
+1,43,1,9773,1,1,119,Basic,Basic,Clerical/service,Clerical/service,105,1,0,0,1,0,0,23,0,0,6,11,3,11.333333,0,16.2,0.3,-0.92,'Not on time'
+1,39,1,171,1,1,133.1,Basic,Basic,Low-skilled,'Manual skilled',100,0,0,1,1,1,1,33,0,0,0,0,0,0,0,15.5,2.8,-4.06,'Not on time'
+1,44,1,9130,1,39,120,Higher,Secondary,High-skilled,Clerical/service,120,1,0,0,1,0,0,20,0,0,6,6,0,0,0,12.4,0.5,1.79,'Not on time'
+1,43,1,9773,1,1,127,Basic,Secondary,Clerical/service,Clerical/service,117.6,1,0,0,1,0,0,18,0,0,6,6,0,0,0,16.2,0.3,-0.92,'Not on time'
+1,1,2,9070,1,1,129,Higher,Higher,High-skilled,High-skilled,136.4,1,0,0,1,0,0,18,0,0,6,6,6,12.333333,0,7.6,2.6,0.32,'Not on time'
+2,39,1,9991,0,1,110,Unknown,Unknown,Other/unknown,Other/unknown,114.6,1,0,0,1,0,0,46,0,0,5,5,0,0,0,7.6,2.6,0.32,'Not on time'
+2,39,1,9991,0,1,120,Basic,Basic,Low-skilled,Low-skilled,119.9,0,0,0,1,0,0,50,0,0,5,9,2,10.5,0,12.7,3.7,-1.7,'Not on time'
+1,1,1,9500,1,1,125,Basic,Basic,Low-skilled,Other/unknown,122,1,0,1,1,0,0,19,0,0,7,0,0,0,0,11.1,0.6,2.02,'Not on time'
+2,39,1,8014,0,19,133.1,Higher,Basic,Other/unknown,Other/unknown,123.5,0,0,0,1,0,0,50,0,0,1,1,0,0,1,10.8,1.4,1.74,'Not on time'
+1,51,1,9147,1,1,160,Secondary,Basic,Low-skilled,Other/unknown,118,0,0,0,1,0,0,53,0,14,15,15,15,11.8,0,8.9,1.4,3.51,'Not on time'
+1,43,1,9238,1,1,122,Basic,Basic,Clerical/service,Clerical/service,114.3,1,0,0,1,0,0,22,0,5,10,15,8,11,0,9.4,-0.8,-3.12,'Not on time'
+2,43,1,9991,0,2,120,Basic,Basic,Low-skilled,'Manual skilled',120,0,0,0,1,0,0,36,0,8,12,21,11,11.5,0,9.4,-0.8,-3.12,'Not on time'
+1,43,4,9085,1,1,133.1,Unknown,Unknown,Other/unknown,Other/unknown,125.2,0,0,0,1,0,0,21,0,0,6,0,0,0,0,7.6,2.6,0.32,'Not on time'
+1,39,1,8014,0,1,155,Basic,Basic,Clerical/service,Clerical/service,117.5,0,0,0,1,0,0,34,0,0,6,6,4,13.25,0,12.7,3.7,-1.7,'Not on time'
+1,39,1,9991,0,9,133.1,Basic,Unknown,Other/unknown,Other/unknown,118.1,1,0,0,1,0,0,39,0,0,5,9,0,0,0,7.6,2.6,0.32,'Not on time'
+1,44,1,9085,1,1,150,Basic,Secondary,'Manual skilled','Manual skilled',150,1,0,0,1,0,0,21,0,0,6,0,0,0,0,10.8,1.4,1.74,'Not on time'
+2,39,1,9853,1,1,133.1,Basic,Basic,Low-skilled,Clerical/service,138.3,0,0,0,1,0,0,45,0,0,7,12,4,10.25,0,11.1,0.6,2.02,'Not on time'
+1,7,1,9500,1,3,130,Basic,Basic,Low-skilled,Clerical/service,130,0,0,0,1,0,0,36,0,0,7,7,0,0,7,16.2,0.3,-0.92,'Not on time'
+1,39,1,9991,0,3,120,Basic,Secondary,Low-skilled,Clerical/service,134,0,0,0,1,0,0,25,0,0,5,14,1,11,0,16.2,0.3,-0.92,'Not on time'
+1,43,2,9853,1,1,118,Basic,Secondary,Clerical/service,Clerical/service,110,1,0,0,1,0,0,20,0,0,6,10,4,12.25,0,10.8,1.4,1.74,'Not on time'
+1,39,1,9500,1,1,148,Higher,Basic,High-skilled,Clerical/service,130,0,0,0,1,0,0,24,0,0,8,12,7,12.714286,0,12.7,3.7,-1.7,'Not on time'
+1,1,1,9085,1,1,132,Higher,Higher,'Manual skilled','Manual skilled',128.5,0,0,0,1,0,0,18,0,0,6,11,5,12.285714,0,12.4,0.5,1.79,'Not on time'
+1,7,1,9853,1,3,130,Basic,Basic,Low-skilled,Low-skilled,130,0,0,0,1,0,0,28,0,14,15,25,14,12.428571,1,7.6,2.6,0.32,'Not on time'
+1,1,1,9085,1,1,146,Secondary,Secondary,Low-skilled,'Manual skilled',126,0,0,0,1,0,0,19,0,0,5,7,3,12.333333,0,7.6,2.6,0.32,'Not on time'
+5,7,1,9130,1,3,160,Basic,Basic,Low-skilled,'Manual skilled',160,0,0,0,0,0,0,27,0,1,5,8,3,14.666667,2,10.8,1.4,1.74,'Not on time'
+1,17,2,9254,1,1,115,Basic,Basic,Low-skilled,'Manual skilled',113.3,1,0,1,1,0,0,21,0,0,6,0,0,0,0,11.1,0.6,2.02,'Not on time'
+1,44,1,9238,1,39,130,Secondary,Basic,Clerical/service,Clerical/service,127.4,0,0,1,0,1,0,27,0,3,6,8,5,11.6,0,13.9,-0.3,0.79,'Not on time'
+1,43,1,9119,1,1,130,Secondary,Secondary,Low-skilled,High-skilled,128,0,0,1,0,1,0,27,0,0,5,5,0,0,0,13.9,-0.3,0.79,'Not on time'
+1,17,1,9853,1,1,128,Basic,Basic,Low-skilled,'Manual skilled',128.4,1,0,0,1,0,1,20,0,0,6,10,5,13.2,0,9.4,-0.8,-3.12,'Not on time'
+1,39,1,9670,1,1,133.1,Basic,Basic,Low-skilled,Low-skilled,100.2,1,0,0,0,0,0,26,0,0,6,9,3,11.75,0,16.2,0.3,-0.92,'Not on time'
+1,17,4,9254,1,1,124,Secondary,Secondary,Clerical/service,Clerical/service,122.3,1,0,0,1,0,0,19,0,0,6,7,6,11.666667,0,13.9,-0.3,0.79,'Not on time'
+1,17,5,9670,1,1,125,Basic,Basic,'Manual skilled','Manual skilled',118.4,1,0,0,1,0,1,19,0,0,5,8,3,10.5,0,7.6,2.6,0.32,'Not on time'
+1,1,1,9147,1,1,130,Basic,Basic,High-skilled,Low-skilled,124.8,0,0,0,1,0,0,19,0,0,5,14,1,11,0,13.9,-0.3,0.79,'Not on time'
+1,1,5,9500,1,1,125,Secondary,Secondary,High-skilled,'Manual skilled',115.6,1,0,0,1,0,0,18,0,0,7,9,6,12.183333,0,16.2,0.3,-0.92,'Not on time'
+1,17,2,9853,1,1,123,Higher,Secondary,High-skilled,High-skilled,124.1,1,0,0,1,0,0,18,0,0,6,7,2,14.5,0,15.5,2.8,-4.06,'Not on time'
+1,17,5,9238,1,1,131,Basic,Basic,Clerical/service,'Manual skilled',120.2,1,0,0,1,0,1,19,0,0,6,9,5,11.333333,0,13.9,-0.3,0.79,'Not on time'
+1,39,1,9119,1,1,130,Basic,Higher,Low-skilled,High-skilled,137,1,0,0,1,1,0,28,0,0,5,11,4,10.5,0,7.6,2.6,0.32,'Not on time'
+1,1,1,171,1,1,118,Basic,Basic,High-skilled,Clerical/service,110,0,0,0,1,1,0,19,0,0,0,0,0,0,0,13.9,-0.3,0.79,'Not on time'
+1,51,1,9991,0,1,120,Basic,Higher,Clerical/service,High-skilled,128.2,0,0,1,1,1,0,24,0,3,10,15,7,10.714286,0,12.4,0.5,1.79,'Not on time'
+1,1,1,9773,1,1,127,Higher,Higher,Clerical/service,Clerical/service,122.8,1,0,0,1,1,0,20,0,0,6,7,6,12.166667,0,12.4,0.5,1.79,'Not on time'
+1,1,1,9238,1,1,135,Secondary,Basic,Clerical/service,'Manual skilled',122.1,0,1,1,0,1,0,19,0,0,6,6,4,11.5,0,8.9,1.4,3.51,'Not on time'
+1,39,1,9991,0,1,140,Secondary,Basic,Low-skilled,'Manual skilled',154.5,0,0,0,1,0,0,26,0,0,1,2,0,0,0,16.2,0.3,-0.92,'Not on time'
+1,44,1,9085,1,39,150,Basic,Basic,Low-skilled,Low-skilled,150,1,0,0,1,0,0,23,0,0,6,11,4,11.5,0,8.9,1.4,3.51,'Not on time'
+1,39,1,8014,0,19,133.1,Basic,Basic,Low-skilled,Low-skilled,100,0,0,0,1,0,0,38,0,0,6,10,3,10.25,0,13.9,-0.3,0.79,'Not on time'
+1,44,1,9130,1,39,130,Secondary,Higher,Low-skilled,High-skilled,130,1,0,1,1,0,1,21,0,1,6,13,3,12.333333,0,13.9,-0.3,0.79,'Not on time'
+1,43,2,9773,1,1,120,Unknown,Unknown,Other/unknown,Other/unknown,103.6,1,0,0,1,0,0,27,0,4,8,11,7,13.285714,0,9.4,-0.8,-3.12,'Not on time'
+1,43,3,9147,1,1,127,Higher,Basic,High-skilled,High-skilled,117.9,1,0,0,1,0,0,22,1,0,5,8,1,10,0,7.6,2.6,0.32,'Not on time'
+1,17,6,9670,1,1,117,Basic,Basic,Other/unknown,High-skilled,114.6,0,0,0,0,1,0,19,0,0,6,9,4,11.25,0,10.8,1.4,1.74,'Not on time'
+1,43,1,9500,1,1,133.1,Basic,Basic,Low-skilled,Other/unknown,114.5,0,0,0,1,0,0,23,0,0,7,11,6,12.1,0,16.2,0.3,-0.92,'Not on time'
+2,39,1,9500,1,1,140,Basic,Basic,Low-skilled,'Manual skilled',110.5,0,0,0,1,0,0,31,0,0,7,0,0,0,0,12.7,3.7,-1.7,'Not on time'
+1,7,1,9119,1,3,120,Basic,Basic,High-skilled,High-skilled,120,0,0,0,0,1,0,40,0,1,5,7,1,13,0,12.7,3.7,-1.7,'Not on time'
+1,39,1,171,1,1,110,Secondary,Higher,Clerical/service,High-skilled,100,1,0,0,1,1,0,27,0,0,0,0,0,0,0,9.4,-0.8,-3.12,'Not on time'
+1,43,1,9254,1,1,110,Secondary,Basic,Low-skilled,Low-skilled,125,0,0,0,0,1,0,31,0,3,8,19,5,12.166667,0,7.6,2.6,0.32,'Not on time'
+1,43,1,9670,1,1,160,Unknown,Unknown,Other/unknown,Other/unknown,100.1,0,0,0,0,1,0,35,0,6,10,10,7,12.142857,0,7.6,2.6,0.32,'Not on time'
+1,1,1,9119,1,1,160,Basic,Basic,Low-skilled,'Manual skilled',153.7,0,0,0,1,1,0,19,0,0,5,7,1,13,0,9.4,-0.8,-3.12,'Not on time'
+1,51,1,9670,1,19,133.1,Higher,Secondary,High-skilled,Other/unknown,120,0,0,1,1,1,0,32,0,1,6,15,2,12,0,11.1,0.6,2.02,'Not on time'
+1,44,1,9119,1,39,130,Higher,Basic,High-skilled,Clerical/service,130,0,0,0,1,1,0,20,0,0,5,12,1,13,0,12.4,0.5,1.79,'Not on time'
+1,7,1,9147,1,2,150,Higher,Basic,High-skilled,Clerical/service,150,1,0,1,0,0,0,38,0,0,5,6,0,0,0,15.5,2.8,-4.06,'Not on time'
+1,17,1,9254,1,1,150,Secondary,Secondary,Low-skilled,Other/unknown,142.7,0,0,1,1,0,0,18,0,0,6,9,4,11,0,7.6,2.6,0.32,'Not on time'
+4,7,1,9147,1,3,130,Basic,Secondary,Clerical/service,Clerical/service,130,0,0,0,1,0,0,35,0,0,5,5,0,0,0,11.1,0.6,2.02,'Not on time'
+1,1,1,9670,1,1,126,Basic,Basic,'Manual skilled','Manual skilled',125.7,0,0,0,1,0,0,20,0,0,6,9,6,13.571429,0,15.5,2.8,-4.06,'Not on time'
+1,17,1,9147,1,1,139,Basic,Basic,'Manual skilled',Clerical/service,133.4,0,0,0,1,0,0,18,0,0,5,9,1,11,1,9.4,-0.8,-3.12,'Not on time'
+1,44,1,9085,1,39,130,Basic,Basic,Low-skilled,'Manual skilled',130,1,0,0,1,0,0,23,0,0,6,7,0,0,0,11.1,0.6,2.02,'Not on time'
+1,18,1,9147,1,1,100,Basic,Basic,Clerical/service,Clerical/service,101.8,1,0,0,1,0,0,24,0,0,5,5,5,10.8,0,10.8,1.4,1.74,'Not on time'
+1,43,1,9991,0,1,120,Basic,Basic,Low-skilled,'Manual skilled',122.5,1,0,0,1,0,0,29,0,8,13,16,8,10.5,0,9.4,-0.8,-3.12,'Not on time'
+1,16,1,9085,1,1,150,Higher,Higher,High-skilled,High-skilled,153.5,1,0,0,1,0,0,19,0,0,6,7,6,15.714286,0,13.9,-0.3,0.79,'Not on time'
+4,43,1,9500,1,1,130,Basic,Basic,Low-skilled,Low-skilled,103.7,0,0,0,1,0,0,38,0,1,8,12,5,13.126,1,10.8,1.4,1.74,'Not on time'
+1,1,1,9991,0,1,140,Basic,Basic,Low-skilled,Low-skilled,124.6,0,0,0,1,0,0,29,0,0,5,11,5,11.4,0,15.5,2.8,-4.06,'Not on time'
+1,43,1,9991,0,1,141,Basic,Basic,Low-skilled,Low-skilled,131.9,0,0,0,1,0,0,21,0,6,10,20,6,11.5,0,9.4,-0.8,-3.12,'Not on time'
+2,39,1,9670,1,1,130,Basic,Basic,Low-skilled,Low-skilled,162.3,0,0,0,1,1,0,36,0,0,6,13,3,11.333333,0,13.9,-0.3,0.79,'Not on time'
+2,39,1,9991,0,19,133.1,Basic,Basic,'Manual skilled','Manual skilled',120,0,0,0,1,1,0,39,0,0,5,9,0,0,0,12.7,3.7,-1.7,'Not on time'
+1,1,1,9147,1,1,122,Secondary,Basic,Low-skilled,Low-skilled,120.3,1,0,0,1,1,1,19,0,0,5,8,5,12.6,0,8.9,1.4,3.51,'Not on time'
+1,17,6,9500,1,1,140,Secondary,Secondary,Clerical/service,High-skilled,130.7,1,0,0,1,1,1,18,0,0,7,7,7,12.718571,0,11.1,0.6,2.02,'Not on time'
+1,43,1,9773,1,1,121,Secondary,Secondary,Clerical/service,Clerical/service,121,1,0,0,1,1,0,23,0,0,6,15,1,13,0,9.4,-0.8,-3.12,'Not on time'
+1,17,1,171,1,1,125,Basic,Basic,'Manual skilled',Low-skilled,134.1,1,0,0,1,1,0,24,0,12,17,19,13,11.642857,0,11.1,0.6,2.02,'Not on time'
+1,18,3,9119,1,1,111,Secondary,Basic,Low-skilled,'Manual skilled',111,1,0,0,1,1,0,18,0,0,5,10,4,11.6,0,12.4,0.5,1.79,'Not on time'
+1,51,1,9991,0,39,120,Secondary,Higher,Clerical/service,Other/unknown,118.1,0,0,0,1,1,0,28,0,13,15,17,13,12,0,8.9,1.4,3.51,'Not on time'
+1,17,1,9670,1,1,132,Basic,Basic,Low-skilled,Low-skilled,122.9,0,0,0,0,1,0,20,0,0,6,6,6,11.5,0,10.8,1.4,1.74,'Not on time'
+1,39,1,9670,1,1,140,Basic,Basic,Low-skilled,Low-skilled,148,1,0,0,0,1,0,31,0,0,6,14,0,0,0,12.7,3.7,-1.7,'Not on time'
+1,17,1,9670,1,1,123,Basic,Basic,High-skilled,High-skilled,122,0,0,1,1,1,0,19,0,0,6,7,6,13.166667,0,8.9,1.4,3.51,'Not on time'
+1,39,1,9130,1,19,133.1,Unknown,Unknown,Other/unknown,Other/unknown,96,0,0,0,1,1,0,31,0,0,5,5,0,0,0,7.6,2.6,0.32,'Not on time'
+1,43,1,9991,0,12,133.1,Secondary,Secondary,Low-skilled,Low-skilled,120,0,0,0,1,1,0,28,0,7,13,13,7,10.285714,0,10.8,1.4,1.74,'Not on time'
+1,17,6,9147,1,1,120,Basic,Basic,Low-skilled,Low-skilled,115.5,1,0,1,0,1,0,19,0,0,5,8,4,12.5,0,8.9,1.4,3.51,'Not on time'
+1,17,3,9500,1,1,132,Higher,Secondary,High-skilled,'Manual skilled',125.5,1,0,0,1,1,0,18,0,0,8,8,7,13.154286,0,10.8,1.4,1.74,'Not on time'
+1,44,1,9003,1,39,150,Basic,Secondary,High-skilled,High-skilled,150,0,0,0,1,1,0,22,0,0,6,12,3,13.333333,0,15.5,2.8,-4.06,'Not on time'
+1,43,1,171,1,1,144,Basic,Basic,Low-skilled,Clerical/service,121.6,0,0,0,1,1,0,22,0,0,0,0,0,0,0,13.9,-0.3,0.79,'Not on time'
+1,1,1,9119,1,1,132,Secondary,Secondary,High-skilled,High-skilled,133.1,1,0,0,1,1,0,19,0,0,5,7,3,12,0,11.1,0.6,2.02,'Not on time'
+1,15,1,9085,1,1,133.1,Basic,Basic,Low-skilled,Low-skilled,109.6,0,0,0,1,0,0,18,1,0,6,13,4,12.25,0,11.1,0.6,2.02,'Not on time'
+1,1,1,171,1,1,143,Higher,Basic,Low-skilled,Low-skilled,142.7,1,0,0,1,0,0,18,0,0,0,0,0,0,0,16.2,0.3,-0.92,'Not on time'
+1,39,1,9085,1,1,133.1,Higher,Higher,Clerical/service,High-skilled,144.9,1,0,0,1,0,0,26,0,0,6,11,3,11.75,0,12.4,0.5,1.79,'Not on time'
+1,44,1,9085,1,39,150,Basic,Secondary,Clerical/service,Clerical/service,150,0,0,0,1,0,0,20,0,0,5,10,2,14.5,1,12.7,3.7,-1.7,'Not on time'
+1,42,1,9147,1,1,130,Unknown,Unknown,Other/unknown,Other/unknown,109.8,1,0,0,0,1,0,23,0,0,3,3,0,0,0,7.6,2.6,0.32,'Not on time'
+2,39,1,9147,1,1,160,Basic,Basic,Low-skilled,'Manual skilled',110,0,0,0,1,1,0,30,0,0,5,8,2,11,0,15.5,2.8,-4.06,'Not on time'
+1,17,5,9119,1,1,130,Basic,Secondary,Clerical/service,Clerical/service,118.1,1,0,1,0,1,0,26,0,0,5,11,1,10,0,8.9,1.4,3.51,'Not on time'
+1,17,1,9254,1,1,119,Secondary,Secondary,Clerical/service,Other/unknown,125,0,0,0,1,1,0,19,0,0,6,7,5,10.8,0,10.8,1.4,1.74,'Not on time'
+1,39,1,9119,1,1,133.1,Basic,Basic,Low-skilled,Low-skilled,101.6,0,0,0,1,1,1,30,0,0,5,11,0,0,0,12.7,3.7,-1.7,'Not on time'
+1,39,1,9147,1,1,120,Secondary,Basic,Clerical/service,'Manual skilled',110,0,0,0,1,1,0,27,0,0,5,13,3,10.75,0,15.5,2.8,-4.06,'Not on time'
+1,43,1,9147,1,1,122,Secondary,Basic,High-skilled,'Manual skilled',118.9,0,0,0,1,1,0,21,0,0,5,11,2,10.5,0,12.7,3.7,-1.7,'Not on time'
+1,17,2,9119,1,1,137,Secondary,Secondary,Clerical/service,Clerical/service,130.4,1,0,1,1,1,0,18,0,0,5,10,1,12,0,7.6,2.6,0.32,'Not on time'
+2,39,1,9238,1,1,120,Basic,Basic,'Manual skilled','Manual skilled',134,0,0,0,1,1,1,40,0,0,6,7,6,12.333333,0,8.9,1.4,3.51,'Not on time'
+1,51,1,9670,1,1,133.1,Higher,Secondary,High-skilled,Other/unknown,116.2,0,0,0,1,1,0,24,0,0,6,11,5,12.857143,0,11.1,0.6,2.02,'Not on time'
+1,39,1,9085,1,19,133.1,Basic,Basic,'Manual skilled',Other/unknown,104,0,0,0,1,0,0,26,0,0,5,11,1,12,1,10.8,1.4,1.74,'Not on time'
+1,17,1,9773,1,1,116,Basic,Secondary,Low-skilled,'Manual skilled',115.7,1,0,1,0,0,0,19,0,0,6,6,3,11.333333,0,12.4,0.5,1.79,'Not on time'
+1,1,1,9085,1,1,150,Basic,Basic,Clerical/service,Low-skilled,132.1,1,0,1,1,0,0,29,0,4,5,11,4,12.5,2,12.7,3.7,-1.7,'Not on time'
+1,44,1,9003,1,39,150,Secondary,Basic,Clerical/service,Low-skilled,150,0,0,0,1,1,1,20,0,0,6,18,3,12,0,15.5,2.8,-4.06,'Not on time'
+1,44,1,9130,1,39,130,Higher,Secondary,High-skilled,'Manual skilled',130,1,0,1,1,1,0,20,0,2,6,9,4,11,0,12.4,0.5,1.79,'Not on time'
+2,39,1,9085,1,12,133.1,Secondary,Secondary,Clerical/service,High-skilled,140,1,0,1,0,0,0,32,0,0,6,7,0,0,0,13.9,-0.3,0.79,'Not on time'
+2,39,1,8014,0,1,120,Unknown,Unknown,Other/unknown,Other/unknown,104,0,0,0,1,0,0,54,0,0,6,8,4,12.75,0,7.6,2.6,0.32,'Not on time'
+1,17,1,9238,1,1,160,Basic,Basic,'Manual skilled','Manual skilled',144.3,0,0,0,1,1,0,22,0,0,6,0,0,0,0,13.9,-0.3,0.79,'Not on time'
+1,1,1,9119,1,1,142,Secondary,Basic,Clerical/service,High-skilled,129.8,1,0,0,1,1,0,18,0,0,5,5,0,0,0,10.8,1.4,1.74,'Not on time'
+1,17,1,9670,1,1,128,Basic,Basic,Low-skilled,Low-skilled,135.7,1,0,0,1,1,0,19,0,0,6,7,5,13.2,0,10.8,1.4,1.74,'Not on time'
+1,17,1,9147,1,1,137,Higher,Basic,High-skilled,Low-skilled,131.4,0,0,0,0,1,0,19,0,0,5,13,4,10,0,15.5,2.8,-4.06,'Not on time'
+1,39,1,9003,1,19,133.1,Higher,Secondary,High-skilled,'Manual skilled',100,1,0,0,1,1,0,35,0,0,6,13,3,11.75,0,13.9,-0.3,0.79,'Not on time'
+1,39,1,9003,1,1,130,Basic,Basic,'Manual skilled','Manual skilled',100,0,0,1,0,1,0,28,0,4,10,19,8,11.888889,0,15.5,2.8,-4.06,'Not on time'
+1,39,1,9238,1,1,133.1,Basic,Basic,Other/unknown,Clerical/service,120.5,0,0,0,0,1,0,32,0,0,6,10,2,11,0,7.6,2.6,0.32,'Not on time'
+1,43,1,9085,1,1,110,Higher,Basic,Clerical/service,'Manual skilled',105,0,0,1,0,1,0,34,0,2,6,13,3,11.333333,0,13.9,-0.3,0.79,'Not on time'
+1,39,1,9130,1,1,133.1,Secondary,Secondary,Other/unknown,High-skilled,120,1,0,1,0,1,0,41,0,0,5,5,0,0,1,12.7,3.7,-1.7,'Not on time'
+1,1,1,9238,1,1,108,Basic,Basic,Low-skilled,Low-skilled,107.3,0,1,0,1,0,1,19,0,0,6,12,4,10.4,0,12.4,0.5,1.79,'Not on time'
+1,17,5,9070,1,1,125,Basic,Secondary,Clerical/service,Clerical/service,122.6,1,0,0,1,1,0,22,0,0,6,6,1,11,0,9.4,-0.8,-3.12,'Not on time'
+1,18,6,9500,1,1,142,Basic,Basic,Low-skilled,Clerical/service,128,1,0,0,0,0,0,19,0,0,7,14,0,0,0,11.1,0.6,2.02,'Not on time'
+1,1,1,9670,1,1,119,Basic,Basic,Other/unknown,'Manual skilled',119.7,1,0,0,1,0,0,20,0,0,5,6,3,13,0,7.6,2.6,0.32,'Not on time'
+1,1,1,9147,1,1,126,Basic,Basic,Low-skilled,Low-skilled,115.2,0,0,1,1,0,0,19,0,0,5,13,1,10,0,12.4,0.5,1.79,'Not on time'
+2,39,1,9147,1,1,120,Basic,Basic,Clerical/service,Clerical/service,124.6,0,0,0,1,0,0,36,0,0,5,8,3,11,0,10.8,1.4,1.74,'Not on time'
+1,18,1,9085,1,1,153,Basic,Basic,Low-skilled,Low-skilled,138,1,0,0,1,0,1,21,0,0,6,7,6,13.5,0,8.9,1.4,3.51,'Not on time'
+1,17,1,9238,1,1,120,Basic,Basic,Clerical/service,Clerical/service,114.8,1,0,1,0,0,0,19,0,0,6,10,5,11.714286,0,16.2,0.3,-0.92,'Not on time'
+1,1,1,9853,1,1,114,Basic,Basic,Clerical/service,Clerical/service,109.5,1,0,0,1,0,0,19,0,0,7,10,4,10.5,0,16.2,0.3,-0.92,'Not on time'
+2,39,1,9119,1,1,140,Unknown,Unknown,Low-skilled,Low-skilled,140,0,0,0,0,1,0,34,0,0,5,5,0,0,0,15.5,2.8,-4.06,'Not on time'
+1,17,5,9254,1,1,114,Basic,Secondary,Clerical/service,Low-skilled,109.5,0,0,0,1,1,0,19,0,0,5,5,0,0,0,10.8,1.4,1.74,'Not on time'
+1,17,1,9254,1,1,134,Basic,Secondary,Low-skilled,Clerical/service,124.9,1,0,0,1,0,0,19,0,0,6,11,3,12,0,7.6,2.6,0.32,'Not on time'
+4,1,1,9991,0,1,140,Basic,Basic,Low-skilled,'Manual skilled',139,0,0,0,1,0,1,38,0,0,5,8,5,11,0,9.4,-0.8,-3.12,'Not on time'
+2,39,1,8014,0,19,133.1,Unknown,Unknown,Other/unknown,Other/unknown,130,0,0,0,1,1,0,38,0,0,6,0,0,0,0,9.4,-0.8,-3.12,'Not on time'
+1,1,1,9130,1,1,164,Unknown,Secondary,Other/unknown,Other/unknown,163,0,0,0,1,0,0,18,0,0,6,0,0,0,0,7.6,2.6,0.32,'Not on time'
+1,1,3,9773,1,1,130,Basic,Basic,Clerical/service,Clerical/service,157,1,0,0,0,0,0,18,0,0,6,0,0,0,0,13.9,-0.3,0.79,'Not on time'
+2,39,1,9238,1,19,133.1,Secondary,Higher,Clerical/service,'Manual skilled',130,0,0,0,1,0,0,31,0,0,6,6,6,13.166667,0,9.4,-0.8,-3.12,'Not on time'
+1,1,1,9085,1,1,131,Basic,Basic,Low-skilled,'Manual skilled',130.7,0,0,1,1,0,0,21,0,0,5,9,2,11.5,0,10.8,1.4,1.74,'Not on time'
+2,43,1,9991,0,1,140,Basic,Basic,High-skilled,Other/unknown,107.8,0,0,0,1,0,0,33,0,8,10,15,8,10.375,0,7.6,2.6,0.32,'Not on time'
+1,18,1,9238,1,1,147,Basic,Unknown,Clerical/service,Other/unknown,130.2,0,0,0,1,0,0,18,0,0,1,1,0,0,1,10.8,1.4,1.74,'Not on time'
+1,1,3,9070,1,1,128,Basic,Basic,High-skilled,High-skilled,129.8,1,0,0,1,0,0,20,0,0,6,6,6,11.833333,0,9.4,-0.8,-3.12,'Not on time'
+1,44,1,9085,1,39,140,Higher,Basic,High-skilled,Low-skilled,140,1,0,0,1,0,0,21,0,7,12,18,8,12.25,0,12.4,0.5,1.79,'Not on time'
+1,39,1,9556,1,1,130,Basic,Basic,Low-skilled,'Manual skilled',113.3,0,0,0,1,0,0,24,0,0,7,15,5,12.4,0,12.4,0.5,1.79,'Not on time'
+1,1,1,9147,1,1,117,Basic,Basic,Low-skilled,Low-skilled,120.2,1,0,0,1,0,0,20,0,0,5,9,2,10,0,7.6,2.6,0.32,'Not on time'
+1,17,2,9254,1,1,118,Basic,Basic,Low-skilled,Low-skilled,110.3,1,0,0,0,0,0,18,1,0,6,7,5,12.6,0,11.1,0.6,2.02,'Not on time'
+1,18,5,9853,1,1,110,Basic,Basic,'Manual skilled','Manual skilled',110,1,0,0,1,0,0,20,0,0,6,10,4,12.75,0,10.8,1.4,1.74,'Not on time'
+1,43,1,9853,1,1,110,Basic,Basic,Low-skilled,Low-skilled,107.7,0,0,1,0,0,0,28,0,0,6,0,0,0,0,10.8,1.4,1.74,'Not on time'
+1,44,1,9085,1,39,140,Secondary,Secondary,High-skilled,Low-skilled,140,1,0,0,1,0,0,20,0,1,6,9,6,12.666667,0,13.9,-0.3,0.79,'Not on time'
+1,1,1,9238,1,1,123,Unknown,Basic,Other/unknown,'Manual skilled',120.2,1,0,0,1,0,0,20,0,0,6,9,5,11.8,0,7.6,2.6,0.32,'Not on time'
+1,1,1,9670,1,1,133.1,Unknown,Basic,Other/unknown,Clerical/service,147,0,0,0,1,0,0,22,0,0,5,6,2,12.5,0,9.4,-0.8,-3.12,'Not on time'
+1,43,1,9670,1,1,134,Secondary,Basic,Clerical/service,Clerical/service,120.7,0,0,1,0,0,0,19,0,0,6,13,3,10.666667,0,15.5,2.8,-4.06,'Not on time'
+1,1,3,9500,1,1,140,Basic,Basic,Low-skilled,Low-skilled,141.5,1,0,1,0,0,0,19,0,0,8,8,7,13.327143,0,10.8,1.4,1.74,'Not on time'
+2,43,1,9991,0,1,150,Basic,Basic,High-skilled,High-skilled,120.1,0,0,0,0,0,0,39,0,11,15,15,12,11.916667,0,10.8,1.4,1.74,'Not on time'
+1,1,1,9670,1,1,121,Basic,Basic,Clerical/service,Low-skilled,116.5,1,0,0,1,0,0,23,0,0,5,7,3,11.333333,0,7.6,2.6,0.32,'Not on time'
+2,43,1,9991,0,2,120,Basic,Basic,Low-skilled,Low-skilled,120,0,0,0,0,0,0,38,0,9,12,12,9,12.222222,2,9.4,-0.8,-3.12,'Not on time'
+1,17,4,9119,1,1,138,Secondary,Higher,High-skilled,Clerical/service,127.5,1,0,0,1,1,0,19,0,0,5,6,5,14.6,0,8.9,1.4,3.51,'Not on time'
+1,17,1,9119,1,1,116,Basic,Basic,Other/unknown,Clerical/service,116.7,1,0,0,1,1,0,21,0,0,5,10,1,10,0,7.6,2.6,0.32,'Not on time'
+1,39,1,9147,1,19,100,Basic,Basic,'Manual skilled',Low-skilled,132,0,0,1,0,1,0,28,0,0,5,7,1,11,0,10.8,1.4,1.74,'Not on time'
+1,39,1,9003,1,1,130,Basic,Basic,Low-skilled,'Manual skilled',120,1,0,0,1,1,0,28,0,7,13,19,8,11.625,0,15.5,2.8,-4.06,'Not on time'
+1,17,4,9773,1,1,147,Secondary,Secondary,Clerical/service,Clerical/service,139.7,1,0,0,1,1,0,18,0,0,6,10,5,11.6,0,9.4,-0.8,-3.12,'Not on time'
+1,44,1,171,1,39,110,Secondary,Secondary,High-skilled,'Manual skilled',114.2,0,0,0,1,1,0,19,0,0,0,0,0,0,0,12.4,0.5,1.79,'Not on time'
+1,15,1,9147,1,1,135,Secondary,Secondary,Low-skilled,'Manual skilled',135,0,0,1,1,1,0,21,1,0,5,9,3,12.333333,0,8.9,1.4,3.51,'Not on time'
+2,39,1,9147,1,12,133.1,Basic,Basic,Low-skilled,Low-skilled,120,0,0,0,1,0,0,25,0,0,5,0,0,0,0,9.4,-0.8,-3.12,'Not on time'
+1,1,1,9147,1,1,123,Secondary,Secondary,Clerical/service,'Manual skilled',118.8,1,0,0,1,0,0,21,0,0,5,9,3,10.666667,0,7.6,2.6,0.32,'Not on time'
+1,17,5,9238,1,1,134,Basic,Basic,Low-skilled,Low-skilled,126,0,0,1,0,0,0,21,0,0,6,10,5,11.833333,0,13.9,-0.3,0.79,'Not on time'
+1,39,1,9085,1,19,133.1,Basic,Basic,Clerical/service,'Manual skilled',140,0,0,0,1,0,0,35,0,0,6,11,3,12.666667,0,11.1,0.6,2.02,'Not on time'
+1,39,1,9991,0,1,120,Basic,Basic,Low-skilled,Low-skilled,120,1,0,0,0,1,0,25,0,0,5,5,0,0,0,9.4,-0.8,-3.12,'Not on time'
+2,43,1,9991,0,1,130,Basic,Basic,Low-skilled,Low-skilled,103.8,0,0,0,1,0,0,28,0,14,15,15,14,11.071429,0,9.4,-0.8,-3.12,'Not on time'
+1,1,1,9238,1,1,122,Basic,Basic,Low-skilled,Low-skilled,112.6,0,0,0,1,0,0,19,0,0,6,0,0,0,0,12.4,0.5,1.79,'Not on time'
+1,1,1,9147,1,1,151,Basic,Secondary,Clerical/service,Other/unknown,138.4,0,0,0,1,0,0,18,0,0,5,6,4,11.25,0,10.8,1.4,1.74,'Not on time'
+1,18,2,9853,1,1,168,Secondary,Basic,High-skilled,Low-skilled,126.8,1,0,0,1,1,0,18,0,0,6,7,5,12.6,0,10.8,1.4,1.74,'Not on time'
+1,43,1,9070,1,1,125,Basic,Basic,'Manual skilled','Manual skilled',133.4,1,0,0,1,1,1,19,0,4,6,6,4,13,0,13.9,-0.3,0.79,'Not on time'
+1,1,1,9670,1,1,122,Secondary,Basic,High-skilled,Clerical/service,116.8,1,0,0,1,0,0,21,0,0,5,8,4,11.5,0,7.6,2.6,0.32,Graduate
+1,39,1,9500,1,1,130,Secondary,Secondary,Clerical/service,Low-skilled,150,0,0,0,1,1,0,24,0,0,8,8,7,12.742857,0,12.7,3.7,-1.7,Graduate
+1,42,1,9085,1,1,100,Secondary,Basic,Clerical/service,Low-skilled,100,1,0,0,1,0,1,20,0,1,2,2,2,12,0,13.9,-0.3,0.79,Graduate
+1,1,4,171,1,1,137,Secondary,Basic,Clerical/service,'Manual skilled',141.2,1,0,0,1,1,0,19,0,0,0,0,0,0,0,11.1,0.6,2.02,Graduate
+1,1,1,171,1,1,136,Basic,Basic,Clerical/service,'Manual skilled',150.4,1,0,0,1,1,1,21,0,0,0,0,0,0,0,12.4,0.5,1.79,Graduate
+1,39,1,9254,1,1,150,Higher,Secondary,High-skilled,Clerical/service,122.3,0,0,0,1,1,0,28,0,0,6,10,6,13,0,13.9,-0.3,0.79,Graduate
+1,17,4,9238,1,1,129,Basic,Basic,Low-skilled,'Manual skilled',117.1,1,0,0,1,1,0,21,0,0,6,6,6,12.333333,0,8.9,1.4,3.51,Graduate
+1,1,1,9500,1,1,118,Basic,Basic,Clerical/service,'Manual skilled',117.8,0,0,0,1,0,1,19,0,0,7,7,7,13.7,0,12.4,0.5,1.79,Graduate
+1,1,3,9500,1,1,102,Secondary,Basic,Low-skilled,Clerical/service,100.6,1,0,0,1,0,1,20,0,0,7,9,6,12.766667,0,12.4,0.5,1.79,Graduate
+1,1,1,9085,1,1,120,Basic,Secondary,'Manual skilled','Manual skilled',115.1,1,0,0,1,0,0,19,0,0,6,8,6,13.857143,0,13.9,-0.3,0.79,Graduate
+1,1,2,9670,1,1,111,Basic,Basic,Low-skilled,Low-skilled,114.2,1,0,0,1,0,0,18,0,0,6,9,4,13.2,0,12.4,0.5,1.79,Graduate
+1,1,1,9238,1,1,132,Basic,Basic,Low-skilled,Clerical/service,135.9,0,0,0,1,0,0,18,0,0,6,11,5,12.4,0,9.4,-0.8,-3.12,Graduate
+1,1,1,9670,1,1,125,Basic,Basic,Clerical/service,Clerical/service,124,0,0,0,1,0,0,19,0,0,6,7,6,14.857143,0,12.4,0.5,1.79,Graduate
+1,43,1,9003,1,1,130,Secondary,Higher,Clerical/service,High-skilled,130,0,0,0,1,1,0,28,0,9,18,36,17,13.058824,1,15.5,2.8,-4.06,Graduate
+1,1,2,9070,1,1,124,Basic,Secondary,Low-skilled,High-skilled,123.7,1,0,0,1,0,1,18,0,1,6,8,6,12.714286,1,13.9,-0.3,0.79,Graduate
+1,1,1,9773,1,1,133.1,Basic,Basic,High-skilled,Other/unknown,146,0,0,1,1,0,0,20,0,0,6,6,5,11,0,16.2,0.3,-0.92,Graduate
+1,17,3,9670,1,1,137,Secondary,Basic,Clerical/service,'Manual skilled',138.4,0,0,0,1,1,0,19,0,0,6,8,6,15.125,0,11.1,0.6,2.02,Graduate
+1,17,3,9238,1,1,143,Basic,Basic,Other/unknown,'Manual skilled',126.9,1,0,0,1,0,0,18,0,0,6,14,5,11,0,7.6,2.6,0.32,Graduate
+1,1,1,9254,1,1,130,Basic,Basic,Low-skilled,Low-skilled,133.9,1,0,0,1,0,0,18,0,0,6,10,5,12.2,0,9.4,-0.8,-3.12,Graduate
+1,1,1,9238,1,1,160,Basic,Basic,Low-skilled,Low-skilled,152,0,0,0,1,1,1,19,0,0,6,7,6,13.857143,0,13.9,-0.3,0.79,Graduate
+4,39,1,9003,1,12,133.1,Basic,Basic,Low-skilled,'Manual skilled',160,0,0,0,1,0,0,43,0,13,18,19,18,14.631579,0,15.5,2.8,-4.06,Graduate
+1,1,3,9130,1,1,167,Basic,Basic,Other/unknown,Other/unknown,159.3,0,0,0,1,0,0,19,0,0,5,7,5,14.714286,0,7.6,2.6,0.32,Graduate
+1,44,1,9003,1,39,140,Basic,Basic,'Manual skilled','Manual skilled',140,0,0,0,1,0,0,19,0,0,6,7,6,12,0,12.4,0.5,1.79,Graduate
+1,1,1,9500,1,1,145,Basic,Basic,Low-skilled,'Manual skilled',136.6,0,0,0,1,0,1,19,0,0,7,12,6,13.766667,0,15.5,2.8,-4.06,Graduate
+1,17,4,9070,1,1,117,Secondary,Secondary,High-skilled,High-skilled,125.4,1,0,0,1,1,1,19,0,0,6,6,6,12.833333,0,11.1,0.6,2.02,Graduate
+1,1,3,9670,1,1,111,Secondary,Secondary,Clerical/service,Clerical/service,105.4,0,0,0,1,0,0,20,0,0,5,6,5,13.333333,0,7.6,2.6,0.32,Graduate
+1,53,1,9085,1,42,150,Secondary,Basic,High-skilled,'Manual skilled',150.3,1,0,0,1,1,1,21,0,7,11,15,9,14.222222,0,8.9,1.4,3.51,Graduate
+1,18,1,9500,1,1,146,Basic,Higher,Clerical/service,Low-skilled,127,0,0,0,1,1,0,19,0,0,8,8,7,13.614286,0,12.7,3.7,-1.7,Graduate
+1,17,4,9670,1,1,122,Higher,Secondary,High-skilled,High-skilled,119.6,1,0,0,1,1,0,18,0,0,6,8,6,13.625,0,11.1,0.6,2.02,Graduate
+1,1,1,9147,1,1,150,Basic,Basic,Low-skilled,'Manual skilled',138.5,0,0,0,1,0,1,18,0,0,5,5,5,14,0,12.4,0.5,1.79,Graduate
+1,18,1,9773,1,1,125,Secondary,Secondary,Clerical/service,'Manual skilled',121.5,1,0,0,1,1,0,19,0,0,6,6,6,13.833333,0,8.9,1.4,3.51,Graduate
+1,18,1,9500,1,1,135,Secondary,Basic,Clerical/service,Clerical/service,127.5,1,0,0,1,0,1,19,0,0,7,8,6,13.741667,0,16.2,0.3,-0.92,Graduate
+1,1,1,9085,1,1,149,Basic,Basic,Clerical/service,'Manual skilled',147.6,1,0,0,1,0,0,20,0,0,6,14,6,13.923077,0,15.5,2.8,-4.06,Graduate
+1,17,1,9254,1,1,125,Secondary,Basic,Clerical/service,'Manual skilled',116.6,0,0,0,1,1,1,19,0,0,6,8,5,12.666667,0,16.2,0.3,-0.92,Graduate
+1,44,1,9070,1,39,140,Basic,Basic,Clerical/service,Other/unknown,140,1,0,0,1,1,0,21,0,0,6,6,6,14.5,0,12.4,0.5,1.79,Graduate
+1,1,6,9500,1,1,135,Basic,Secondary,Clerical/service,Clerical/service,126.8,1,0,0,1,0,1,18,0,0,8,8,7,12.61,0,10.8,1.4,1.74,Graduate
+1,15,1,9238,1,1,150,Higher,Basic,High-skilled,'Manual skilled',132.5,1,0,0,0,0,0,20,1,0,6,9,5,13,0,13.9,-0.3,0.79,Graduate
+1,43,1,9500,1,1,120,Secondary,Secondary,Clerical/service,'Manual skilled',112,1,0,0,1,0,1,19,0,0,8,15,7,11.571429,0,12.7,3.7,-1.7,Graduate
+2,39,1,8014,0,1,150,Basic,Basic,Low-skilled,Low-skilled,140,0,0,0,0,1,0,35,0,0,6,6,6,14,0,9.4,-0.8,-3.12,Graduate
+1,17,2,9238,1,1,115,Basic,Basic,'Manual skilled','Manual skilled',116.4,1,0,0,1,0,0,21,0,0,6,9,6,11.375,0,16.2,0.3,-0.92,Graduate
+1,39,1,171,1,1,145,Higher,Secondary,High-skilled,Other/unknown,114.5,1,0,0,1,1,0,24,0,0,0,0,0,0,0,9.4,-0.8,-3.12,Graduate
+1,43,2,9773,1,1,132,Basic,Basic,Other/unknown,Other/unknown,127.1,0,0,0,1,1,0,23,0,0,6,9,6,12.333333,0,7.6,2.6,0.32,Graduate
+1,17,4,9500,1,1,137,Secondary,Basic,Clerical/service,High-skilled,121.3,1,0,0,1,1,1,18,0,0,8,8,7,15.07,0,10.8,1.4,1.74,Graduate
+1,1,1,9773,1,1,128,Basic,Basic,'Manual skilled',High-skilled,116.5,0,0,0,1,1,1,18,0,0,6,12,4,11.5,0,10.8,1.4,1.74,Graduate
+1,42,1,9119,1,1,150,Basic,Basic,Clerical/service,'Manual skilled',133.5,1,0,0,1,1,0,21,0,0,5,10,5,13,0,9.4,-0.8,-3.12,Graduate
+1,16,1,9085,1,1,140,Secondary,Secondary,Low-skilled,Low-skilled,127.1,1,0,0,1,0,0,18,0,0,5,8,4,13.25,1,12.7,3.7,-1.7,Graduate
+1,1,1,9238,1,1,135,Basic,Basic,Low-skilled,Low-skilled,124.5,0,0,0,1,0,1,18,0,0,6,11,5,11.142857,0,16.2,0.3,-0.92,Graduate
+1,1,1,9670,1,1,141,Secondary,Basic,Clerical/service,Clerical/service,132.6,0,0,0,1,0,1,18,0,0,6,8,6,14,0,11.1,0.6,2.02,Graduate
+1,44,1,9003,1,39,170,Basic,Basic,Clerical/service,Clerical/service,170,1,0,0,1,1,0,20,0,0,6,8,6,14.5,0,16.2,0.3,-0.92,Graduate
+1,39,1,9500,1,1,127,Basic,Basic,Clerical/service,Clerical/service,160,0,0,0,1,1,0,28,0,0,7,7,7,14.528571,0,16.2,0.3,-0.92,Graduate
+1,1,1,9130,1,1,161,Secondary,Basic,Clerical/service,Clerical/service,152.3,0,0,0,1,0,0,18,0,0,6,7,6,15.571429,0,11.1,0.6,2.02,Graduate
+1,7,1,9147,1,3,130,Basic,Basic,High-skilled,Low-skilled,130,0,0,0,1,0,0,27,0,0,5,9,3,12,0,10.8,1.4,1.74,Graduate
+1,1,2,9500,1,1,125,Basic,Basic,Low-skilled,Low-skilled,114.9,0,0,0,1,0,0,18,0,0,7,8,6,13.133333,0,16.2,0.3,-0.92,Graduate
+4,39,1,9500,1,19,133.1,Basic,Secondary,Low-skilled,Clerical/service,120,0,0,0,1,0,1,35,0,0,8,9,8,13.63,1,9.4,-0.8,-3.12,Graduate
+1,1,1,9670,1,1,130,Basic,Basic,Other/unknown,Other/unknown,117.8,1,0,0,1,0,0,21,0,0,5,8,3,13,0,7.6,2.6,0.32,Graduate
+1,44,1,8014,0,39,120,Basic,Basic,'Manual skilled','Manual skilled',121.8,1,0,0,1,0,0,22,0,3,6,6,6,12.5,0,12.4,0.5,1.79,Graduate
+1,39,1,9773,1,19,100,Basic,Basic,Other/unknown,Other/unknown,128,1,0,0,1,1,0,28,0,0,6,7,6,13.166667,0,7.6,2.6,0.32,Graduate
+1,44,1,9085,1,39,150,Higher,Higher,High-skilled,High-skilled,150,0,0,0,1,0,0,20,1,2,6,7,6,13.333333,0,12.4,0.5,1.79,Graduate
+1,1,6,9500,1,1,143,Basic,Basic,Low-skilled,Low-skilled,127,1,0,0,1,0,1,18,0,0,8,8,7,13.585714,0,12.7,3.7,-1.7,Graduate
+2,39,1,8014,0,19,100,Secondary,Basic,High-skilled,Clerical/service,130,0,0,1,1,0,1,33,0,0,6,9,5,13.833333,0,9.4,-0.8,-3.12,Graduate
+1,1,1,9147,1,1,160,Secondary,Basic,Clerical/service,High-skilled,151.3,0,0,0,1,0,0,23,0,0,5,8,3,10.666667,0,7.6,2.6,0.32,Graduate
+1,1,6,9254,1,1,126,Basic,Basic,Clerical/service,'Manual skilled',123.9,1,0,0,1,0,1,18,0,0,6,7,6,13,0,12.4,0.5,1.79,Graduate
+1,1,2,9085,1,1,122,Higher,Secondary,Clerical/service,'Manual skilled',116.1,1,0,0,1,0,0,18,0,0,6,13,6,13.153846,0,15.5,2.8,-4.06,Graduate
+1,17,1,9773,1,1,122,Secondary,Secondary,Clerical/service,'Manual skilled',116.8,1,0,1,1,0,0,18,0,0,6,6,6,11.666667,0,16.2,0.3,-0.92,Graduate
+1,1,1,9238,1,1,122,Secondary,Basic,Clerical/service,Clerical/service,127.3,1,0,1,1,0,0,20,0,0,6,6,6,12.166667,0,9.4,-0.8,-3.12,Graduate
+1,17,2,9773,1,1,133.1,Higher,Secondary,Clerical/service,Clerical/service,115,1,0,0,1,0,0,19,0,0,6,6,6,12.833333,0,16.2,0.3,-0.92,Graduate
+1,1,3,9773,1,1,153,Higher,Secondary,High-skilled,'Manual skilled',137.6,1,0,0,1,0,0,18,0,0,6,6,6,16,0,12.4,0.5,1.79,Graduate
+1,43,1,8014,0,1,145.7,Basic,Basic,Low-skilled,Low-skilled,145.7,1,0,0,1,0,0,25,1,8,16,16,15,13.333333,0,13.9,-0.3,0.79,Graduate
+1,1,1,9085,1,1,122,Secondary,Basic,Other/unknown,'Manual skilled',103.4,0,0,0,1,0,0,19,0,0,5,6,5,14.4,0,7.6,2.6,0.32,Graduate
+1,17,5,9853,1,1,141,Higher,Basic,High-skilled,'Manual skilled',130.9,1,0,0,1,0,0,18,0,0,6,7,6,13.5,0,7.6,2.6,0.32,Graduate
+1,15,1,9238,1,1,140,Basic,Basic,Low-skilled,'Manual skilled',140,0,0,0,1,1,0,21,1,0,6,7,6,12.333333,0,11.1,0.6,2.02,Graduate
+1,1,4,9500,1,1,137,Basic,Basic,Low-skilled,'Manual skilled',130.8,0,0,1,1,0,0,18,0,0,8,9,8,14.4025,1,9.4,-0.8,-3.12,Graduate
+2,39,1,8014,0,1,150,Basic,Basic,'Manual skilled',Clerical/service,143,0,0,0,1,0,0,40,0,5,9,9,9,15.888889,0,12.7,3.7,-1.7,Graduate
+1,1,1,9238,1,1,145,Basic,Basic,Clerical/service,'Manual skilled',148.9,1,0,0,1,0,1,18,0,0,6,6,6,13.666667,0,10.8,1.4,1.74,Graduate
+1,17,2,8014,0,1,120,Basic,Unknown,Other/unknown,Other/unknown,117.6,1,0,0,1,0,0,19,0,0,6,8,5,12.2,0,7.6,2.6,0.32,Graduate
+1,1,3,9556,1,1,132,Basic,Basic,'Manual skilled','Manual skilled',119,1,0,0,1,0,0,19,0,0,7,9,7,11.677778,0,12.7,3.7,-1.7,Graduate
+1,17,1,9070,1,1,135,Basic,Basic,Clerical/service,Low-skilled,145.9,0,0,0,1,0,1,18,0,0,6,6,6,12.666667,0,16.2,0.3,-0.92,Graduate
+1,1,6,9500,1,1,137,Secondary,Secondary,Clerical/service,Clerical/service,126.3,1,0,0,1,0,1,18,0,0,8,8,8,13.42375,0,9.4,-0.8,-3.12,Graduate
+2,44,1,9085,1,39,160,Basic,Basic,Low-skilled,Low-skilled,160,0,0,0,1,0,0,27,0,0,5,12,3,14,2,9.4,-0.8,-3.12,Graduate
+1,17,2,9500,1,1,138,Secondary,Basic,Clerical/service,'Manual skilled',132.8,1,0,0,1,0,0,18,0,0,7,9,6,12.385714,0,13.9,-0.3,0.79,Graduate
+2,39,1,8014,0,1,100,Basic,Basic,Low-skilled,Low-skilled,141.5,0,0,0,1,0,0,45,0,0,6,9,5,12.333333,0,13.9,-0.3,0.79,Graduate
+1,17,5,9670,1,1,125,Secondary,Basic,Low-skilled,'Manual skilled',119.4,1,0,0,1,0,0,18,0,0,6,10,4,13.6,0,11.1,0.6,2.02,Graduate
+1,1,1,9254,1,1,131,Basic,Basic,Low-skilled,'Manual skilled',137,0,0,0,1,0,1,20,0,0,6,8,6,11.166667,0,15.5,2.8,-4.06,Graduate
+1,1,2,9500,1,1,149,Higher,Secondary,Low-skilled,Low-skilled,137.5,0,0,0,1,1,0,19,0,0,8,8,7,13.828571,0,12.7,3.7,-1.7,Graduate
+1,1,1,9670,1,1,131,Basic,Basic,Low-skilled,Low-skilled,127.9,0,0,0,1,0,1,19,0,0,5,5,5,12.8,0,9.4,-0.8,-3.12,Graduate
+1,1,1,9238,1,1,137,Basic,Secondary,Low-skilled,Low-skilled,132.8,0,0,0,1,1,0,19,0,0,6,6,6,12.833333,0,10.8,1.4,1.74,Graduate
+1,1,4,9070,1,1,136,Basic,Basic,Low-skilled,'Manual skilled',136.7,1,0,0,1,0,0,20,0,0,6,6,4,13.5,0,10.8,1.4,1.74,Graduate
+1,1,1,9238,1,1,135,Secondary,Secondary,Clerical/service,Clerical/service,122.8,0,0,0,1,0,0,18,0,0,6,7,6,14,0,10.8,1.4,1.74,Graduate
+1,39,1,9500,1,1,114,Basic,Basic,Low-skilled,Low-skilled,130,0,0,0,1,1,0,25,0,0,8,11,6,12.675,0,12.7,3.7,-1.7,Graduate
+1,17,1,9773,1,1,121,Basic,Basic,Low-skilled,'Manual skilled',120.4,1,0,0,1,0,1,18,0,0,6,6,6,12.833333,0,15.5,2.8,-4.06,Graduate
+1,1,2,9773,1,1,137,Secondary,Basic,'Manual skilled','Manual skilled',133.2,1,0,0,1,0,1,19,0,0,6,7,6,14.714286,0,13.9,-0.3,0.79,Graduate
+1,18,1,9500,1,1,140,Basic,Basic,Clerical/service,'Manual skilled',126,1,0,0,1,0,0,18,0,0,8,8,7,13.314286,0,12.7,3.7,-1.7,Graduate
+1,1,1,9085,1,1,130,Basic,Basic,Low-skilled,'Manual skilled',126.5,1,0,0,1,0,1,18,0,0,6,13,6,16.461538,0,15.5,2.8,-4.06,Graduate
+4,43,1,9500,1,19,100,Unknown,Unknown,Other/unknown,Other/unknown,110,0,0,0,1,1,0,30,0,11,14,26,12,12.526087,1,7.6,2.6,0.32,Graduate
+1,1,1,9238,1,1,130,Basic,Basic,Low-skilled,Clerical/service,121.6,0,0,0,1,0,0,18,0,0,6,6,6,12.833333,0,12.4,0.5,1.79,Graduate
+1,1,5,9500,1,1,145,Basic,Basic,Low-skilled,Low-skilled,125.5,1,0,0,1,0,1,18,0,0,8,8,8,13.76375,0,9.4,-0.8,-3.12,Graduate
+1,17,6,9556,1,1,118,Basic,Basic,Clerical/service,Clerical/service,117.8,1,0,0,1,0,1,19,0,0,7,11,6,12.4,0,11.1,0.6,2.02,Graduate
+1,1,1,9070,1,1,137,Basic,Basic,Low-skilled,Low-skilled,126.2,1,0,0,1,0,1,19,0,0,6,6,6,13,0,10.8,1.4,1.74,Graduate
+1,17,1,9670,1,1,149,Basic,Basic,'Manual skilled',Clerical/service,134.3,0,1,0,1,0,0,20,0,0,6,7,6,12.666667,0,10.8,1.4,1.74,Graduate
+1,17,1,9254,1,1,116,Basic,Basic,Low-skilled,'Manual skilled',109.7,1,0,0,1,0,0,22,0,0,6,7,5,14,0,11.1,0.6,2.02,Graduate
+1,1,5,9500,1,1,101,Basic,Basic,Low-skilled,Low-skilled,104.5,1,0,0,1,0,1,21,0,0,7,9,5,13.336,0,11.1,0.6,2.02,Graduate
+1,1,2,9085,1,1,141,Secondary,Basic,Low-skilled,'Manual skilled',128.9,1,0,0,1,0,1,18,0,0,6,7,6,13.833333,0,8.9,1.4,3.51,Graduate
+1,17,1,9085,1,1,124,Basic,Basic,'Manual skilled','Manual skilled',113.9,1,0,0,1,0,1,20,0,0,5,8,5,12,1,12.7,3.7,-1.7,Graduate
+1,1,1,9238,1,1,133,Higher,Secondary,Clerical/service,Clerical/service,131.6,0,0,0,1,0,0,18,0,0,6,7,6,13.833333,0,11.1,0.6,2.02,Graduate
+1,1,1,9500,1,1,125,Basic,Basic,Low-skilled,Low-skilled,126,1,0,1,1,0,0,20,0,0,7,7,6,15.4,0,7.6,2.6,0.32,Graduate
+1,1,2,9070,1,1,126,Basic,Basic,Low-skilled,Low-skilled,132,1,0,0,1,0,1,19,0,0,6,6,6,14.166667,0,10.8,1.4,1.74,Graduate
+1,1,2,9853,1,1,127,Basic,Basic,Low-skilled,'Manual skilled',137.5,1,0,0,1,0,0,21,0,0,6,7,6,13.428571,0,7.6,2.6,0.32,Graduate
+1,1,2,9070,1,1,145,Secondary,Basic,Clerical/service,High-skilled,133.5,0,0,0,1,0,0,19,0,0,6,6,6,12.166667,0,12.7,3.7,-1.7,Graduate
+1,7,1,9238,1,40,130,Basic,Basic,Clerical/service,Clerical/service,130,0,0,0,1,1,0,37,0,11,16,23,15,11.733333,0,15.5,2.8,-4.06,Graduate
+1,44,1,9085,1,39,160,Basic,Basic,Low-skilled,Low-skilled,160,1,0,0,1,0,0,20,0,1,6,7,6,14.166667,0,12.4,0.5,1.79,Graduate
+1,16,4,9500,1,1,145,Secondary,Secondary,Clerical/service,Clerical/service,127.5,1,0,0,1,0,0,18,0,0,8,8,8,13.11,0,9.4,-0.8,-3.12,Graduate
+1,17,6,9556,1,1,134,Basic,Basic,'Manual skilled','Manual skilled',128.5,1,0,0,1,0,1,18,0,0,7,9,7,14.1,0,12.7,3.7,-1.7,Graduate
+1,1,4,9500,1,1,142,Basic,Basic,Low-skilled,Clerical/service,127.3,1,0,0,1,0,0,18,0,0,8,8,7,15.075714,0,10.8,1.4,1.74,Graduate
+1,1,3,9500,1,1,137,Basic,Basic,Clerical/service,'Manual skilled',122.7,1,0,0,1,0,1,18,0,0,7,8,7,13.778571,0,16.2,0.3,-0.92,Graduate
+1,1,1,8014,0,1,125,Basic,Basic,Low-skilled,'Manual skilled',114.9,0,0,0,1,0,0,29,0,8,11,14,11,12.75,0,9.4,-0.8,-3.12,Graduate
+1,17,3,9238,1,1,131,Secondary,Secondary,Clerical/service,High-skilled,122.6,1,0,0,1,0,0,18,0,0,6,7,6,13,0,12.4,0.5,1.79,Graduate
+2,39,1,9500,1,38,133.1,Basic,Basic,Low-skilled,High-skilled,146.6,0,0,0,1,1,0,37,0,0,7,8,7,12.828571,0,13.9,-0.3,0.79,Graduate
+1,1,1,9254,1,1,145,Higher,Basic,High-skilled,'Manual skilled',134.9,1,0,0,1,0,0,18,0,0,6,6,6,15.5,0,12.4,0.5,1.79,Graduate
+1,1,4,9500,1,1,126,Basic,Basic,Low-skilled,Low-skilled,125,1,0,0,1,0,0,19,0,0,7,8,6,11.658333,0,12.4,0.5,1.79,Graduate
+1,1,1,9853,1,1,128,Basic,Basic,Low-skilled,Low-skilled,124.9,0,0,0,1,0,1,19,0,0,6,6,6,12.5,0,12.7,3.7,-1.7,Graduate
+1,17,1,9238,1,1,132,Basic,Basic,Low-skilled,Clerical/service,120.8,0,0,0,1,0,1,19,0,0,6,11,5,11.6,0,15.5,2.8,-4.06,Graduate
+1,18,6,9500,1,1,144,Secondary,Secondary,High-skilled,'Manual skilled',130.8,1,0,0,1,0,0,18,0,0,8,11,7,12.771429,0,12.7,3.7,-1.7,Graduate
+1,17,2,9773,1,1,125,Secondary,Basic,Clerical/service,'Manual skilled',115.9,1,0,0,1,0,0,18,0,0,6,6,6,13,0,12.4,0.5,1.79,Graduate
+1,17,5,9147,1,1,131,Basic,Basic,High-skilled,Other/unknown,119.8,1,0,0,1,0,0,19,0,0,5,8,5,12.6,0,8.9,1.4,3.51,Graduate
+2,43,1,9147,1,1,130,Basic,Basic,'Manual skilled',Other/unknown,138,0,0,0,1,0,0,34,0,12,15,17,12,11.916667,0,7.6,2.6,0.32,Graduate
+2,39,1,9556,1,19,133.1,Basic,Basic,Low-skilled,Low-skilled,123,0,0,0,1,0,0,31,0,0,7,13,6,11.833333,0,12.4,0.5,1.79,Graduate
+1,44,1,9003,1,39,160,Basic,Basic,Low-skilled,'Manual skilled',160,1,0,0,1,0,0,20,0,0,6,7,6,13.571429,0,12.4,0.5,1.79,Graduate
+1,1,1,9500,1,1,136,Secondary,Basic,Clerical/service,'Manual skilled',136.4,0,0,0,1,0,1,19,0,0,7,8,7,12.8375,0,13.9,-0.3,0.79,Graduate
+1,18,2,9500,1,1,129,Basic,Basic,Clerical/service,Clerical/service,119,1,0,0,1,0,1,19,0,0,8,8,7,12.342857,0,10.8,1.4,1.74,Graduate
+4,43,1,9238,1,1,120,Basic,Basic,Low-skilled,Low-skilled,110,0,0,1,1,0,0,34,0,0,6,13,4,11.25,0,13.9,-0.3,0.79,Graduate
+4,39,1,9147,1,1,140,Basic,Basic,Low-skilled,Low-skilled,142.8,0,0,0,1,0,0,43,0,0,5,5,5,16.4,0,7.6,2.6,0.32,Graduate
+1,1,1,171,1,3,116,Higher,Higher,High-skilled,High-skilled,128.2,0,0,0,1,0,0,22,0,12,17,22,17,10.368421,0,11.1,0.6,2.02,Graduate
+1,1,2,9085,1,1,130,Basic,Basic,Other/unknown,Other/unknown,122,0,0,0,1,0,0,20,0,0,5,6,5,12.6,0,7.6,2.6,0.32,Graduate
+4,39,1,8014,0,19,133.1,Basic,Basic,Low-skilled,'Manual skilled',134.5,0,0,0,1,0,1,47,0,0,6,8,5,12.2,0,12.4,0.5,1.79,Graduate
+1,39,1,8014,0,2,130,Basic,Basic,Clerical/service,'Manual skilled',147.5,0,0,0,1,0,0,39,0,7,11,13,11,14.454545,0,12.7,3.7,-1.7,Graduate
+2,39,1,8014,0,12,110,Unknown,Unknown,Other/unknown,Other/unknown,157.8,0,0,0,1,0,0,44,0,5,8,13,8,13.75,0,7.6,2.6,0.32,Graduate
+2,1,1,8014,0,1,151,Basic,Basic,Low-skilled,Low-skilled,152.4,0,0,0,1,0,0,40,0,0,6,7,6,11.333333,0,10.8,1.4,1.74,Graduate
+1,1,1,171,1,1,137,Basic,Basic,Clerical/service,Clerical/service,134.6,1,0,0,1,0,1,19,0,0,0,0,0,0,0,10.8,1.4,1.74,Graduate
+1,17,1,9773,1,1,136,Higher,Secondary,High-skilled,High-skilled,132.5,1,0,0,1,0,0,19,0,0,6,7,6,12.5,0,10.8,1.4,1.74,Graduate
+1,17,1,9773,1,1,120,Basic,Basic,Low-skilled,'Manual skilled',117.9,1,0,0,1,0,1,21,0,0,6,6,5,13,0,8.9,1.4,3.51,Graduate
+1,44,1,9003,1,39,150,Basic,Basic,'Manual skilled','Manual skilled',150,0,0,1,1,0,1,19,0,0,6,9,6,14.333333,0,13.9,-0.3,0.79,Graduate
+1,1,1,171,1,1,162,Basic,Basic,Clerical/service,'Manual skilled',152.9,1,0,0,1,0,1,18,0,0,0,0,0,0,0,12.4,0.5,1.79,Graduate
+1,1,1,9773,1,1,154,Basic,Basic,Low-skilled,'Manual skilled',150.2,0,0,0,1,0,1,18,0,0,6,6,6,14.5,0,16.2,0.3,-0.92,Graduate
+1,1,5,9670,1,1,142,Basic,Basic,'Manual skilled',High-skilled,132.9,0,0,0,1,1,0,19,0,0,5,5,4,12.5,0,7.6,2.6,0.32,Graduate
+1,43,1,9991,0,1,140,Secondary,Secondary,'Manual skilled','Manual skilled',100,0,0,0,1,1,0,34,0,0,5,5,5,13.8,0,9.4,-0.8,-3.12,Graduate
+4,39,1,8014,0,3,100,Basic,Basic,Low-skilled,Low-skilled,130,0,0,0,1,0,1,43,0,0,6,7,5,12.2,0,9.4,-0.8,-3.12,Graduate
+1,17,4,9238,1,1,123,Basic,Basic,Low-skilled,Clerical/service,116,1,0,0,1,0,1,18,0,0,6,9,6,11.666667,0,8.9,1.4,3.51,Graduate
+2,1,1,9003,1,1,131,Basic,Basic,Clerical/service,Clerical/service,118.4,0,0,0,1,0,0,20,0,0,6,11,6,14.125,0,13.9,-0.3,0.79,Graduate
+1,1,1,171,1,1,139,Basic,Basic,Low-skilled,Low-skilled,124,1,0,0,1,0,0,18,0,0,0,0,0,0,0,7.6,2.6,0.32,Graduate
+1,1,1,9670,1,1,133.1,Secondary,Secondary,Low-skilled,High-skilled,103,1,0,0,1,0,1,20,0,0,6,8,4,11.75,0,10.8,1.4,1.74,Graduate
+1,17,1,9147,1,1,137,Secondary,Higher,'Manual skilled',High-skilled,131.1,1,0,1,1,0,1,19,0,0,5,7,5,13.6,0,8.9,1.4,3.51,Graduate
+1,43,2,9238,1,1,133.1,Basic,Basic,Clerical/service,Clerical/service,120.6,1,0,0,1,0,0,24,0,6,10,16,10,12.5,0,16.2,0.3,-0.92,Graduate
+5,43,1,9991,0,3,130,Higher,Higher,High-skilled,High-skilled,130,0,0,0,1,0,0,41,0,5,10,14,10,14.636364,0,16.2,0.3,-0.92,Graduate
+1,17,4,9773,1,1,138,Basic,Basic,Clerical/service,'Manual skilled',133.5,1,0,0,0,0,0,18,0,0,6,7,6,12.5,0,10.8,1.4,1.74,Graduate
+1,17,1,9070,1,1,135,Basic,Basic,Low-skilled,Low-skilled,125.2,1,0,0,1,0,0,19,0,0,6,6,6,14.333333,0,12.7,3.7,-1.7,Graduate
+1,1,1,9130,1,1,172,Basic,Basic,Low-skilled,Low-skilled,163.3,1,0,0,1,0,1,18,0,0,6,8,6,14.5,0,13.9,-0.3,0.79,Graduate
+1,17,5,9500,1,1,137,Secondary,Secondary,Clerical/service,Clerical/service,132.6,1,0,0,1,0,1,18,0,0,7,7,7,13.857143,0,13.9,-0.3,0.79,Graduate
+1,42,1,9500,1,1,100,Basic,Basic,Clerical/service,'Manual skilled',134.3,1,0,0,1,0,0,28,0,12,17,21,17,13.394737,0,16.2,0.3,-0.92,Graduate
+1,1,4,9500,1,1,122,Basic,Basic,'Manual skilled','Manual skilled',117.1,1,0,0,1,0,1,18,0,0,7,7,7,14.572857,0,12.4,0.5,1.79,Graduate
+1,17,1,9085,1,1,141,Higher,Higher,High-skilled,High-skilled,130.2,1,0,0,1,0,0,20,0,0,6,14,6,15.75,0,15.5,2.8,-4.06,Graduate
+1,1,4,9500,1,1,136,Basic,Secondary,Clerical/service,'Manual skilled',133.9,1,0,0,1,0,0,18,0,0,7,9,7,14.711111,0,15.5,2.8,-4.06,Graduate
+1,17,1,9130,1,1,131,Basic,Secondary,Clerical/service,High-skilled,118.4,0,0,0,1,0,0,19,0,0,5,8,3,12,0,7.6,2.6,0.32,Graduate
+1,1,6,9500,1,1,149,Secondary,Secondary,Clerical/service,Low-skilled,133,1,0,0,1,0,1,18,0,0,8,8,7,14,0,12.7,3.7,-1.7,Graduate
+1,17,4,9070,1,1,160,Secondary,Basic,Clerical/service,'Manual skilled',155.5,1,0,0,1,0,0,18,0,0,6,6,6,14,0,11.1,0.6,2.02,Graduate
+1,1,1,9254,1,1,136,Secondary,Secondary,Clerical/service,Clerical/service,122,1,0,0,1,0,0,18,0,0,6,8,6,11.333333,0,7.6,2.6,0.32,Graduate
+1,17,1,9254,1,1,126,Secondary,Secondary,Low-skilled,Low-skilled,124.3,0,0,0,1,0,1,19,0,0,6,8,6,11.166667,0,16.2,0.3,-0.92,Graduate
+1,17,2,9853,1,1,123,Secondary,Secondary,High-skilled,Low-skilled,116.7,1,0,0,1,0,0,19,0,0,6,8,5,13,0,9.4,-0.8,-3.12,Graduate
+1,1,2,9085,1,1,117,Basic,Basic,Low-skilled,Low-skilled,113.5,1,0,0,1,0,1,21,0,0,5,7,4,12,0,10.8,1.4,1.74,Graduate
+2,39,1,9003,1,1,120,Basic,Basic,Low-skilled,Low-skilled,155.8,0,0,0,1,1,0,29,0,0,6,9,6,16.111111,0,13.9,-0.3,0.79,Graduate
+1,1,1,171,1,1,151,Higher,Higher,High-skilled,Clerical/service,161.9,1,0,0,1,0,1,19,1,0,0,0,0,0,0,13.9,-0.3,0.79,Graduate
+1,7,1,9119,1,40,140,Higher,Secondary,High-skilled,Clerical/service,140,0,0,0,1,1,0,23,0,0,5,5,5,13.8,0,11.1,0.6,2.02,Graduate
+1,44,1,9238,1,39,140,Secondary,Secondary,Clerical/service,'Manual skilled',137.5,0,0,1,1,0,1,23,1,3,6,7,6,13.142857,0,12.4,0.5,1.79,Graduate
+1,53,1,9254,1,42,110,Secondary,Secondary,Clerical/service,'Manual skilled',111.8,1,0,0,1,0,1,21,0,0,6,7,6,10.571429,0,8.9,1.4,3.51,Graduate
+1,39,1,9991,0,1,120,Basic,Basic,Clerical/service,Clerical/service,152.4,0,0,0,1,1,0,27,0,0,5,5,5,15.2,0,10.8,1.4,1.74,Graduate
+1,43,1,9070,1,1,134,Basic,Basic,'Manual skilled','Manual skilled',132.7,1,0,0,1,1,0,22,0,9,13,13,13,14,0,15.5,2.8,-4.06,Graduate
+1,1,1,9238,1,1,123,Basic,Basic,Low-skilled,Low-skilled,115,1,0,0,1,0,0,19,0,0,6,10,4,10.25,0,11.1,0.6,2.02,Graduate
+1,1,4,9238,1,1,118,Basic,Basic,Low-skilled,Low-skilled,110,0,0,0,1,0,1,18,0,0,6,7,6,12.285714,0,12.4,0.5,1.79,Graduate
+1,1,1,9500,1,1,134,Basic,Basic,High-skilled,Other/unknown,121.2,0,0,0,1,0,0,19,0,0,7,10,7,13.47,0,15.5,2.8,-4.06,Graduate
+1,17,1,171,1,1,135,Basic,Secondary,Clerical/service,High-skilled,131.9,1,0,0,1,1,0,19,0,6,12,12,12,13.583333,0,8.9,1.4,3.51,Graduate
+1,17,1,9670,1,1,120,Basic,Basic,Clerical/service,Clerical/service,113,1,0,0,1,0,0,20,0,0,5,7,4,12.2,0,7.6,2.6,0.32,Graduate
+1,1,1,9238,1,1,138,Basic,Basic,Clerical/service,'Manual skilled',133.5,0,0,0,1,0,1,19,0,0,6,6,6,15,0,8.9,1.4,3.51,Graduate
+1,1,1,9773,1,1,153,Secondary,Secondary,Clerical/service,'Manual skilled',157.9,0,0,1,1,0,1,18,0,0,6,6,6,14.833333,0,8.9,1.4,3.51,Graduate
+1,43,1,9238,1,1,117,Unknown,Unknown,Other/unknown,Other/unknown,109.3,0,0,0,1,0,0,30,0,9,16,19,15,12.266667,0,9.4,-0.8,-3.12,Graduate
+1,17,1,9238,1,1,134,Higher,Secondary,High-skilled,Clerical/service,133,1,0,0,1,0,0,18,0,0,6,8,6,11.75,0,12.7,3.7,-1.7,Graduate
+1,1,1,171,1,1,138,Secondary,Higher,Clerical/service,High-skilled,149.9,1,0,0,1,0,0,20,0,0,0,0,0,0,0,11.1,0.6,2.02,Graduate
+1,39,1,9085,1,1,128,Basic,Secondary,Low-skilled,Other/unknown,157.4,1,0,0,1,0,0,26,0,0,6,7,6,16.5,0,8.9,1.4,3.51,Graduate
+2,43,1,9991,0,1,133.1,Basic,Basic,Low-skilled,'Manual skilled',113.5,0,0,0,1,0,1,32,0,3,10,12,7,11.142857,0,10.8,1.4,1.74,Graduate
+1,1,1,9991,0,1,130,Higher,Basic,High-skilled,Low-skilled,131.4,0,0,0,1,1,0,34,0,0,5,6,5,12.4,0,13.9,-0.3,0.79,Graduate
+1,1,1,9500,1,1,140,Basic,Basic,High-skilled,'Manual skilled',124.3,1,0,0,1,0,1,18,0,0,7,7,7,14.542857,0,16.2,0.3,-0.92,Graduate
+1,1,2,171,1,1,125,Basic,Basic,Low-skilled,Low-skilled,117.3,1,0,0,1,1,1,21,0,0,0,0,0,0,0,10.8,1.4,1.74,Graduate
+1,1,1,9085,1,1,134,Secondary,Secondary,High-skilled,'Manual skilled',128.4,1,0,0,1,0,1,18,0,0,5,12,5,12.857143,2,9.4,-0.8,-3.12,Graduate
+1,17,1,9147,1,1,127,Secondary,Basic,Clerical/service,'Manual skilled',121.1,1,0,0,1,1,1,20,0,0,5,11,4,12,0,11.1,0.6,2.02,Graduate
+1,1,5,9500,1,1,129,Basic,Basic,Low-skilled,Low-skilled,128.8,1,0,0,1,0,0,19,0,0,7,7,6,12.666667,0,7.6,2.6,0.32,Graduate
+1,17,1,9070,1,1,157,Higher,Higher,High-skilled,High-skilled,146.2,0,0,0,1,1,0,18,0,0,6,6,6,16,0,12.4,0.5,1.79,Graduate
+1,43,1,9147,1,1,123,Basic,Basic,Low-skilled,Low-skilled,106.2,0,0,0,1,0,0,49,0,9,13,22,10,10.4,0,12.7,3.7,-1.7,Graduate
+1,43,1,8014,0,1,161,Basic,Basic,Clerical/service,Other/unknown,100,0,0,0,1,1,0,44,0,9,13,18,13,11.846154,0,12.7,3.7,-1.7,Graduate
+1,1,6,9773,1,1,116,Basic,Secondary,Clerical/service,Clerical/service,110.1,1,0,0,1,0,1,19,0,0,6,8,6,12.666667,0,12.4,0.5,1.79,Graduate
+1,43,1,9500,1,6,134,Secondary,Basic,Low-skilled,Low-skilled,120.4,1,0,0,1,0,0,19,0,0,7,7,6,13.333333,0,7.6,2.6,0.32,Graduate
+1,1,1,171,1,1,156,Basic,Basic,Low-skilled,Clerical/service,170,1,0,0,1,1,0,22,0,0,0,0,0,0,0,7.6,2.6,0.32,Graduate
+1,7,1,9003,1,3,130,Higher,Higher,'Manual skilled',High-skilled,130,1,0,0,1,1,0,29,0,1,6,10,6,17.111111,0,13.9,-0.3,0.79,Graduate
+1,1,6,9254,1,1,102,Higher,Secondary,High-skilled,High-skilled,101.7,1,0,0,1,1,1,21,0,0,6,6,6,13.5,0,12.4,0.5,1.79,Graduate
+1,1,2,171,1,1,131,Basic,Secondary,Clerical/service,'Manual skilled',131.4,1,0,0,1,1,0,20,1,0,0,0,0,0,0,7.6,2.6,0.32,Graduate
+2,43,1,9500,1,1,140,Basic,Basic,Low-skilled,Other/unknown,105.7,1,0,0,1,0,0,27,0,0,8,8,8,13.81375,0,9.4,-0.8,-3.12,Graduate
+1,39,1,9500,1,1,130,Basic,Secondary,Low-skilled,Clerical/service,140,1,0,0,1,0,0,24,0,0,8,8,7,14.985714,0,12.7,3.7,-1.7,Graduate
+1,1,2,9500,1,1,141,Basic,Basic,Low-skilled,'Manual skilled',126.3,1,0,0,1,0,0,19,0,0,7,10,7,13.805,0,15.5,2.8,-4.06,Graduate
+1,1,1,9773,1,1,132,Basic,Basic,Low-skilled,Low-skilled,131,1,0,0,1,0,1,18,0,0,6,8,5,13,0,15.5,2.8,-4.06,Graduate
+1,1,1,8014,0,1,126,Basic,Basic,Low-skilled,Other/unknown,119.4,0,0,0,1,0,0,19,0,0,6,6,6,12.666667,0,12.7,3.7,-1.7,Graduate
+1,1,1,9238,1,1,133,Unknown,Basic,Clerical/service,Low-skilled,134.4,1,0,0,1,0,1,18,0,0,6,6,6,12.166667,0,9.4,-0.8,-3.12,Graduate
+1,17,6,9670,1,1,120,Secondary,Secondary,Clerical/service,Clerical/service,113.7,1,0,0,1,0,0,18,0,0,5,7,4,11.4,0,9.4,-0.8,-3.12,Graduate
+1,1,1,9085,1,1,124,Higher,Secondary,Clerical/service,Other/unknown,117.4,1,0,0,1,0,0,19,0,0,5,7,4,12.75,0,10.8,1.4,1.74,Graduate
+1,17,1,9238,1,1,125,Secondary,Basic,Clerical/service,'Manual skilled',123.3,0,0,0,1,0,1,19,0,0,6,8,6,11.5,0,12.4,0.5,1.79,Graduate
+1,39,1,9773,1,12,120,Secondary,Secondary,Low-skilled,Low-skilled,129.8,1,0,0,1,1,0,52,0,0,6,7,5,13,0,9.4,-0.8,-3.12,Graduate
+5,7,1,9147,1,40,110,Basic,Basic,Low-skilled,Low-skilled,110,0,0,0,1,0,0,23,0,10,15,15,13,10.923077,0,15.5,2.8,-4.06,Graduate
+1,17,2,9556,1,1,137,Secondary,Secondary,'Manual skilled','Manual skilled',124.4,1,0,0,1,0,0,20,1,0,7,8,7,12.728571,0,15.5,2.8,-4.06,Graduate
+4,43,1,9991,0,1,140,Basic,Basic,Clerical/service,Clerical/service,149.8,0,0,0,1,1,0,36,0,0,5,5,5,13.8,0,12.7,3.7,-1.7,Graduate
+1,1,5,9254,1,1,101,Higher,Basic,High-skilled,Low-skilled,98.9,1,0,0,1,1,0,20,0,0,6,10,4,13,0,12.4,0.5,1.79,Graduate
+1,17,2,8014,0,1,120,Basic,Secondary,Clerical/service,Other/unknown,114.8,1,0,0,1,0,0,19,0,0,6,8,4,10.5,0,10.8,1.4,1.74,Graduate
+2,39,1,8014,0,1,120,Basic,Basic,Clerical/service,High-skilled,110.5,0,0,0,1,0,1,36,0,0,6,6,6,11.833333,0,10.8,1.4,1.74,Graduate
+1,1,3,9773,1,1,135,Secondary,Secondary,High-skilled,Clerical/service,130.1,1,0,0,1,0,0,18,0,0,6,6,6,13.666667,0,15.5,2.8,-4.06,Graduate
+2,39,1,8014,0,1,140,Basic,Basic,Low-skilled,'Manual skilled',102.5,0,0,0,1,0,1,32,0,0,6,6,6,11.333333,0,15.5,2.8,-4.06,Graduate
+2,1,1,9991,0,1,120,Basic,Basic,Low-skilled,Low-skilled,135,1,0,0,1,1,0,32,0,0,5,5,5,14.8,0,7.6,2.6,0.32,Graduate
+1,1,1,9773,1,1,117,Secondary,Basic,Clerical/service,Low-skilled,118.4,0,0,0,1,1,1,19,0,0,6,8,6,11.833333,0,15.5,2.8,-4.06,Graduate
+1,1,1,9085,1,1,127,Basic,Higher,Low-skilled,Clerical/service,123.2,1,0,0,1,0,1,18,0,0,6,7,6,15.714286,0,12.4,0.5,1.79,Graduate
+1,1,1,9238,1,1,133,Secondary,Basic,Low-skilled,Low-skilled,132,0,0,0,1,1,1,20,0,0,6,11,5,11.142857,0,16.2,0.3,-0.92,Graduate
+1,1,1,9085,1,1,129,Secondary,Basic,Clerical/service,'Manual skilled',123.4,0,0,0,1,0,0,19,0,0,5,6,5,12.4,0,7.6,2.6,0.32,Graduate
+1,7,1,9991,0,40,133.1,Secondary,Basic,Clerical/service,High-skilled,100,0,0,0,1,0,0,26,0,8,9,11,9,12.333333,0,12.4,0.5,1.79,Graduate
+1,17,5,9500,1,1,137,Secondary,Secondary,Clerical/service,Clerical/service,127.6,1,0,0,1,0,0,18,0,0,7,7,7,13.528571,0,12.4,0.5,1.79,Graduate
+1,1,2,171,1,1,117,Secondary,Basic,High-skilled,High-skilled,121.6,1,0,0,1,0,0,22,0,6,12,12,12,12.916667,0,8.9,1.4,3.51,Graduate
+1,1,1,9500,1,1,138,Secondary,Basic,Clerical/service,Low-skilled,132.5,1,0,0,1,0,1,19,0,0,8,8,7,14.36,0,10.8,1.4,1.74,Graduate
+1,1,2,9238,1,1,129,Basic,Secondary,Clerical/service,Other/unknown,129.4,1,0,0,1,0,0,18,0,0,6,7,6,12.333333,0,9.4,-0.8,-3.12,Graduate
+2,1,1,9500,1,1,151,Basic,Basic,Low-skilled,'Manual skilled',134.5,0,0,1,1,0,1,18,0,0,7,7,6,14.2,0,7.6,2.6,0.32,Graduate
+1,1,2,9085,1,1,157,Higher,Higher,Clerical/service,High-skilled,153.9,1,0,0,1,0,0,18,0,0,6,7,6,16.571429,0,13.9,-0.3,0.79,Graduate
+1,44,1,9003,1,39,160,Basic,Basic,'Manual skilled','Manual skilled',160,1,0,0,1,0,0,21,0,0,6,11,6,13.428571,0,15.5,2.8,-4.06,Graduate
+1,17,1,9500,1,1,148,Secondary,Basic,Low-skilled,'Manual skilled',143.3,0,0,0,1,0,1,18,0,0,7,7,7,13.442857,0,13.9,-0.3,0.79,Graduate
+1,1,1,9238,1,1,115,Basic,Basic,'Manual skilled','Manual skilled',108.7,0,0,0,1,0,1,19,0,0,6,9,5,10.8,0,15.5,2.8,-4.06,Graduate
+1,17,1,9853,1,1,133,Basic,Basic,Low-skilled,Low-skilled,127.4,0,0,1,1,0,1,18,0,0,7,7,7,12.714286,0,16.2,0.3,-0.92,Graduate
+1,53,1,9085,1,42,160,Basic,Basic,Clerical/service,Low-skilled,160,1,0,0,1,0,0,20,0,7,11,15,11,13.785714,0,8.9,1.4,3.51,Graduate
+1,1,1,9238,1,1,154,Basic,Basic,Low-skilled,Low-skilled,156.5,1,1,0,1,0,1,18,0,0,6,8,6,11.714286,0,12.7,3.7,-1.7,Graduate
+1,17,2,171,1,1,146,Higher,Higher,High-skilled,High-skilled,155.1,1,0,0,1,0,0,18,0,0,0,0,0,0,0,13.9,-0.3,0.79,Graduate
+1,17,4,9500,1,1,136,Secondary,Secondary,Clerical/service,Low-skilled,128.5,1,0,0,1,0,0,18,0,0,7,7,6,12.766667,0,7.6,2.6,0.32,Graduate
+5,39,1,9991,0,1,110,Secondary,Secondary,High-skilled,High-skilled,119,0,0,0,1,1,1,35,0,0,5,10,4,10.5,0,8.9,1.4,3.51,Graduate
+1,1,1,9500,1,1,125,Secondary,Secondary,Low-skilled,Clerical/service,117,0,0,0,1,0,1,21,0,0,8,8,8,13.2575,0,9.4,-0.8,-3.12,Graduate
+1,17,3,9070,1,1,128,Basic,Basic,Clerical/service,Clerical/service,124.5,1,0,0,1,1,0,18,0,0,6,6,6,14.166667,0,10.8,1.4,1.74,Graduate
+1,51,1,9070,1,1,132,Basic,Basic,Clerical/service,Clerical/service,120,0,0,0,1,0,1,23,0,0,6,6,6,15.333333,0,11.1,0.6,2.02,Graduate
+1,1,2,9070,1,1,135,Secondary,Secondary,Clerical/service,'Manual skilled',129.8,1,0,0,1,0,0,19,0,0,6,6,6,11.833333,0,9.4,-0.8,-3.12,Graduate
+1,1,1,9500,1,1,133,Basic,Basic,Low-skilled,Low-skilled,130.2,1,0,0,1,1,1,19,0,0,7,7,7,13.7,0,16.2,0.3,-0.92,Graduate
+1,1,5,9500,1,1,130,Basic,Secondary,Low-skilled,Clerical/service,122.1,1,0,0,1,0,1,19,0,0,7,8,7,11.678571,0,12.4,0.5,1.79,Graduate
+1,17,1,9070,1,1,141,Basic,Basic,Clerical/service,Clerical/service,133.7,1,0,0,1,1,0,22,0,0,6,7,5,11.4,0,7.6,2.6,0.32,Graduate
+1,1,1,9238,1,1,145,Basic,Secondary,'Manual skilled',Clerical/service,127.9,1,0,0,1,0,0,19,0,0,6,7,6,13.714286,0,12.7,3.7,-1.7,Graduate
+1,1,2,9500,1,1,139,Basic,Basic,Low-skilled,'Manual skilled',125,1,0,0,1,0,1,19,0,0,7,7,6,12.9,0,7.6,2.6,0.32,Graduate
+1,1,1,9238,1,1,130,Basic,Basic,'Manual skilled','Manual skilled',136.3,1,0,0,1,1,0,18,0,0,6,8,6,12.5,0,10.8,1.4,1.74,Graduate
+1,1,6,9500,1,1,143,Basic,Basic,'Manual skilled',Low-skilled,129.5,1,0,0,1,0,1,18,0,0,8,8,7,13.798571,0,10.8,1.4,1.74,Graduate
+1,17,1,9085,1,1,131,Basic,Basic,Low-skilled,'Manual skilled',125.4,1,0,0,1,0,0,20,0,0,6,13,6,15.692308,0,15.5,2.8,-4.06,Graduate
+1,1,1,9500,1,1,133,Basic,Basic,Low-skilled,'Manual skilled',121.8,0,0,0,1,1,1,18,0,0,8,8,8,12.93875,0,9.4,-0.8,-3.12,Graduate
+1,17,2,9500,1,1,135,Secondary,Basic,Clerical/service,Other/unknown,133.5,1,0,0,1,0,0,19,0,0,8,8,8,13.3425,0,9.4,-0.8,-3.12,Graduate
+1,17,3,9070,1,1,142,Secondary,Basic,High-skilled,Clerical/service,146.9,1,0,0,1,0,1,18,0,0,6,6,6,13,0,16.2,0.3,-0.92,Graduate
+1,1,1,9003,1,1,124,Basic,Basic,Low-skilled,'Manual skilled',116,0,0,0,1,1,0,19,0,0,6,8,6,15.5,0,16.2,0.3,-0.92,Graduate
+1,1,4,9500,1,1,136,Basic,Basic,Clerical/service,'Manual skilled',125.5,1,0,0,1,0,1,21,0,0,7,7,6,14.033333,0,7.6,2.6,0.32,Graduate
+1,17,4,9500,1,1,150,Basic,Basic,Low-skilled,Low-skilled,130.8,0,0,0,1,1,1,22,0,0,7,7,7,14.842857,0,16.2,0.3,-0.92,Graduate
+1,1,3,9147,1,1,128,Higher,Higher,Clerical/service,Other/unknown,116.5,0,0,0,1,1,0,20,0,0,5,7,5,11.6,0,12.4,0.5,1.79,Graduate
+1,44,1,9070,1,39,120,Higher,Basic,High-skilled,'Manual skilled',120,0,0,0,1,1,0,21,0,2,7,10,6,13.428571,0,16.2,0.3,-0.92,Graduate
+1,43,1,9991,0,4,160,Higher,Higher,High-skilled,High-skilled,125,0,0,0,1,1,0,26,0,0,5,7,5,12.6,0,13.9,-0.3,0.79,Graduate
+1,44,1,9003,1,39,140,Basic,Basic,'Manual skilled','Manual skilled',140,1,0,0,1,1,0,19,0,0,6,8,6,12.714286,0,12.4,0.5,1.79,Graduate
+1,1,3,9670,1,1,106,Higher,Secondary,High-skilled,High-skilled,105.7,1,0,0,1,1,0,19,0,0,6,6,6,13.333333,0,8.9,1.4,3.51,Graduate
+1,1,3,9070,1,1,132,Secondary,Higher,Low-skilled,'Manual skilled',126.1,1,0,0,1,0,1,18,0,0,6,6,6,15.833333,0,11.1,0.6,2.02,Graduate
+1,17,2,9670,1,1,124,Secondary,Basic,Clerical/service,Clerical/service,124.4,0,0,0,1,0,0,19,0,0,5,5,5,14.2,0,7.6,2.6,0.32,Graduate
+1,17,3,9500,1,1,156,Basic,Basic,Clerical/service,Low-skilled,132.3,1,0,0,1,1,1,18,0,0,7,7,6,13.266667,0,7.6,2.6,0.32,Graduate
+1,17,3,9238,1,1,125,Basic,Basic,'Manual skilled','Manual skilled',121.5,0,0,0,1,0,0,19,0,0,6,10,5,11.666667,0,13.9,-0.3,0.79,Graduate
+1,44,1,9085,1,39,150,Basic,Basic,Clerical/service,High-skilled,150,1,0,0,1,1,0,20,0,1,6,11,6,13.8,0,16.2,0.3,-0.92,Graduate
+1,1,1,9147,1,1,125,Basic,Secondary,High-skilled,Other/unknown,114.5,1,0,0,1,1,0,19,0,0,5,5,5,13.8,0,9.4,-0.8,-3.12,Graduate
+1,1,1,9853,1,1,140,Basic,Basic,Low-skilled,Low-skilled,145.3,0,0,0,1,0,0,18,0,0,6,6,6,13.666667,0,7.6,2.6,0.32,Graduate
+1,17,2,9070,1,1,121,Secondary,Basic,Clerical/service,Clerical/service,111.9,1,0,0,1,1,0,19,0,0,6,9,5,12,0,8.9,1.4,3.51,Graduate
+1,1,1,9130,1,1,140,Higher,Higher,High-skilled,High-skilled,127.8,0,0,0,1,1,0,18,0,0,6,7,6,14.285714,0,11.1,0.6,2.02,Graduate
+1,44,1,9003,1,39,150,Basic,Secondary,Low-skilled,'Manual skilled',150,1,0,0,1,1,0,21,0,0,6,12,5,13.625,0,13.9,-0.3,0.79,Graduate
+1,1,5,9070,1,1,133.1,Secondary,Basic,High-skilled,High-skilled,112,1,0,0,1,1,1,21,0,0,6,6,6,13.5,0,11.1,0.6,2.02,Graduate
+1,17,6,9500,1,1,143,Secondary,Basic,Clerical/service,Clerical/service,129.9,0,0,0,1,0,1,20,0,3,7,7,7,13.914286,0,11.1,0.6,2.02,Graduate
+1,17,3,9254,1,1,118,Basic,Secondary,Clerical/service,Clerical/service,115.9,1,0,0,1,1,1,18,0,0,6,7,6,12.142857,0,8.9,1.4,3.51,Graduate
+1,17,1,9500,1,1,131,Higher,Basic,Clerical/service,Clerical/service,132.3,1,0,0,1,0,0,19,0,0,7,7,6,11.683333,0,7.6,2.6,0.32,Graduate
+1,1,3,9773,1,1,135,Higher,Secondary,High-skilled,Clerical/service,129.8,1,0,0,1,1,0,20,0,0,6,6,5,12.8,0,15.5,2.8,-4.06,Graduate
+1,17,2,9085,1,1,166,Secondary,Basic,Clerical/service,High-skilled,158.7,0,0,0,1,0,0,18,0,0,6,7,6,14.857143,0,11.1,0.6,2.02,Graduate
+1,1,2,9147,1,1,131,Secondary,Secondary,Low-skilled,Low-skilled,118.8,0,0,0,1,1,1,18,0,0,5,9,4,11.5,0,12.4,0.5,1.79,Graduate
+1,42,1,9500,1,1,160,Basic,Basic,Low-skilled,'Manual skilled',161,1,0,0,1,0,1,22,0,0,8,8,7,13.08,0,10.8,1.4,1.74,Graduate
+1,1,4,9500,1,1,128,Secondary,Secondary,Clerical/service,Other/unknown,125.2,1,0,0,1,1,1,18,0,0,7,7,7,14.682857,0,12.4,0.5,1.79,Graduate
+1,1,3,9500,1,1,108,Basic,Secondary,Low-skilled,High-skilled,107.8,1,0,0,1,0,1,20,0,0,7,10,6,12.357143,0,13.9,-0.3,0.79,Graduate
+1,42,1,9500,1,6,141,Basic,Secondary,Low-skilled,Clerical/service,145,0,0,0,1,0,0,21,0,12,21,33,18,14.933333,12,7.6,2.6,0.32,Graduate
+1,1,3,9773,1,1,150,Basic,Basic,Clerical/service,Clerical/service,146.5,1,0,0,1,0,1,20,0,0,6,6,6,13.5,0,11.1,0.6,2.02,Graduate
+1,17,3,9238,1,1,133.1,Higher,Secondary,High-skilled,High-skilled,117,1,0,0,1,0,0,21,0,0,6,8,6,12.666667,0,11.1,0.6,2.02,Graduate
+1,43,1,9070,1,1,135,Secondary,Basic,High-skilled,Low-skilled,126.4,1,0,0,1,0,1,20,0,5,12,12,12,13.25,0,15.5,2.8,-4.06,Graduate
+1,44,1,9238,1,39,140,Secondary,Secondary,High-skilled,Clerical/service,141.7,0,0,0,1,0,1,20,0,3,6,6,6,12.833333,0,13.9,-0.3,0.79,Graduate
+1,17,1,9500,1,1,142,Basic,Basic,Clerical/service,Clerical/service,131.3,1,0,0,1,0,0,19,0,0,8,8,7,14.731429,0,10.8,1.4,1.74,Graduate
+1,1,1,9500,1,1,138,Basic,Basic,Low-skilled,Low-skilled,126.8,0,0,0,1,1,1,19,0,0,7,9,7,14.244444,0,15.5,2.8,-4.06,Graduate
+1,1,1,171,1,1,138,Secondary,Higher,Clerical/service,Clerical/service,147.5,1,0,0,1,0,1,19,0,6,12,12,12,13.666667,0,8.9,1.4,3.51,Graduate
+1,17,1,9070,1,1,118,Basic,Basic,Low-skilled,High-skilled,111,1,0,0,1,0,0,21,0,0,6,6,6,12.5,0,7.6,2.6,0.32,Graduate
+1,1,1,171,1,1,135,Secondary,Basic,High-skilled,Low-skilled,137.1,1,0,0,1,0,0,18,0,0,0,0,0,0,0,12.7,3.7,-1.7,Graduate
+1,1,1,9238,1,1,130,Secondary,Secondary,Clerical/service,Clerical/service,124.8,0,0,0,1,0,1,18,0,0,6,9,6,11.5,0,11.1,0.6,2.02,Graduate
+1,17,6,9147,1,1,129,Basic,Secondary,Low-skilled,Clerical/service,122,1,0,0,1,1,0,19,0,0,5,8,5,11.6,1,9.4,-0.8,-3.12,Graduate
+1,39,1,9070,1,1,130,Secondary,Basic,Clerical/service,Clerical/service,110,1,0,0,1,0,0,24,0,0,6,6,6,15.166667,0,15.5,2.8,-4.06,Graduate
+1,1,1,9147,1,1,158,Secondary,Basic,High-skilled,'Manual skilled',155.2,0,0,0,1,1,1,18,0,0,5,5,5,11.8,0,9.4,-0.8,-3.12,Graduate
+1,16,6,9773,1,1,136,Basic,Secondary,Other/unknown,Other/unknown,129.7,1,0,0,1,0,0,21,0,0,6,6,6,13.166667,0,7.6,2.6,0.32,Graduate
+1,17,4,9085,1,1,137,Basic,Basic,Clerical/service,Clerical/service,141.6,0,0,0,1,1,0,21,0,0,5,7,4,12.25,0,7.6,2.6,0.32,Graduate
+1,44,1,9003,1,39,160,Higher,Higher,High-skilled,Other/unknown,160,1,0,0,1,1,0,20,0,0,6,7,6,14,0,12.4,0.5,1.79,Graduate
+1,15,1,9238,1,1,150,Basic,Secondary,Low-skilled,Low-skilled,146.5,1,0,1,0,1,0,22,1,0,6,10,5,11.5,0,13.9,-0.3,0.79,Graduate
+1,17,1,9773,1,1,120,Basic,Basic,Clerical/service,Clerical/service,125.3,0,0,0,1,0,0,18,0,0,6,9,6,12.5,0,7.6,2.6,0.32,Graduate
+1,43,1,9500,1,1,132,Secondary,Basic,'Manual skilled','Manual skilled',129.6,0,1,0,1,1,0,23,0,0,7,10,6,12.733333,0,16.2,0.3,-0.92,Graduate
+1,1,2,9500,1,1,144,Basic,Basic,Low-skilled,Low-skilled,128.8,1,0,0,1,1,0,19,0,0,7,7,6,13.2,0,7.6,2.6,0.32,Graduate
+1,1,1,9238,1,1,132,Secondary,Basic,Low-skilled,'Manual skilled',127.1,1,0,0,1,0,1,20,0,0,6,9,6,12.333333,0,8.9,1.4,3.51,Graduate
+1,1,1,171,1,1,145,Higher,Secondary,Clerical/service,High-skilled,149.9,1,0,0,0,0,0,19,0,0,0,0,0,0,0,16.2,0.3,-0.92,Graduate
+1,17,2,9500,1,1,130,Basic,Basic,'Manual skilled','Manual skilled',122.5,1,0,0,1,0,0,19,0,0,8,8,7,13.937143,0,10.8,1.4,1.74,Graduate
+1,1,2,9500,1,1,145,Basic,Secondary,Low-skilled,Clerical/service,138.8,1,0,0,1,0,1,18,0,0,7,7,6,12.95,0,7.6,2.6,0.32,Graduate
+1,2,1,9147,1,1,150,Basic,Basic,Low-skilled,Low-skilled,122,1,0,0,1,0,0,29,0,13,15,19,13,11.769231,0,9.4,-0.8,-3.12,Graduate
+1,1,1,9500,1,1,141,Basic,Basic,'Manual skilled','Manual skilled',125.6,1,0,0,1,0,1,22,0,0,7,9,6,13.081667,0,11.1,0.6,2.02,Graduate
+1,1,1,171,1,1,145,Secondary,Basic,Other/unknown,Clerical/service,150.6,1,0,0,1,1,0,18,0,0,0,0,0,0,0,10.8,1.4,1.74,Graduate
+1,1,1,9500,1,1,132,Basic,Higher,Low-skilled,High-skilled,126,1,0,0,1,0,0,19,0,0,7,7,6,12.183333,0,7.6,2.6,0.32,Graduate
+1,18,1,9500,1,1,135,Higher,Higher,High-skilled,High-skilled,125.8,1,0,0,1,0,0,18,0,0,8,8,7,13.154286,0,10.8,1.4,1.74,Graduate
+1,1,1,171,1,1,146,Higher,Higher,Clerical/service,Clerical/service,150.2,1,0,0,1,0,0,18,0,0,0,0,0,0,0,11.1,0.6,2.02,Graduate
+1,1,2,9500,1,1,134,Basic,Basic,Clerical/service,'Manual skilled',131,1,0,0,1,1,0,18,0,0,7,9,7,14.594444,0,15.5,2.8,-4.06,Graduate
+1,1,3,9119,1,1,113,Higher,Basic,High-skilled,'Manual skilled',107.4,1,0,0,1,1,0,18,0,0,5,8,5,14,0,8.9,1.4,3.51,Graduate
+1,42,1,9085,1,1,133.1,Secondary,Secondary,Clerical/service,Clerical/service,128.2,0,0,0,1,0,0,24,0,5,11,29,9,12,6,9.4,-0.8,-3.12,Graduate
+1,17,1,9500,1,1,160,Basic,Secondary,Clerical/service,Other/unknown,153,1,0,0,1,0,0,18,0,0,7,7,6,13.116667,0,7.6,2.6,0.32,Graduate
+1,1,6,9500,1,1,117,Higher,Secondary,Clerical/service,Low-skilled,119.8,1,0,0,1,0,0,18,0,0,7,7,7,13.877143,0,12.4,0.5,1.79,Graduate
+1,17,2,9238,1,1,130,Basic,Basic,Low-skilled,Low-skilled,127.6,1,0,0,1,0,0,18,0,0,6,6,6,11.666667,0,11.1,0.6,2.02,Graduate
+1,1,2,9556,1,1,125,Basic,Secondary,Low-skilled,High-skilled,116.3,1,0,0,1,0,0,18,0,0,7,8,7,13.428571,0,16.2,0.3,-0.92,Graduate
+1,17,5,9500,1,1,136,Basic,Basic,Clerical/service,'Manual skilled',130.3,1,0,0,1,0,1,18,0,0,7,7,6,12.6,0,7.6,2.6,0.32,Graduate
+1,1,3,9500,1,1,143,Secondary,Secondary,Clerical/service,Clerical/service,129,1,0,0,1,1,0,18,0,0,8,8,7,12.365714,0,10.8,1.4,1.74,Graduate
+1,17,3,9147,1,1,142,Basic,Basic,Clerical/service,High-skilled,129.4,0,0,0,1,0,0,18,0,0,5,5,5,13.2,0,9.4,-0.8,-3.12,Graduate
+1,17,6,9556,1,1,115,Basic,Higher,Clerical/service,High-skilled,112.2,1,0,0,1,0,0,20,0,0,7,7,7,13.785714,0,12.4,0.5,1.79,Graduate
+1,17,2,9238,1,1,125,Basic,Basic,High-skilled,High-skilled,118,1,0,0,1,0,0,18,0,0,6,9,5,11,0,8.9,1.4,3.51,Graduate
+1,17,1,9130,1,1,147,Higher,Secondary,High-skilled,Other/unknown,141.8,1,0,0,1,0,0,19,0,0,6,8,6,13,0,13.9,-0.3,0.79,Graduate
+1,1,4,9773,1,1,124,Higher,Secondary,High-skilled,Low-skilled,137,1,0,0,1,1,0,20,0,0,6,6,6,16.833333,0,8.9,1.4,3.51,Graduate
+1,1,1,9070,1,1,117,Higher,Basic,High-skilled,Clerical/service,123.7,1,0,0,1,0,0,19,0,0,6,6,6,12.666667,0,12.4,0.5,1.79,Graduate
+1,1,1,9500,1,1,157,Basic,Basic,Clerical/service,High-skilled,149.3,0,0,0,1,0,0,18,0,0,8,8,8,14.035,0,9.4,-0.8,-3.12,Graduate
+1,17,1,9670,1,1,133.1,Secondary,Basic,Clerical/service,Clerical/service,150,0,0,0,1,1,0,21,0,0,6,8,6,14.75,0,11.1,0.6,2.02,Graduate
+1,17,6,9500,1,1,132,Basic,Basic,'Manual skilled','Manual skilled',132.4,1,0,0,1,0,1,22,0,0,7,8,6,13.516667,0,11.1,0.6,2.02,Graduate
+1,17,5,9773,1,1,111,Basic,Secondary,'Manual skilled',High-skilled,115.9,1,0,0,1,0,0,22,0,0,6,7,6,13.571429,0,13.9,-0.3,0.79,Graduate
+1,18,1,9238,1,1,122,Basic,Basic,Low-skilled,'Manual skilled',114.7,0,0,1,1,0,1,18,0,0,6,9,6,10.833333,0,11.1,0.6,2.02,Graduate
+1,1,3,9500,1,1,134,Basic,Basic,Low-skilled,Low-skilled,120.3,1,0,0,1,0,1,18,0,0,8,8,7,12.082857,0,10.8,1.4,1.74,Graduate
+1,1,1,9500,1,1,140,Basic,Basic,Low-skilled,'Manual skilled',130,1,0,0,1,1,1,18,0,0,7,7,6,13.183333,0,7.6,2.6,0.32,Graduate
+1,1,3,9500,1,1,142,Basic,Basic,Low-skilled,Low-skilled,137.3,1,0,0,1,0,1,22,0,0,7,7,6,13.9,0,7.6,2.6,0.32,Graduate
+4,39,1,9254,1,1,120,Basic,Basic,Low-skilled,'Manual skilled',95,0,0,0,1,0,1,36,0,0,6,10,6,11,0,10.8,1.4,1.74,Graduate
+1,1,3,171,1,1,145,Secondary,Secondary,High-skilled,High-skilled,140.1,1,0,0,1,0,0,20,0,6,12,12,12,13.25,0,8.9,1.4,3.51,Graduate
+1,1,1,9147,1,1,138,Basic,Basic,Low-skilled,'Manual skilled',145,1,0,0,1,0,0,18,0,0,5,6,5,13,0,7.6,2.6,0.32,Graduate
+1,1,5,9238,1,1,126,Basic,Secondary,Low-skilled,Clerical/service,125.7,1,0,0,1,0,1,19,0,0,6,8,6,11,0,9.4,-0.8,-3.12,Graduate
+1,1,1,9773,1,1,140,Secondary,Basic,Clerical/service,'Manual skilled',124.6,1,0,0,1,0,0,19,0,0,6,7,5,14.2,0,15.5,2.8,-4.06,Graduate
+1,1,1,9773,1,1,151,Secondary,Secondary,Clerical/service,Low-skilled,146.5,0,0,0,1,0,1,18,1,0,6,6,6,13.333333,0,12.7,3.7,-1.7,Graduate
+1,44,1,9238,1,39,140,Secondary,Basic,Low-skilled,Other/unknown,143,0,0,0,1,0,0,20,0,3,6,6,6,13.5,0,13.9,-0.3,0.79,Graduate
+1,1,1,9147,1,1,140,Basic,Basic,Low-skilled,Low-skilled,124.3,1,0,0,1,0,1,18,0,0,5,8,4,10.75,0,12.4,0.5,1.79,Graduate
+1,17,1,9773,1,1,115,Basic,Basic,Low-skilled,'Manual skilled',116.1,1,0,0,1,0,1,18,0,0,6,7,6,13.857143,0,13.9,-0.3,0.79,Graduate
+1,17,2,9254,1,1,108,Basic,Basic,Low-skilled,'Manual skilled',108,1,0,0,1,0,1,20,0,0,6,10,4,11.6,0,12.7,3.7,-1.7,Graduate
+1,1,2,9500,1,1,116,Basic,Basic,High-skilled,High-skilled,109,1,0,0,1,0,1,23,0,0,7,8,6,12.993333,0,11.1,0.6,2.02,Graduate
+1,1,1,9670,1,1,130,Basic,Basic,Clerical/service,Clerical/service,118.8,0,0,0,1,0,1,18,0,0,6,6,6,14.5,0,12.7,3.7,-1.7,Graduate
+1,1,3,9500,1,1,150,Basic,Basic,Clerical/service,Clerical/service,132.8,1,0,0,1,0,1,18,0,0,8,8,8,13.01125,0,9.4,-0.8,-3.12,Graduate
+1,1,1,9070,1,1,131,Basic,Basic,High-skilled,High-skilled,131.7,1,0,0,1,0,0,20,0,0,6,6,6,12.166667,0,12.7,3.7,-1.7,Graduate
+1,17,4,9500,1,1,121,Basic,Basic,Clerical/service,Clerical/service,118.9,1,0,0,1,0,0,21,0,0,7,7,7,14.428571,0,16.2,0.3,-0.92,Graduate
+1,17,6,9238,1,1,117,Secondary,Basic,Clerical/service,'Manual skilled',114.6,0,0,0,1,0,1,18,0,0,6,7,6,12.142857,0,13.9,-0.3,0.79,Graduate
+1,17,1,9070,1,1,119,Basic,Basic,Low-skilled,'Manual skilled',124.6,1,0,0,1,0,0,20,0,0,6,6,6,12.5,0,7.6,2.6,0.32,Graduate
+1,15,1,9853,1,1,133.1,Higher,Secondary,Clerical/service,High-skilled,128.2,0,0,0,1,0,0,23,1,11,16,17,16,14.625,0,8.9,1.4,3.51,Graduate
+1,17,1,9085,1,1,142,Higher,Basic,Clerical/service,'Manual skilled',132.4,1,0,0,1,0,0,18,0,0,6,8,6,13.857143,0,12.4,0.5,1.79,Graduate
+2,39,1,9500,1,19,133.1,Basic,Basic,Low-skilled,Low-skilled,129,1,0,0,1,0,0,36,0,0,7,7,6,11.3,0,7.6,2.6,0.32,Graduate
+1,51,1,9254,1,1,120,Basic,Basic,Low-skilled,Low-skilled,118,0,0,0,1,0,0,28,0,0,6,8,6,12.857143,0,8.9,1.4,3.51,Graduate
+2,39,1,8014,0,1,146,Basic,Basic,Low-skilled,'Manual skilled',120.5,0,0,0,1,0,0,44,0,0,6,6,6,14.833333,0,10.8,1.4,1.74,Graduate
+1,1,5,9773,1,1,135,Basic,Secondary,Clerical/service,Clerical/service,124.9,1,0,0,1,0,0,18,0,0,6,6,6,13.666667,0,8.9,1.4,3.51,Graduate
+1,44,1,9003,1,39,140,Secondary,Basic,Clerical/service,'Manual skilled',140,0,0,0,1,1,0,20,0,0,6,7,6,13.571429,0,12.4,0.5,1.79,Graduate
+1,1,1,9238,1,1,105,Basic,Basic,'Manual skilled','Manual skilled',106.1,1,0,0,1,0,0,20,0,0,6,6,6,11.5,0,11.1,0.6,2.02,Graduate
+1,17,1,9130,1,1,145,Basic,Basic,Low-skilled,'Manual skilled',129.3,1,0,0,1,0,0,19,0,0,5,5,5,11.8,0,10.8,1.4,1.74,Graduate
+1,1,3,9773,1,1,115,Basic,Secondary,Low-skilled,Clerical/service,116.1,1,0,0,1,1,0,19,0,0,6,6,6,12.5,0,12.4,0.5,1.79,Graduate
+1,1,1,9085,1,1,140,Higher,Secondary,High-skilled,Clerical/service,124.1,0,0,0,1,0,0,18,0,0,5,12,5,14.5,2,9.4,-0.8,-3.12,Graduate
+1,1,1,9238,1,1,128,Basic,Basic,Low-skilled,High-skilled,116.5,1,0,0,1,0,1,19,0,0,6,6,6,13,0,12.4,0.5,1.79,Graduate
+1,43,1,9500,1,1,141,Higher,Basic,Clerical/service,Other/unknown,100,0,0,0,1,1,0,18,0,0,7,7,7,11.828571,0,13.9,-0.3,0.79,Graduate
+1,1,1,9500,1,1,132,Basic,Basic,Clerical/service,Low-skilled,128,1,0,0,1,0,1,19,0,0,7,7,6,12.966667,0,7.6,2.6,0.32,Graduate
+1,5,1,9130,1,1,157,Higher,Higher,High-skilled,High-skilled,149.7,1,0,0,1,0,0,18,0,0,6,6,6,15,0,8.9,1.4,3.51,Graduate
+1,39,1,9085,1,1,133.1,Basic,Basic,Low-skilled,'Manual skilled',130,1,0,0,1,0,0,26,0,0,6,17,6,12.666667,0,15.5,2.8,-4.06,Graduate
+1,18,1,9500,1,1,136,Higher,Higher,High-skilled,High-skilled,130.8,0,0,0,1,0,0,18,0,0,7,7,7,14.057143,0,16.2,0.3,-0.92,Graduate
+1,1,1,9773,1,1,121,Secondary,Higher,High-skilled,'Manual skilled',113,1,0,0,1,1,1,18,0,0,6,7,6,11.666667,0,12.4,0.5,1.79,Graduate
+1,1,4,9238,1,1,134,Basic,Basic,'Manual skilled','Manual skilled',128.4,1,0,0,1,0,1,18,0,0,6,6,6,12.5,0,10.8,1.4,1.74,Graduate
+1,1,3,9254,1,1,118,Secondary,Basic,Low-skilled,Low-skilled,111.7,1,0,0,1,0,0,19,0,0,6,6,6,12.5,0,12.4,0.5,1.79,Graduate
+2,39,1,8014,0,1,150,Unknown,Unknown,Other/unknown,Other/unknown,112.5,0,0,0,1,0,0,33,0,0,6,10,5,11.4,0,7.6,2.6,0.32,Graduate
+1,1,4,9500,1,1,135,Basic,Basic,Low-skilled,'Manual skilled',126.3,1,0,0,1,0,1,19,0,0,7,7,6,15.433333,0,7.6,2.6,0.32,Graduate
+1,17,1,9238,1,1,133,Basic,Basic,'Manual skilled','Manual skilled',125.3,1,0,0,1,0,1,18,0,0,6,6,6,11.333333,0,15.5,2.8,-4.06,Graduate
+1,1,1,9147,1,1,131,Basic,Basic,Low-skilled,Low-skilled,130,1,0,0,1,1,0,19,0,0,5,5,5,12.8,0,10.8,1.4,1.74,Graduate
+1,1,1,9500,1,1,153,Basic,Basic,Low-skilled,Clerical/service,138.5,1,0,0,1,0,1,20,0,0,8,8,7,15.798571,0,10.8,1.4,1.74,Graduate
+1,1,1,9070,1,1,130,Basic,Basic,Low-skilled,'Manual skilled',125.5,1,0,0,1,0,1,19,1,0,6,6,6,14.166667,0,11.1,0.6,2.02,Graduate
+1,17,5,9500,1,1,144,Basic,Secondary,Clerical/service,High-skilled,141,1,0,0,1,0,1,19,0,0,8,8,7,12.485714,0,12.7,3.7,-1.7,Graduate
+1,1,1,9147,1,1,127,Secondary,Basic,Clerical/service,'Manual skilled',130.5,1,0,0,1,0,1,21,0,0,5,6,5,12.8,1,9.4,-0.8,-3.12,Graduate
+1,1,5,9500,1,1,143,Basic,Basic,Low-skilled,Clerical/service,131.6,1,0,0,1,0,1,19,0,0,7,10,7,14.368,0,15.5,2.8,-4.06,Graduate
+1,1,1,8014,0,1,115,Basic,Basic,Low-skilled,'Manual skilled',115,1,0,0,1,0,0,28,0,0,6,8,5,12.8,0,9.4,-0.8,-3.12,Graduate
+1,1,1,9085,1,1,120,Basic,Basic,Clerical/service,'Manual skilled',111.6,1,0,0,1,0,0,19,0,0,6,12,5,14,0,16.2,0.3,-0.92,Graduate
+1,17,5,9070,1,1,133,Higher,Secondary,Clerical/service,Clerical/service,132,1,1,0,1,0,1,17,0,0,6,6,6,13,0,15.5,2.8,-4.06,Graduate
+1,1,1,9773,1,1,159,Unknown,Basic,Other/unknown,'Manual skilled',160.1,1,0,0,1,0,0,18,0,0,6,6,6,15.166667,0,7.6,2.6,0.32,Graduate
+1,1,5,9085,1,1,124,Higher,Basic,High-skilled,High-skilled,113.9,1,0,0,1,0,0,19,0,0,6,12,5,15,0,16.2,0.3,-0.92,Graduate
+1,44,1,9991,0,39,120,Basic,Basic,'Manual skilled','Manual skilled',120,1,0,0,1,0,1,23,0,2,6,8,5,11.8,0,9.4,-0.8,-3.12,Graduate
+1,1,6,9500,1,1,125,Basic,Basic,Low-skilled,Low-skilled,115.9,0,0,0,1,0,0,18,0,0,7,7,7,13.557143,0,12.4,0.5,1.79,Graduate
+1,1,1,9500,1,1,144,Basic,Basic,Low-skilled,Low-skilled,125.8,0,0,0,1,0,1,19,0,0,8,12,7,12.471429,0,12.7,3.7,-1.7,Graduate
+1,43,1,9500,1,1,137,Basic,Basic,Low-skilled,Clerical/service,129.3,1,0,0,1,0,0,19,0,0,8,12,7,12.071429,0,12.7,3.7,-1.7,Graduate
+1,1,1,9773,1,1,127,Basic,Basic,Low-skilled,Low-skilled,116.5,0,0,0,1,0,1,19,0,0,6,7,6,14.285714,0,11.1,0.6,2.02,Graduate
+2,1,1,9085,1,1,139,Basic,Basic,Low-skilled,Clerical/service,127.1,0,0,0,1,1,1,23,0,0,5,6,5,11.8,0,10.8,1.4,1.74,Graduate
+2,39,1,8014,0,1,130,Unknown,Unknown,Other/unknown,Other/unknown,114.8,0,0,0,1,0,0,44,0,0,6,9,6,11.166667,0,7.6,2.6,0.32,Graduate
+1,1,5,9254,1,1,120,Basic,Basic,Low-skilled,'Manual skilled',127,1,0,0,1,0,1,18,0,0,6,10,6,11.666667,0,9.4,-0.8,-3.12,Graduate
+1,1,1,9147,1,1,133.1,Basic,Basic,Low-skilled,Clerical/service,95,0,0,0,1,0,0,20,0,0,5,10,4,11.75,0,11.1,0.6,2.02,Graduate
+1,1,3,9500,1,1,154,Secondary,Basic,Clerical/service,Low-skilled,134.8,1,0,0,1,0,0,19,0,0,7,7,6,13.533333,0,7.6,2.6,0.32,Graduate
+1,1,1,9254,1,1,129,Basic,Secondary,High-skilled,'Manual skilled',121,0,0,0,1,0,1,22,0,0,6,9,6,12.833333,0,16.2,0.3,-0.92,Graduate
+1,1,2,9238,1,1,100,Basic,Secondary,'Manual skilled','Manual skilled',99.3,1,0,0,1,0,0,21,0,0,6,8,5,12.4,0,12.4,0.5,1.79,Graduate
+2,39,1,9003,1,1,130,Secondary,Basic,Clerical/service,Low-skilled,152.4,1,0,0,1,0,0,36,0,4,12,14,12,13.846154,0,8.9,1.4,3.51,Graduate
+1,44,1,9238,1,39,140,Basic,Basic,Clerical/service,Other/unknown,141.8,0,0,0,1,0,0,21,0,3,6,7,6,12.571429,0,12.4,0.5,1.79,Graduate
+2,43,1,9500,1,1,137,Higher,Higher,High-skilled,High-skilled,115,0,0,0,1,0,0,28,0,0,7,8,7,14.95,0,13.9,-0.3,0.79,Graduate
+1,1,1,9773,1,1,140,Basic,Basic,Low-skilled,Low-skilled,142.5,1,0,0,1,0,0,18,0,0,6,6,6,13.333333,0,9.4,-0.8,-3.12,Graduate
+1,51,1,9085,1,1,125,Secondary,Secondary,Low-skilled,Clerical/service,120,0,0,0,1,0,0,22,0,0,6,8,6,14.833333,0,11.1,0.6,2.02,Graduate
+1,17,1,9238,1,1,144,Higher,Secondary,High-skilled,High-skilled,126.9,0,0,0,1,0,0,19,0,0,6,8,5,10.6,0,15.5,2.8,-4.06,Graduate
+1,1,1,9130,1,1,135,Higher,Higher,High-skilled,High-skilled,137.1,1,0,0,1,0,0,18,0,0,6,8,6,12,0,12.4,0.5,1.79,Graduate
+1,1,1,9147,1,1,135,Secondary,Basic,Clerical/service,Clerical/service,122.4,0,0,1,1,0,0,19,0,0,5,10,5,10.875,0,13.9,-0.3,0.79,Graduate
+1,1,1,171,1,1,174,Higher,Higher,High-skilled,High-skilled,157.9,0,0,0,1,0,0,18,0,0,0,0,0,0,0,13.9,-0.3,0.79,Graduate
+1,17,5,9773,1,1,134,Secondary,Basic,Low-skilled,Clerical/service,121.8,1,0,0,1,1,0,19,0,0,6,6,6,13.166667,0,16.2,0.3,-0.92,Graduate
+1,17,1,9070,1,1,132,Basic,Basic,Low-skilled,'Manual skilled',138,0,0,0,1,1,1,18,0,0,6,6,6,13.666667,0,12.4,0.5,1.79,Graduate
+1,17,5,9500,1,1,128,Secondary,Secondary,Clerical/service,Clerical/service,120.8,1,0,0,1,0,1,19,0,0,7,9,7,13.507143,0,16.2,0.3,-0.92,Graduate
+1,1,5,9773,1,1,118,Basic,Basic,Low-skilled,Low-skilled,113.8,1,0,0,1,0,0,19,0,0,6,7,6,12.333333,0,8.9,1.4,3.51,Graduate
+1,17,1,9238,1,1,123,Secondary,Secondary,Low-skilled,Low-skilled,115.7,1,0,0,1,0,0,21,0,0,6,8,6,12.166667,0,11.1,0.6,2.02,Graduate
+1,1,1,171,1,1,147,Secondary,Secondary,Clerical/service,Clerical/service,148.4,1,0,0,1,1,1,20,0,8,14,15,12,10.923077,0,11.1,0.6,2.02,Graduate
+1,17,2,9147,1,1,122,Basic,Basic,'Manual skilled','Manual skilled',116.1,1,0,0,1,0,1,19,0,0,5,8,5,11.2,0,12.4,0.5,1.79,Graduate
+1,44,1,9003,1,39,130,Secondary,Basic,'Manual skilled','Manual skilled',130,1,0,0,1,1,0,20,0,0,6,14,5,11.714286,0,16.2,0.3,-0.92,Graduate
+1,1,4,9500,1,1,137,Basic,Basic,'Manual skilled','Manual skilled',126,1,0,0,1,0,0,19,0,0,7,9,7,14.283333,0,15.5,2.8,-4.06,Graduate
+1,44,1,9085,1,39,150,Basic,Basic,Low-skilled,Clerical/service,150,1,0,0,1,1,1,22,0,0,6,9,6,13.428571,0,12.4,0.5,1.79,Graduate
+1,17,6,9500,1,1,139,Basic,Basic,Low-skilled,'Manual skilled',133.5,1,0,0,1,0,1,18,0,0,8,8,7,15.228571,0,12.7,3.7,-1.7,Graduate
+1,1,4,9500,1,1,142,Secondary,Higher,High-skilled,High-skilled,133,0,0,0,1,0,1,20,0,0,8,8,7,14.565714,0,10.8,1.4,1.74,Graduate
+2,7,1,8014,0,3,130,Basic,Basic,High-skilled,'Manual skilled',130,0,0,0,1,0,0,32,0,8,14,18,13,12.846154,0,10.8,1.4,1.74,Graduate
+1,1,6,9147,1,1,112,Basic,Basic,Low-skilled,Low-skilled,117.3,1,0,0,1,0,0,20,0,0,5,8,4,12,0,11.1,0.6,2.02,Graduate
+1,1,5,9500,1,1,133.1,Secondary,Secondary,Clerical/service,'Manual skilled',123,1,0,0,1,0,0,19,0,0,8,8,7,13.714286,0,12.7,3.7,-1.7,Graduate
+1,17,1,9085,1,1,120,Higher,Higher,High-skilled,High-skilled,116.1,0,0,0,1,0,0,20,0,0,5,12,3,11.666667,2,9.4,-0.8,-3.12,Graduate
+1,1,1,9773,1,1,140,Secondary,Basic,Clerical/service,Other/unknown,141.1,1,0,0,1,0,0,18,0,0,6,6,6,12.833333,0,9.4,-0.8,-3.12,Graduate
+1,44,1,9085,1,39,140,Higher,Secondary,Clerical/service,High-skilled,140,1,0,0,1,0,1,20,0,2,6,11,6,11.833333,0,12.4,0.5,1.79,Graduate
+1,1,2,9085,1,1,160,Higher,Basic,High-skilled,Clerical/service,162.1,1,0,0,1,0,0,18,0,0,5,8,5,16.166667,2,9.4,-0.8,-3.12,Graduate
+1,17,4,9500,1,1,140,Basic,Basic,Clerical/service,'Manual skilled',133.3,1,0,0,1,0,0,19,0,0,7,7,6,11.966667,0,7.6,2.6,0.32,Graduate
+1,1,2,171,1,1,117,Basic,Basic,Clerical/service,Low-skilled,120.2,1,0,0,1,1,0,19,0,0,0,0,0,0,0,7.6,2.6,0.32,Graduate
+1,1,3,171,1,1,137,Secondary,Higher,Clerical/service,High-skilled,133.9,1,0,0,1,1,0,19,0,0,0,0,0,0,0,12.7,3.7,-1.7,Graduate
+1,17,1,9254,1,1,116,Basic,Basic,Low-skilled,'Manual skilled',119.9,1,0,0,1,0,0,20,0,0,6,6,6,12.333333,0,12.4,0.5,1.79,Graduate
+1,1,4,9238,1,1,127,Basic,Basic,Clerical/service,Other/unknown,127.4,1,0,0,1,0,0,20,0,0,6,8,6,11.166667,0,7.6,2.6,0.32,Graduate
+1,1,2,9500,1,1,126,Secondary,Basic,Clerical/service,'Manual skilled',124.3,1,0,0,1,0,1,20,0,0,8,8,8,12.98125,0,9.4,-0.8,-3.12,Graduate
+1,39,1,9085,1,1,150,Basic,Basic,Low-skilled,Low-skilled,132,1,0,0,1,0,0,24,0,0,5,6,5,12,0,10.8,1.4,1.74,Graduate
+1,39,1,9500,1,1,150,Basic,Higher,Low-skilled,High-skilled,140,0,0,0,1,1,0,24,0,0,7,11,7,11.294444,0,15.5,2.8,-4.06,Graduate
+1,1,1,9085,1,1,123,Basic,Basic,Clerical/service,Other/unknown,122.3,0,0,0,1,0,0,18,0,0,5,6,5,14.2,0,7.6,2.6,0.32,Graduate
+1,1,4,9500,1,1,160,Basic,Basic,'Manual skilled','Manual skilled',133,1,0,0,1,1,1,18,0,0,8,8,7,14.314286,0,12.7,3.7,-1.7,Graduate
+1,1,1,9070,1,1,124,Basic,Basic,Low-skilled,Clerical/service,121.2,0,0,0,1,1,1,20,0,1,6,7,6,13.5,0,10.8,1.4,1.74,Graduate
+1,1,1,9773,1,1,144,Basic,Basic,'Manual skilled','Manual skilled',138.4,0,0,0,1,0,0,18,0,0,6,7,6,13.428571,0,13.9,-0.3,0.79,Graduate
+1,17,1,9085,1,1,129,Secondary,Basic,Low-skilled,Low-skilled,118.2,1,0,0,1,0,1,18,0,0,5,7,4,13.25,0,10.8,1.4,1.74,Graduate

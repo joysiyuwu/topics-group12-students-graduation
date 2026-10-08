@@ -1,0 +1,103 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CVParameterSelection -P "K 1.0 10.0 10.0" -P "depth 0.0 20.0 5.0" -X 10 -S 1 -W weka.classifiers.trees.RandomForest -- -P 100 -attribute-importance -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     data_all-weka.filters.unsupervised.attribute.Remove-R8,30-33-weka.filters.unsupervised.attribute.Remove-R27-28-weka.filters.unsupervised.attribute.NumericToNominal-R1,2,4,5,6,8-11,13-18,20-weka.filters.unsupervised.attribute.Remove-R21-26-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-V-N5-F1
+Instances:    3539
+Attributes:   24
+              Marital status
+              Application mode
+              Application order
+              Course
+              Daytime/evening attendance
+              Previous qualification
+              Previous qualification (grade)
+              Mother qualification
+              Father qualification
+              Mother occupation
+              Father occupation
+              Admission grade
+              Displaced
+              Educational special needs
+              Debtor
+              Tuition fees up to date
+              Gender
+              Scholarship holder
+              Age at enrollment
+              International
+              Unemployment rate
+              Inflation rate
+              GDP
+              Target
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Cross-validated Parameter selection.
+Classifier: weka.classifiers.trees.RandomForest
+Cross-validation Parameter: '-K' ranged from 1.0 to 10.0 with 10.0 steps
+Cross-validation Parameter: '-depth' ranged from 0.0 to 20.0 with 5.0 steps
+Classifier Options: -K 5 -depth 5 -P 100 -attribute-importance -I 100 -num-slots 1 -M 1.0 -V 0.001 -S 1
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 5 -M 1.0 -V 0.001 -S 1 -depth 5 -do-not-check-capabilities
+
+Attribute importance based on average impurity decrease (and number of nodes using that attribute)
+
+      0.42 (   364)  Marital status
+      0.42 (   787)  Course
+      0.41 (  1522)  Previous qualification (grade)
+      0.4  (  1238)  Father occupation
+      0.39 (   687)  Father qualification
+      0.39 (   529)  Application order
+      0.39 (  1431)  Admission grade
+      0.38 (   744)  Mother qualification
+      0.36 (  1058)  Mother occupation
+      0.35 (   334)  Displaced
+      0.34 (  1056)  Age at enrollment
+      0.34 (   909)  Unemployment rate
+      0.32 (   840)  Inflation rate
+      0.32 (   546)  Previous qualification
+      0.32 (    52)  Daytime/evening attendance
+      0.31 (   404)  Gender
+      0.3  (  1040)  Application mode
+      0.29 (   773)  GDP
+      0.28 (    32)  Educational special needs
+      0.26 (    73)  International
+      0.25 (   311)  Debtor
+      0.25 (   581)  Scholarship holder
+      0.24 (   540)  Tuition fees up to date
+
+
+Time taken to build model: 114.54 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.02 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         648               73.2203 %
+Incorrectly Classified Instances       237               26.7797 %
+Kappa statistic                          0.4645
+Mean absolute error                      0.3886
+Root mean squared error                  0.4213
+Relative absolute error                 77.7254 %
+Root relative squared error             84.2595 %
+Total Number of Instances              885     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.686    0.222    0.756      0.686    0.720      0.466    0.827     0.837     Not on time
+                 0.778    0.314    0.712      0.778    0.744      0.466    0.827     0.823     Graduate
+Weighted Avg.    0.732    0.268    0.734      0.732    0.732      0.466    0.827     0.830     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 304 139 |   a = Not on time
+  98 344 |   b = Graduate
+

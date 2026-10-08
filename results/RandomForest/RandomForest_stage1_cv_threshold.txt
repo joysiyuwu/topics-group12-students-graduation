@@ -1,0 +1,74 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.ThresholdSelector -C 1 -X 10 -E 0 -R 0 -M FMEASURE -S 1 -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 5 -M 1.0 -V 0.001 -S 1 -depth 5
+Relation:     data_all-weka.filters.unsupervised.attribute.Remove-R8,30-33-weka.filters.unsupervised.attribute.Remove-R27-28-weka.filters.unsupervised.attribute.NumericToNominal-R1,2,4,5,6,8-11,13-18,20-weka.filters.unsupervised.attribute.Remove-R21-26-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-V-N5-F1
+Instances:    3539
+Attributes:   24
+              Marital status
+              Application mode
+              Application order
+              Course
+              Daytime/evening attendance
+              Previous qualification
+              Previous qualification (grade)
+              Mother qualification
+              Father qualification
+              Mother occupation
+              Father occupation
+              Admission grade
+              Displaced
+              Educational special needs
+              Debtor
+              Tuition fees up to date
+              Gender
+              Scholarship holder
+              Age at enrollment
+              International
+              Unemployment rate
+              Inflation rate
+              GDP
+              Target
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Threshold Selector.
+Classifier: weka.classifiers.trees.RandomForest
+Index of designated class: 0
+Evaluation mode: 10-fold cross-validation
+Threshold: 0.37607390837943455
+Best value: 0.73503861003861
+Measure: FMEASURE
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 5 -M 1.0 -V 0.001 -S 1 -depth 5 -do-not-check-capabilities
+
+Time taken to build model: 1.53 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2475               69.935  %
+Incorrectly Classified Instances      1064               30.065  %
+Kappa statistic                          0.3985
+Mean absolute error                      0.3993
+Root mean squared error                  0.4364
+Relative absolute error                 79.8539 %
+Root relative squared error             87.271  %
+Total Number of Instances             3539     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.819    0.420    0.661      0.819    0.732      0.410    0.799     0.817     Not on time
+                 0.580    0.181    0.761      0.580    0.658      0.410    0.799     0.771     Graduate
+Weighted Avg.    0.699    0.301    0.711      0.699    0.695      0.410    0.799     0.794     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1451  321 |    a = Not on time
+  743 1024 |    b = Graduate
+

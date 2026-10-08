@@ -1,0 +1,101 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.FilteredClassifier -F "weka.filters.unsupervised.attribute.Remove -R 15,16,18" -S 1 -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 5 -M 1.0 -V 0.001 -S 1 -depth 5
+Relation:     data_all-weka.filters.unsupervised.attribute.Remove-R8,30-33-weka.filters.unsupervised.attribute.Remove-R27-28-weka.filters.unsupervised.attribute.NumericToNominal-R1,2,4,5,6,8-11,13-18,20-weka.filters.unsupervised.attribute.Remove-R21-26-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-V-N5-F1
+Instances:    3539
+Attributes:   24
+              Marital status
+              Application mode
+              Application order
+              Course
+              Daytime/evening attendance
+              Previous qualification
+              Previous qualification (grade)
+              Mother qualification
+              Father qualification
+              Mother occupation
+              Father occupation
+              Admission grade
+              Displaced
+              Educational special needs
+              Debtor
+              Tuition fees up to date
+              Gender
+              Scholarship holder
+              Age at enrollment
+              International
+              Unemployment rate
+              Inflation rate
+              GDP
+              Target
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 5 -M 1.0 -V 0.001 -S -597473084 -depth 5 on data filtered through weka.filters.unsupervised.attribute.Remove -R 15,16,18
+
+Filtered Header
+@relation 'data_all-weka.filters.unsupervised.attribute.Remove-R8,30-33-weka.filters.unsupervised.attribute.Remove-R27-28-weka.filters.unsupervised.attribute.NumericToNominal-R1,2,4,5,6,8-11,13-18,20-weka.filters.unsupervised.attribute.Remove-R21-26-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-V-N5-F1-weka.filters.unsupervised.attribute.Remove-R15,16,18'
+
+@attribute 'Marital status' {1,2,3,4,5,6}
+@attribute 'Application mode' {1,2,5,7,10,15,16,17,18,26,27,39,42,43,44,51,53,57}
+@attribute 'Application order' numeric
+@attribute Course {33,171,8014,9003,9070,9085,9119,9130,9147,9238,9254,9500,9556,9670,9773,9853,9991}
+@attribute 'Daytime/evening attendance' {0,1}
+@attribute 'Previous qualification' {1,2,3,4,5,6,9,10,12,14,15,19,38,39,40,42,43}
+@attribute 'Previous qualification (grade)' numeric
+@attribute 'Mother qualification' {Basic,Secondary,Higher,Unknown}
+@attribute 'Father qualification' {Secondary,Higher,Basic,Unknown}
+@attribute 'Mother occupation' {Clerical/service,High-skilled,Low-skilled,'Manual skilled',Other/unknown}
+@attribute 'Father occupation' {Low-skilled,High-skilled,'Manual skilled',Other/unknown,Clerical/service}
+@attribute 'Admission grade' numeric
+@attribute Displaced {0,1}
+@attribute 'Educational special needs' {0,1}
+@attribute Gender {0,1}
+@attribute 'Age at enrollment' numeric
+@attribute International {0,1}
+@attribute 'Unemployment rate' numeric
+@attribute 'Inflation rate' numeric
+@attribute GDP numeric
+@attribute Target {'Not on time',Graduate}
+
+@data
+
+
+Classifier Model
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 5 -M 1.0 -V 0.001 -S -597473084 -depth 5 -do-not-check-capabilities
+
+Time taken to build model: 0.18 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         615               69.4915 %
+Incorrectly Classified Instances       270               30.5085 %
+Kappa statistic                          0.3899
+Mean absolute error                      0.4122
+Root mean squared error                  0.4432
+Relative absolute error                 82.4485 %
+Root relative squared error             88.639  %
+Total Number of Instances              885     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.661    0.271    0.709      0.661    0.685      0.391    0.773     0.771     Not on time
+                 0.729    0.339    0.682      0.729    0.705      0.391    0.773     0.770     Graduate
+Weighted Avg.    0.695    0.305    0.696      0.695    0.695      0.391    0.773     0.771     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 293 150 |   a = Not on time
+ 120 322 |   b = Graduate
+

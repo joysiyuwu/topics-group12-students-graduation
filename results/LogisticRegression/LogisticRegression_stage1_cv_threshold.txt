@@ -1,0 +1,264 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.ThresholdSelector -C 1 -X 10 -E 0 -R 0 -M FMEASURE -S 1 -W weka.classifiers.functions.Logistic -- -R 27.0 -M -1 -num-decimal-places 4
+Relation:     data_all-weka.filters.unsupervised.attribute.Remove-R8,30-33-weka.filters.unsupervised.attribute.Remove-R27-28-weka.filters.unsupervised.attribute.NumericToNominal-R1,2,4,5,6,8-11,13-18,20-weka.filters.unsupervised.attribute.Remove-R21-26-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-V-N5-F1
+Instances:    3539
+Attributes:   24
+              Marital status
+              Application mode
+              Application order
+              Course
+              Daytime/evening attendance
+              Previous qualification
+              Previous qualification (grade)
+              Mother qualification
+              Father qualification
+              Mother occupation
+              Father occupation
+              Admission grade
+              Displaced
+              Educational special needs
+              Debtor
+              Tuition fees up to date
+              Gender
+              Scholarship holder
+              Age at enrollment
+              International
+              Unemployment rate
+              Inflation rate
+              GDP
+              Target
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Threshold Selector.
+Classifier: weka.classifiers.functions.Logistic
+Index of designated class: 0
+Evaluation mode: 10-fold cross-validation
+Threshold: 0.3819384870329517
+Best value: 0.7382516422435573
+Measure: FMEASURE
+Logistic Regression with ridge parameter of 27.0
+Coefficients...
+                                            Class
+Variable                              Not on time
+=================================================
+Marital status=1                           0.1015
+Marital status=2                          -0.2573
+Marital status=3                           1.3548
+Marital status=4                           0.4018
+Marital status=5                          -0.4107
+Marital status=6                           1.6033
+Application mode=1                        -0.3692
+Application mode=2                         0.9448
+Application mode=5                         0.5714
+Application mode=7                         0.6975
+Application mode=10                       -0.9131
+Application mode=15                       -1.0727
+Application mode=16                       -0.3526
+Application mode=17                       -0.0853
+Application mode=18                       -0.3377
+Application mode=26                        1.7251
+Application mode=27                         2.064
+Application mode=39                        0.6218
+Application mode=42                        0.1012
+Application mode=43                        0.0538
+Application mode=44                         0.101
+Application mode=51                       -0.2286
+Application mode=53                       -0.1742
+Application mode=57                       -3.1924
+Application order                          -0.006
+Course=33                                  1.4304
+Course=171                                 0.4764
+Course=8014                                -0.791
+Course=9003                               -0.4932
+Course=9070                               -0.2686
+Course=9085                               -0.0931
+Course=9119                                1.7509
+Course=9130                                0.4558
+Course=9147                                0.5254
+Course=9238                               -0.5598
+Course=9254                                0.1227
+Course=9500                               -0.5544
+Course=9556                                0.4482
+Course=9670                               -0.0861
+Course=9773                               -0.2689
+Course=9853                                0.8939
+Course=9991                                0.4431
+Daytime/evening attendance=1               0.1108
+Previous qualification=1                   0.0237
+Previous qualification=2                   0.4366
+Previous qualification=3                  -0.2771
+Previous qualification=4                   0.0578
+Previous qualification=5                   1.7218
+Previous qualification=6                  -0.3616
+Previous qualification=9                   2.0135
+Previous qualification=10                 -0.7297
+Previous qualification=12                 -0.0004
+Previous qualification=14                  1.4797
+Previous qualification=15                 -1.9365
+Previous qualification=19                 -0.1038
+Previous qualification=38                  -0.512
+Previous qualification=39                  0.2911
+Previous qualification=40                 -0.5646
+Previous qualification=42                 -0.2633
+Previous qualification=43                 -0.6846
+Previous qualification (grade)            -0.0036
+Mother qualification=Basic                  -0.03
+Mother qualification=Secondary            -0.0612
+Mother qualification=Higher                0.0614
+Mother qualification=Unknown               0.4318
+Father qualification=Secondary             0.0912
+Father qualification=Higher                0.1147
+Father qualification=Basic                 -0.109
+Father qualification=Unknown              -0.0518
+Mother occupation=Clerical/service        -0.0177
+Mother occupation=High-skilled               0.02
+Mother occupation=Low-skilled             -0.1143
+Mother occupation=Manual skilled           0.0612
+Mother occupation=Other/unknown            0.4617
+Father occupation=Low-skilled              0.0387
+Father occupation=High-skilled             -0.139
+Father occupation=Manual skilled           0.0336
+Father occupation=Other/unknown           -0.1246
+Father occupation=Clerical/service         0.1109
+Admission grade                           -0.0157
+Displaced=1                                0.0162
+Educational special needs=1                0.1297
+Debtor=1                                   0.7897
+Tuition fees up to date=1                 -2.1038
+Gender=1                                     0.43
+Scholarship holder=1                      -1.0518
+Age at enrollment                          0.0049
+International=1                            0.0102
+Unemployment rate                         -0.0168
+Inflation rate                             0.0118
+GDP                                       -0.0584
+Intercept                                  4.4428
+
+
+Odds Ratios...
+                                            Class
+Variable                              Not on time
+=================================================
+Marital status=1                           1.1068
+Marital status=2                           0.7732
+Marital status=3                           3.8759
+Marital status=4                           1.4945
+Marital status=5                           0.6632
+Marital status=6                           4.9692
+Application mode=1                         0.6913
+Application mode=2                         2.5724
+Application mode=5                         1.7707
+Application mode=7                         2.0087
+Application mode=10                        0.4013
+Application mode=15                        0.3421
+Application mode=16                        0.7029
+Application mode=17                        0.9183
+Application mode=18                        0.7134
+Application mode=26                        5.6129
+Application mode=27                        7.8771
+Application mode=39                        1.8622
+Application mode=42                        1.1065
+Application mode=43                        1.0553
+Application mode=44                        1.1063
+Application mode=51                        0.7957
+Application mode=53                        0.8401
+Application mode=57                        0.0411
+Application order                           0.994
+Course=33                                  4.1804
+Course=171                                 1.6102
+Course=8014                                0.4534
+Course=9003                                0.6107
+Course=9070                                0.7645
+Course=9085                                0.9111
+Course=9119                                5.7597
+Course=9130                                1.5775
+Course=9147                                1.6911
+Course=9238                                0.5713
+Course=9254                                1.1306
+Course=9500                                0.5744
+Course=9556                                1.5655
+Course=9670                                0.9175
+Course=9773                                0.7642
+Course=9853                                2.4447
+Course=9991                                1.5575
+Daytime/evening attendance=1               1.1172
+Previous qualification=1                    1.024
+Previous qualification=2                   1.5474
+Previous qualification=3                    0.758
+Previous qualification=4                   1.0595
+Previous qualification=5                   5.5948
+Previous qualification=6                   0.6966
+Previous qualification=9                   7.4893
+Previous qualification=10                  0.4821
+Previous qualification=12                  0.9996
+Previous qualification=14                  4.3915
+Previous qualification=15                  0.1442
+Previous qualification=19                  0.9014
+Previous qualification=38                  0.5993
+Previous qualification=39                  1.3379
+Previous qualification=40                  0.5686
+Previous qualification=42                  0.7685
+Previous qualification=43                  0.5043
+Previous qualification (grade)             0.9964
+Mother qualification=Basic                 0.9705
+Mother qualification=Secondary             0.9406
+Mother qualification=Higher                1.0634
+Mother qualification=Unknown               1.5401
+Father qualification=Secondary             1.0955
+Father qualification=Higher                1.1215
+Father qualification=Basic                 0.8968
+Father qualification=Unknown               0.9496
+Mother occupation=Clerical/service         0.9825
+Mother occupation=High-skilled             1.0202
+Mother occupation=Low-skilled              0.8919
+Mother occupation=Manual skilled           1.0631
+Mother occupation=Other/unknown            1.5867
+Father occupation=Low-skilled              1.0394
+Father occupation=High-skilled             0.8702
+Father occupation=Manual skilled           1.0342
+Father occupation=Other/unknown            0.8829
+Father occupation=Clerical/service         1.1173
+Admission grade                            0.9844
+Displaced=1                                1.0163
+Educational special needs=1                1.1385
+Debtor=1                                   2.2026
+Tuition fees up to date=1                   0.122
+Gender=1                                   1.5373
+Scholarship holder=1                       0.3493
+Age at enrollment                          1.0049
+International=1                            1.0102
+Unemployment rate                          0.9834
+Inflation rate                             1.0118
+GDP                                        0.9433
+
+
+Time taken to build model: 2.77 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2480               70.0763 %
+Incorrectly Classified Instances      1059               29.9237 %
+Kappa statistic                          0.4013
+Mean absolute error                      0.3736
+Root mean squared error                  0.4348
+Relative absolute error                 74.7279 %
+Root relative squared error             86.969  %
+Total Number of Instances             3539     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.834    0.433    0.659      0.834    0.736      0.416    0.799     0.815     Not on time
+                 0.567    0.166    0.773      0.567    0.654      0.416    0.799     0.768     Graduate
+Weighted Avg.    0.701    0.300    0.716      0.701    0.695      0.416    0.799     0.792     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1478  294 |    a = Not on time
+  765 1002 |    b = Graduate
+
